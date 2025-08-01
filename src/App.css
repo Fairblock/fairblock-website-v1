@@ -1,6 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
+/* Adding custom font - MarlideDisplay (Headers) - START */
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Light.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Regular.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Medium.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Bold.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_ExtraBold.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Heavy.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Adding custom font - MarlideDisplay - END */
+
 @theme {
-  --font-inter: "Inter", sans-serif;
+  --font-eb-garamond: "EB Garamond", serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-marlide: "Marlide Display", serif;
+  --color-primary-blue: #58bdf6;
+  --color-primary-darkBlue: #000D14;
+  --breakpoint-3xl: 1920px
+}
+
+.custom-border-left {
+  border-image-source: url('/public/how-it-works/key-benefits-border-left.svg');
+  border-image-slice: 40; /* How the image is divided into corners & edges */
+  border-image-repeat: stretch; /* or round / repeat */
 }
