@@ -21,15 +21,6 @@ const Card = ({ title, content }: Card) => {
   );
 };
 
-// const Card2 = ({ title, content }: Card) => {
-//   return (
-//     <div className="bg-[url('/how-it-works/key-benefits-border-mobile.svg')] sm:bg-[url('/how-it-works/key-benefits-border.svg')] bg-contain bg-no-repeat flex flex-col gap-2 items-center justify-start p-10 lg:py-11 lg:px-14 h-[240px] lg:h-[300px] w-[360px] text-center">
-//       <h4 className="relative sm:-left-[6px] lg:left-0 font-medium text-2xl text-primary-blue">{title}</h4>
-//       <p className="relative sm:-left-[6px] lg:left-0 text-lg lg:text-xl">{content}</p>
-//     </div>
-//   );
-// };
-
 const Section5 = () => {
   return (
     <div className="flex flex-col gap-10 p-4 sm:px-8">
