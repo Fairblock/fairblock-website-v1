@@ -18,15 +18,15 @@ const Section4 = () => {
         <div className="font-eb-garamond flex flex-col gap-4 pb-12 text-lg lg:text-xl text-center">
           <p>
             Simplicity is the ultimate form of art. We prioritize simplicity and
-            usability through a multimodal, dynamic design—fine-tuning
+            usability through a multimodal, dynamic design fine-tuning
             performance and security, and introducing complexity only when
             essential. Fairblock leverages DKG and threshold IBE (sometimes
             referred to as conditional decryption) for applications that require
-            pre-execution confidentiality—such as sealed-bid auctions, protected
-            trading intents, and AI data marketplaces—achieving minimal
+            pre-execution confidentiality such as sealed-bid auctions, protected
+            trading intents, and AI data marketplaces achieving minimal
             bandwidth and computation overhead. For applications requiring
-            computation over encrypted transactions or private data—such as
-            confidential stablecoins, private AI inference, and dark pools—we
+            computation over encrypted transactions or private data such as
+            confidential stablecoins, private AI inference, and dark pools we
             employ advanced MPC and HE schemes, including Twisted ElGamal,
             threshold FHE (CKKS), and SPDZ. MPC schemes can also be combined
             with TEEs to mitigate reliance on any single TEE’s hardware security

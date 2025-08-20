@@ -38,7 +38,7 @@ const Section5 = () => {
           </div>
           <Card
             title="Chain Agnostic"
-            content="FairyKit is compatible with major L1s, L2s such as ..."
+            content="FairyKit is compatible with major L1s, L2s such as Ethereum, Arbitrum, Plasma, Hyperliquid, Solana, Base"
           />
         </div>
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between lg:justify-center gap-10 lg:gap-20">
