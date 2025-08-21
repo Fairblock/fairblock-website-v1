@@ -11,7 +11,7 @@ const Ecosystem = () => {
     }, []);
 
   return (
-    <div className="flex flex-col gap-16 overflow-hidden relative mx-auto max-w-[1920px]">
+    <div className="flex flex-col gap-10 sm:gap-16 overflow-hidden relative mx-auto max-w-[1920px]">
       <Section1 />
       <Section2 />
       <Section3 />

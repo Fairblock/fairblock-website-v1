@@ -7,8 +7,9 @@ import type { CardProps } from "./types";
 
 const StartBuildingCard = ({ imageUrl, title, content }: CardProps) => {
   return (
-    <div className="border border-primary-blue bg-[linear-gradient(to_bottom,transparent_0%,transparent_25%,#58bdf644_50%,#58bdf688_75%,#58bdf6bb_100%)] hover:bg-none hover:cursor-pointer flex flex-col gap-4 items-center p-4 pt-8 relative rounded-3xl w-full md:w-80 max-w-80">
-      <PiArrowUpRightBold className="absolute top-2 right-2 bg-primary-blue p-1 rounded-full text-primary-darkBlue text-2xl" />
+    <div className="bg-gradient-to-b from-primary-blue via-primary-blue/50 to-primary-blue/20 rounded-3xl w-full md:w-80 max-w-80">
+      <div className="bg-primary-darkBlue hover:cursor-pointer duration-300 flex flex-col gap-4 items-center p-4 pt-8 m-[1px] relative rounded-3xl hover:shadow shadow-primary-blue">
+      <PiArrowUpRightBold className="absolute top-3 right-3 bg-primary-blue p-1 rounded-full text-primary-darkBlue text-2xl" />
       <div className="w-56">
         <img className="w-full" src={imageUrl} alt={title} />
       </div>
@@ -18,6 +19,7 @@ const StartBuildingCard = ({ imageUrl, title, content }: CardProps) => {
           {content}
         </p>
       </div>
+    </div>
     </div>
   );
 };
@@ -29,7 +31,7 @@ const Section7 = () => {
       <div className="mb-8">
         <Title title="Start Building" />
       </div>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
         <StartBuildingCard
           imageUrl="/home/developer-docs.svg"
           title="Wander the woods"

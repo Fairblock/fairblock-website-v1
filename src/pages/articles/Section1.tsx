@@ -510,7 +510,7 @@ const Section1 = () => {
     <div>
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 lg:py-12">
         {/* SECTION 01 - ARTICLES & RESEARCH */}
-        <h2 className="font-marlide text-4xl lg:text-5xl text-center mb-8 xl:mb-12">
+        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center mb-8 xl:mb-12">
           Articles & Research
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -527,7 +527,7 @@ const Section1 = () => {
         </div>
 
         {/* SECTION 02 - NEWS */}
-        <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
+        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center my-8 xl:my-12">
           News
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -544,7 +544,7 @@ const Section1 = () => {
         </div>
 
         {/* SECTION 03 - TWEETS */}
-        <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
+        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center my-8 xl:my-12">
           Tweets
         </h2>
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4">

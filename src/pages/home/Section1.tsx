@@ -23,11 +23,12 @@ const Section1 = () => {
   return (
     <div className="relative sm:mt-[18vh] h-full w-full">
       <video
-        className="w-full h-[70vh] sm:h-[82vh] object-cover"
+        className="w-full h-[82vh] object-cover"
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
         src={videoSrc}
       />
       <h2 className="hidden absolute bottom-[10%] sm:flex justify-center pb-1 text-2xl sm:text-4xl lg:text-5xl w-full overflow-hidden">

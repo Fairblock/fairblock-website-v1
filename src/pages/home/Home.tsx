@@ -9,7 +9,7 @@ import Section7 from "./Section7";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-16 mx-auto overflow-hidden relative max-w-[1920px]">
+    <div className="flex flex-col gap-10 sm:gap-16 mx-auto overflow-hidden relative max-w-[1920px]">
       <img
           className="absolute w-[1000px] top-[42%] -left-[25%] -z-50"
           src="/home/flow-chart-left-gradient.svg"

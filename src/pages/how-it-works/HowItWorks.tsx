@@ -12,7 +12,7 @@ const HowItWorks = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-16 pt-24 xl:pt-40 overflow-hidden relative mx-auto max-w-[1920px]">
+    <div className="flex flex-col gap-10 sm:gap-16 pt-24 xl:pt-40 overflow-hidden relative mx-auto max-w-[1920px]">
       {/* left light-ray */}
       <img
         className="absolute top-0 lg:top-14 -left-52 lg:-left-80 xl:-left-52 rotate-3 sm:rotate-2 lg:-rotate-2 -z-50"
