@@ -20,3 +20,39 @@ const Card = ({ title, content }: Card) => {
     </div>
   );
 };
+
+const Section5 = () => {
+  return (
+    <div className="flex flex-col gap-10 p-4 sm:px-8">
+      <div className="md:mb-8">
+        <Title title="Key Benefits" />
+      </div>
+      <div className="flex flex-col gap-10 lg:gap-12">
+        <div className="flex flex-col sm:flex-row items-center justify-between lg:justify-center gap-8 lg:gap-12 xl:gap-24">
+          <Card
+            title="Composable"
+            content="Developers can build confidentiality features directly into the chains and applications they already know and love."
+          />
+          <div className="relative -top-6 hidden lg:block max-w-36">
+            <img src="/how-it-works/key-benefits.svg" alt="fairy-key" />
+          </div>
+          <Card
+            title="Chain Agnostic"
+            content="FairyKit is compatible with major L1s, L2s such as Ethereum, Arbitrum, Plasma, Hyperliquid, Solana, Base"
+          />
+        </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-between lg:justify-center gap-10 lg:gap-20">
+          <Card
+            title="Performant and Scalable"
+            content="Linear bandwidth scaling and encryption run times in milliseconds, ensuring frictionless user experience."
+          />
+          <Card
+            title="Dynamic"
+            content="There is no one-size-fits-all encryption solution. Fairblock's MPC schemes can be combined and configured for any use case or level of confidentiality."
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+export default Section5;
