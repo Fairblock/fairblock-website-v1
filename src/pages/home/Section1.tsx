@@ -23,7 +23,7 @@ const Section1 = () => {
   return (
     <div className="relative sm:mt-[18vh] h-full w-full">
       <video
-        className="w-full h-[82vh] object-cover"
+        className="w-full h-[87vh] sm:h-[82vh] object-cover"
         autoPlay
         loop
         muted

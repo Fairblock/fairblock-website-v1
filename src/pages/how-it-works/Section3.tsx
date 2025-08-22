@@ -20,7 +20,7 @@ const HowItWorksCard = ({ imageUrl, title, content }: HowItWorksCardProps) => {
 const Section3 = () => {
   return (
     <div className="flex flex-col items-center gap-8 p-4 sm:px-8">
-      <div className="mb-8">
+      <div className="">
         <Title title={"Confidential Stabelcoins"} />
       </div>
       <div>

@@ -3,7 +3,7 @@ import Title from "../../common/Title";
 
 const Section2 = () => {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center">
       <div className="">
         <Title title={"Example User Flow"} />
       </div>

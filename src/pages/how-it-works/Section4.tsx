@@ -4,7 +4,7 @@ import Title from "../../common/Title";
 const Section4 = () => {
   return (
     <div className="bg-gradient-to-b from-transparent via-transparent to-primary-blue/20">
-      <div className="flex flex-col gap-12 p-4 sm:px-8 mx-auto max-w-[1280px]">
+      <div className="flex flex-col gap-8 p-4 sm:px-8 mx-auto max-w-[1280px]">
         <div>
           <Title title="Confidential Computing" />
         </div>

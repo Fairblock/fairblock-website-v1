@@ -48,7 +48,7 @@ const Section5 = () => {
                 loading="lazy"
                 key={index}
                 className="max-w-36 w-full"
-                src={`/home/backers/${item}.svg`}
+                src={`/home/backers/${item}.png`}
                 alt={item}
               />
             ))}

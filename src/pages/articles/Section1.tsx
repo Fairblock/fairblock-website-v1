@@ -166,7 +166,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl: "/images/article-page/ibe-ibe-img.png",
+    imageUrl: "/articles/ibe-ibe.jpg",
     newsHeader:
       "Intent-Based Execution through Identity-Based Encryption and Auctions",
     newsBody:
@@ -457,7 +457,7 @@ const Card = ({
       <a href={newsLink} target="_blank">
         <div className="mb-4">
           <img
-            className="h-40 object-cover rounded-xl w-full"
+            className="h-56 sm:h-48 lg:h-44 object-cover rounded-xl w-full"
             src={imageUrl}
             alt={newsHeader}
           />
