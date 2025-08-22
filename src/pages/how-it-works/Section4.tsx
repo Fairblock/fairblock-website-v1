@@ -23,7 +23,7 @@ const Section4 = () => {
             essential. Fairblock leverages DKG and threshold IBE (sometimes
             referred to as conditional decryption) for applications that require
             pre-execution confidentiality such as sealed-bid auctions, protected
-            trading intents, and AI data marketplaces achieving minimal
+            trading, and AI private data marketplaces achieving minimal
             bandwidth and computation overhead. For applications requiring
             computation over encrypted transactions or private data such as
             confidential stablecoins, private AI inference, and dark pools we

@@ -21,7 +21,7 @@ const Section3 = () => {
   return (
     <div className="flex flex-col items-center gap-8 p-4 sm:px-8">
       <div className="mb-8">
-        <Title title={"Confidential Stabelcoins"} />
+        <Title title={"Confidential Stablecoins"} />
       </div>
       <div>
         <img
