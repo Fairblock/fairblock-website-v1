@@ -3,7 +3,11 @@ import Title from "../../common/Title";
 import SubTitle from "../../common/SubTitle";
 import Slider from "../../common/Slider";
 // types
-import type { CardProps } from "./types";
+type CardProps = {
+  content: string;
+  imageUrl: string;
+  title: string;
+}
 
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
