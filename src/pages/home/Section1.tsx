@@ -33,19 +33,19 @@ const Section1 = () => {
       />
       <h2 className="hidden absolute bottom-[10%] sm:flex justify-center pb-1 text-2xl sm:text-4xl lg:text-5xl w-full overflow-hidden">
         <ScrambleText
-          text="Powering incorruptible markets and machines"
+          text="Powering Incorruptible Markets and Machines"
           speed={40}
           scrambleOnLoad={true}
         />
       </h2>
       <h2 className="sm:hidden absolute bottom-[4%] flex flex-col gap-2 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
         <ScrambleText
-          text="Powering incorruptible"
+          text="Powering Incorruptible"
           speed={40}
           scrambleOnLoad={true}
         />
         <ScrambleText
-          text="markets and machines"
+          text="Markets and Machines"
           speed={40}
           scrambleOnLoad={true}
         />
