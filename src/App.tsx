@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           {/* <Route path="ecosystem" element={<Ecosystem />} /> */}
-          <Route path="c-apps" element={<CApps />} />
+          <Route path="capps" element={<CApps />} />
           <Route path="articles" element={<Articles />} />
         </Routes>
         <Footer />

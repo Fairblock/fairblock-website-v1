@@ -39,7 +39,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         Ecosystem
       </Link> */}
       <Link
-        to="c-apps"
+        to="capps"
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
       >
         cApps
