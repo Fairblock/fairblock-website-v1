@@ -20,7 +20,10 @@ const Section4 = () => {
             Simplicity is the ultimate form of art. We prioritize simplicity and
             usability through a multimodal, dynamic design fine-tuning
             performance and security, and introducing complexity only when
-            essential. Fairblock leverages DKG and threshold IBE (sometimes
+            essential. 
+          </p>
+          <p>
+            Fairblock leverages DKG and threshold IBE (sometimes
             referred to as conditional decryption) for applications that require
             pre-execution confidentiality such as sealed-bid auctions, protected
             trading, and AI private data marketplaces achieving minimal
@@ -28,20 +31,11 @@ const Section4 = () => {
             computation over encrypted transactions or private data such as
             confidential stablecoins, private AI inference, and dark pools we
             employ advanced MPC and HE schemes, including Twisted ElGamal,
-            threshold FHE (CKKS), and SPDZ. MPC schemes can also be combined
-            with TEEs to mitigate reliance on any single TEE’s hardware security
-            and reduce an MPC’s honest-majority collusion risks. Additionally,
-            ZKPs are used in select MPC applications to ensure the validity of
-            private inputs when multiple parties interact within a shared
-            private state.
+            threshold FHE (CKKS), and SPDZ. 
           </p>
           <p>
-            As confidentiality technology advances, Fairblock will continuously
-            deliver cutting-edge schemes through FairyKit, empowering partner
-            protocols and native applications. We begin with threshold IBE and
-            HE (Twisted ElGamal and CKKS), unlocking new performance frontiers
-            and driving the next wave of confidential and trustworthy open
-            finance.
+            Integrating TEEs with MPC schemes reduces reliance on a single TEE’s hardware security guarantees while lowering the probability of collusion required to compromise an MPC protocol’s honest-majority assumption. Additionally, ZKPs are used in select MPC applications to ensure the validity of private inputs when multiple parties interact within a shared
+            private state.
           </p>
         </div>
       </div>
