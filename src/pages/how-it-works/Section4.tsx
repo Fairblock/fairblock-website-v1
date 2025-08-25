@@ -12,7 +12,7 @@ const Section4 = () => {
     <section className="bg-gradient-to-b from-transparent via-transparent to-primary-blue/20" aria-label="Confidential Computing">
       <div className="flex flex-col gap-8 p-4 sm:px-8 mx-auto max-w-[1280px]">
         <div className="text-center">
-          <Title title="Confidential Computing" />
+          <Title title="Dynamic Confidential Computing" />
         </div>
 
         <figure className="w-full">
@@ -28,7 +28,7 @@ const Section4 = () => {
 
         <div className="font-eb-garamond flex flex-col gap-6 pb-12 text-lg lg:text-xl text-left leading-relaxed max-w-4xl mx-auto">
           {paragraphs.map((text, idx) => (
-            <p key={idx} className="break-words hyphens-auto">{text}</p>
+            <p key={idx} className="text-justify break-words hyphens-auto">{text}</p>
           ))}
         </div>
       </div>
