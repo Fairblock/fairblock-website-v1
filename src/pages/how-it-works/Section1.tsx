@@ -19,12 +19,7 @@ const Section1 = () => {
           <Title title="How things work" />
         </div>
         <p className="font-eb-garamond mx-auto p-4 sm:px-8 text-left text-lg lg:text-xl max-w-4xl leading-relaxed break-words">
-          Fairblock is a decentralized cryptographic computer that runs secure
-          and performant confidential stablecoins, protected intents, AI private
-          data marketplace, and sealed-bid auctions for cheap and fast
-          execution, or seamlessly "deliver" these capabilities to deep-rooted
-          ecosystems such as Arbitrum, Hyperliquid, Solana, Uniswap, and Cosmos
-          chains.
+        Fairblock is a dynamic and decentralized cryptographic computer that powers fast and secure cryptographic execution. It not only hosts cheap and performant "native" cApps, but also seamlessly "delivers" these capabilities to cApps within deep-rooted ecosystems like Arbitrum, Hyperliquid, Solana, Base, and Cosmos.
         </p>
       </div>
     </div>
