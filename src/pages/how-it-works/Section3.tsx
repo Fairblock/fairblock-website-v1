@@ -1,5 +1,9 @@
-const Section3 = () => {
-  return (
+// components
+import Title from "../../common/Title";
+// types 
+import type { HowItWorksCardProps } from "./types"; 
+const HowItWorksCard = ({ imageUrl, title, content }: 
+  HowItWorksCardProps) => { return (
     <div className="flex flex-col items-center p-4 sm:px-8">
       {/* Main Title */}
       <div className="">
