@@ -54,35 +54,36 @@ const C_APPS_LIST = [
     imageUrl: "/c-apps/demos/confidential-stablecoins.png",
     title: "Confidential Stablecoins",
     content:
-      "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack. This site is an educational demo.",
+      "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack. Check out this educational demo.",
     link: "https://confidential-usdc-demo.vercel.app/",
   },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
     title: "Fairates",
     content:
-      "Fixed rate lending through sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Fair pricing, no slippage, and capital efficiency with funds locked only during the auction.",
+      "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
     link: "https://fairates.fairblock.network/",
   },
   {
     videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
     title: "FairyCoW Swap",
     content:
-      "Over 40% of US trades use dark pools. FairyCoW brings that privacy onchain with encrypted orders. Now live on Sepolia.",
+      "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
     link: "https://swap.fairycow.fi/",
   },
   {
     imageUrl: "/c-apps/demos/time-machine-img.png",
     title: "Time Machine",
     content:
-      "Encrypt your prediction. Keep your alpha private. Earn more for being early and accurate. Like options or Polymarket, but simpler. No greeks, no frontrunning, no games.",
+      "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation."
+",
     link: "https://timemachine.fairblock.network/",
   },
   {
     imageUrl: "/c-apps/demos/fair-ex-img.png",
     title: "FariEx",
     content:
-      "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay private until the trigger price hits, then execute onchain.",
+      "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay confidential until the trigger price hits, then execute onchain.",
     link: "https://dex.fairblock.network/swap",
   },
   {
@@ -96,21 +97,21 @@ const C_APPS_LIST = [
     videoUrl: "/c-apps/demos/lazy-killer.mp4",
     title: "Lazy Killer",
     content:
-      "Lazy Killer is a multi-player murder mystery game that utilizes encryption to conceal the murderer until a certain block height is met.",
+      "Lazy Killer is a multi-player murder mystery game that utilizes MPC and encryption to keep the suspects in the shadows until the truth emerges.",
     link: "https://lazykiller.fairblock.network/",
   },
   {
     videoUrl: "/c-apps/demos/verifiable-randomness.mp4",
     title: "Verifiable Randomness",
     content:
-      "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
+      "Verifiable randomness unlocks a new generation of gaming, DeFi, distribution, and auction-based apps across chains.",
     link: "https://website-0xfairblock.vercel.app/applications/randomness",
   },
   {
     videoUrl: "/c-apps/demos/onchain-time-bomb.mp4",
     title: "Onchain Time Bomb",
     content:
-      "Our Time Bomb game allows users to grasp the power of encryption tangibly. Over 10,000 bombs have exploded since our testnet launch.",
+      "Our Time Bomb game allows users to grasp the power of encryption tangibly. Over 50,000 bombs have exploded since our testnet launch.",
     link: "https://bomb.fairblock.network/",
   },
   {

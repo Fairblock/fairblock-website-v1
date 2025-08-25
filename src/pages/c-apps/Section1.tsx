@@ -8,7 +8,7 @@ const CAppList = () => {
     <ul className="font-eb-garamond flex flex-col gap-2 text-lg lg:text-xl">
       <li className="flex gap-2 items-start">
         <VscDebugBreakpointLog className="flex-shrink-0 h-3 w-3 relative top-2" />{" "}
-        Confidential and Compliant Stablecoins for institutions, treasuries, and
+        Confidential and Compliant Stablecoins for payment networks, institutions, treasuries, and
         execution-sensitive funds
       </li>
       <li className="flex gap-2 items-start">
@@ -42,7 +42,7 @@ const Section1 = () => {
           <Title title="Our Applications" />
         </div>
         <div className="flex flex-col gap-8 w-full">
-          <p className="font-eb-garamond text-lg lg:text-xl text-center mx-auto lg:w-3/5">
+          <p className="font-eb-garamond text-lg lg:text-xl text-justify mx-auto lg:w-3/5">
             Fairblock is product-first. Rather than being a general-purpose
             infrastructure project focused solely on cryptography research or
             marketing, we prioritize building and collaborating on real,
