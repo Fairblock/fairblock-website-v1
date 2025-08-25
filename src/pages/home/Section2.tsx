@@ -38,7 +38,7 @@ const Section2 = () => {
 >
 
           <p>
-            Most Web2 and even many Web3 applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains aren't the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
+            Most Web2 and even many Web3 applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains are not the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
           </p>
           <p>
             Fairblock solves this with dynamic confidential computing eliminating information leakage and manipulation. The results: encrypted stablecoins, new financial primitives, better pricing and trustworthy financial rails for institutions.
