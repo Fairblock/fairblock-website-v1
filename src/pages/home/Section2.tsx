@@ -32,7 +32,7 @@ const Section2 = () => {
             alt="Fairy ring"
           />
         </div>
-        <div className="font-eb-garamond flex flex-col gap-4 text-lg lg:text-xl text-center lg:text-left">
+        <div className="font-eb-garamond flex flex-col gap-4 text-lg lg:text-xl text-justify lg:text-left">
           <p>
             Most Web2 and even many Web3 applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains aren't the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
           </p>
