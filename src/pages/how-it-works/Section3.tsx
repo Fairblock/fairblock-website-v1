@@ -25,12 +25,12 @@ const Section3 = () => {
         <HowItWorksCard
           imageUrl="/how-it-works/fairy-ring.svg"
           title="Fairyring"
-          content="A dynamic and decentralized network that hosts app-specific secure and performant confidential computing."
+          content="A dynamic network that hosts app-specific secure and performant confidential computing."
         />
         <HowItWorksCard
           imageUrl="/how-it-works/fairy-kit.svg"
           title="FairyKit"
-          content="A module that enables confidential computing for applications within our native ecosystem or across external chains."
+          content="A module that enables confidential computing for cApps within our native ecosystem or across external chains."
         />
       </div>
     </div>
