@@ -26,7 +26,7 @@ const Section4 = () => {
           <figcaption className="sr-only">Confidential computing diagram</figcaption>
         </figure>
 
-        <div className="font-eb-garamond flex flex-col gap-6 pb-12 text-lg lg:text-xl text-center leading-relaxed max-w-4xl mx-auto">
+        <div className="font-eb-garamond flex flex-col gap-6 pb-12 text-lg lg:text-xl text-left leading-relaxed max-w-4xl mx-auto">
           {paragraphs.map((text, idx) => (
             <p key={idx} className="break-words hyphens-auto">{text}</p>
           ))}
