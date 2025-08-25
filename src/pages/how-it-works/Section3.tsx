@@ -23,15 +23,17 @@ const Section3 = () => {
       <div className="">
         <Title title={"Confidential Stablecoins Flow"} />
       </div>
-      <div className="mt-12">
-        <Title title="Core Components" />
-      </div>
+      
       <div>
         <img
           className="mx-auto lg:w-[90%]"
           src="/how-it-works/confidential-stablecoins.svg"
           alt="confidential-stablecoins"
         />
+      </div>
+
+      <div className="mt-12">
+        <Title title="Core Components" />
       </div>
 
       <div className="flex flex-col sm:flex-row gap-8 lg:gap-16 items-center justify-center mt-8">
