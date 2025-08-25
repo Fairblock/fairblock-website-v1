@@ -15,10 +15,10 @@ const Section1 = () => {
 
       {/* how-it-works content */}
       <div className="flex flex-col gap-4">
-        <div className="text-center">
+        <div className="text-left">
           <Title title="How things work" />
         </div>
-        <p className="font-eb-garamond mx-auto p-4 sm:px-8 text-center text-lg lg:text-xl max-w-[1280px]">
+        <p className="font-eb-garamond mx-auto p-4 sm:px-8 text-left text-lg lg:text-xl max-w-4xl leading-relaxed break-words">
           Fairblock is a decentralized cryptographic computer that runs secure
           and performant confidential stablecoins, protected intents, AI private
           data marketplace, and sealed-bid auctions for cheap and fast
@@ -30,4 +30,5 @@ const Section1 = () => {
     </div>
   );
 };
+
 export default Section1;
