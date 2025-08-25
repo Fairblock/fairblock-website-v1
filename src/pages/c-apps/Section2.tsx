@@ -75,8 +75,7 @@ const C_APPS_LIST = [
     imageUrl: "/c-apps/demos/time-machine-img.png",
     title: "Time Machine",
     content:
-      "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation."
-",
+      "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation.",
     link: "https://timemachine.fairblock.network/",
   },
   {
