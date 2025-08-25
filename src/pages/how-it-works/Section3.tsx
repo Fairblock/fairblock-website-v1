@@ -1,28 +1,12 @@
-// components
-import Title from "../../common/Title";
-// types
-import type { HowItWorksCardProps } from "./types";
-
-const HowItWorksCard = ({ imageUrl, title, content }: HowItWorksCardProps) => {
-  return (
-    <div className="bg-primary-blue cursor-pointer flex flex-col gap-8 p-4 lg:py-8 rounded-2xl hover:scale-[1.04] duration-300 transition-all will-change-transform text-black w-full max-w-72 lg:max-w-[310px]">
-      <div className="">
-        <img className="aspect-square mx-auto w-48 lg:w-52" src={imageUrl} alt={title} />
-      </div>
-      <div className="flex flex-col gap-4 text-center">
-        <h3 className="text-3xl">{title}</h3>
-        <p className="text-lg/5 lg:text-xl/5">{content}</p>
-      </div>
-    </div>
-  );
-};
-
 const Section3 = () => {
   return (
     <div className="flex flex-col items-center p-4 sm:px-8">
+      {/* Main Title */}
       <div className="">
-        <Title title={"Confidential Stablecoins"} />
+        <Title title={"Confidential Stablecoins Flow"} />
       </div>
+
+      {/* Image */}
       <div>
         <img
           className="mx-auto lg:w-[90%]"
@@ -31,6 +15,12 @@ const Section3 = () => {
         />
       </div>
 
+      {/* New Section Title */}
+      <div className="mt-12">
+        <Title title="Core Components" />
+      </div>
+
+      {/* Cards */}
       <div className="flex flex-col sm:flex-row gap-8 lg:gap-16 items-center justify-center mt-8">
         <HowItWorksCard
           imageUrl="/how-it-works/fairy-ring.svg"
@@ -46,5 +36,3 @@ const Section3 = () => {
     </div>
   );
 };
-
-export default Section3;

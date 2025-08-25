@@ -5,7 +5,7 @@ const Section2 = () => {
   return (
     <div className="flex flex-col items-center">
       <div className="">
-        <Title title={"Example User Flow"} />
+        <Title title={"General User Flow"} />
       </div>
       <div className="relative overflow-hidden pt-8 w-full">
         <img
