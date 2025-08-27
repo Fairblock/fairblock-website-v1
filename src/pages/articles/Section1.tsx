@@ -482,7 +482,7 @@ const Card = ({
         </div>
         <div className="text-base">
           <h4 className="font-semibold py-2">{newsHeader}</h4>
-          <p className="font-eb-garamond line-clamp-3 py-2">{newsBody}</p>
+          <p className="font-eb-garamond line-clamp-3 my-2">{newsBody}</p>
           <p className="flex font-semibold items-center gap-2 py-2 text-neutral-400">
             <span>{site}</span> <LuExternalLink />
           </p>
