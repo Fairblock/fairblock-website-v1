@@ -130,9 +130,9 @@ export const ARTICLE_CARDS_ARRAY = [
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
     newsHeader:
-      "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
+      "Forget Privacy Clichés: Confidentiality Means Profit",
     newsBody:
-      "The crypto market is evolving from speculation to everyday payments. Stablecoins are the driving force. Shopify merchants take USDC on Base via Commerce Payments.",
+      "Fairblock enables confidential stablecoin transactions by encrypting amounts while keeping addresses transparent. With growing interest from enterprise payment networks like Stripe, Robinhood and PayPal, it offers compliance-ready selective disclosure, high performance, and seamless multi-chain integration.",
     newsLink:
       "https://medium.com/@0xfairblock/forget-privacy-clich%C3%A9s-confidentiality-means-profit-c4c31cbb1bbc",
     site: "medium.com",
@@ -482,7 +482,7 @@ const Card = ({
         </div>
         <div className="text-base">
           <h4 className="font-semibold py-2">{newsHeader}</h4>
-          <p className="py-2">{newsBody}</p>
+          <p className="font-eb-garamond py-2">{newsBody}</p>
           <p className="flex font-semibold items-center gap-2 py-2 text-neutral-400">
             <span>{site}</span> <LuExternalLink />
           </p>
