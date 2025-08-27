@@ -127,18 +127,36 @@ export const TWEETS_ARRAY = [
 
 export const ARTICLE_CARDS_ARRAY = [
   {
-    imageUrl: "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c4c4d7b-2ff3-41d1-b204-68de7f5fea13_1600x1066.png",
-    newsHeader: "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
-    newsBody: "Fairblock is building the Incorruptible world computer that unlocks secure, trust-minimized applications crucial for the next generation of institutional-grade DeFi systems.",
+    imageUrl:
+      "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
+    newsHeader:
+      "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
+    newsBody:
+      "The crypto market is evolving from speculation to everyday payments. Stablecoins are the driving force. Shopify merchants take USDC on Base via Commerce Payments.",
+    newsLink:
+      "https://medium.com/@0xfairblock/forget-privacy-clich%C3%A9s-confidentiality-means-profit-c4c31cbb1bbc",
+    site: "medium.com",
+    type: "articles",
+  },
+  {
+    imageUrl:
+      "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c4c4d7b-2ff3-41d1-b204-68de7f5fea13_1600x1066.png",
+    newsHeader:
+      "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
+    newsBody:
+      "Fairblock is building the Incorruptible world computer that unlocks secure, trust-minimized applications crucial for the next generation of institutional-grade DeFi systems.",
     newsLink: "https://www.shoal.gg/p/fairblock-incorruptible-markets-and",
     site: "shoal.gg",
     type: "articles",
   },
   {
-    imageUrl: "https://academy-public.coinmarketcap.com/srd-optimized-uploads/ed43ef9b80ce489fb99f48e863bc99de.jpg",
+    imageUrl:
+      "https://academy-public.coinmarketcap.com/srd-optimized-uploads/ed43ef9b80ce489fb99f48e863bc99de.jpg",
     newsHeader: "Fairblock Q2 2025 Overview",
-    newsBody: "Fairblock is building the Incorruptible Computer. It delivers fair and credible decentralized markets and autonomous machines through institutional-grade confidentiality. The outcome is provably fair trades, transfers, bids, and AI decisions that preserve trust and credibility.",
-    newsLink: "https://coinmarketcap.com/community/articles/682cb2cff9996f5939813d6d/",
+    newsBody:
+      "Fairblock is building the Incorruptible Computer. It delivers fair and credible decentralized markets and autonomous machines through institutional-grade confidentiality. The outcome is provably fair trades, transfers, bids, and AI decisions that preserve trust and credibility.",
+    newsLink:
+      "https://coinmarketcap.com/community/articles/682cb2cff9996f5939813d6d/",
     site: "coinmarketcap.com",
     type: "articles",
   },
