@@ -127,14 +127,6 @@ export const TWEETS_ARRAY = [
 
 export const ARTICLE_CARDS_ARRAY = [
   {
-    imageUrl: "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
-    newsHeader: "ABCDEF",
-    newsBody: "lorem10",
-    newsLink: "https://medium.com/@0xfairblock/forget-privacy-clich%C3%A9s-confidentiality-means-profit-c4c31cbb1bbc",
-    site: "medium.com",
-    type: "articles",
-  },
-  {
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
     newsHeader:
