@@ -1,10 +1,13 @@
 // components
 import { useEffect } from "react";
+import Section02 from "./Section02";
+import Section03 from "./Section03";
+import Section04 from "./Section04";
 import Section1 from "./Section1";
-import Section2 from "./Section2";
-import Section3 from "./Section3";
-import Section4 from "./Section4";
-import Section5 from "./Section5";
+// import Section2 from "./Section2";
+// import Section3 from "./Section3";
+// import Section4 from "./Section4";
+// import Section5 from "./Section5";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -36,10 +39,17 @@ const HowItWorks = () => {
         src="/how-it-works/user-flow-bg-gradient.svg"
         alt=""
       />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
+      <Section02 />
+      <div className="bg-[url(/how-it-works/bg-2.svg)]">
+        <Section03 />
+      </div>
+      <div className="bg-[url(/how-it-works/bg-3.svg)] pb-8">
+        <Section04 />
+      </div>
+      {/* <Section2 /> */}
+      {/* <Section3 /> */}
+      {/* <Section4 /> */}
+      {/* <Section5 /> */}
     </div>
   );
 };

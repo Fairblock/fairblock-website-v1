@@ -124,13 +124,11 @@ export const TWEETS_ARRAY = [
   </blockquote>,
 ];
 
-
 export const ARTICLE_CARDS_ARRAY = [
   {
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
-    newsHeader:
-      "Forget Privacy Clichés: Confidentiality Means Profit",
+    newsHeader: "Forget Privacy Clichés: Confidentiality Means Profit",
     newsBody:
       "Fairblock enables confidential stablecoin transactions by encrypting amounts while keeping addresses transparent. With growing interest from enterprise payment networks like Stripe, Robinhood and PayPal, it offers compliance-ready selective disclosure, high performance, and seamless multi-chain integration.",
     newsLink:
@@ -140,7 +138,7 @@ export const ARTICLE_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c4c4d7b-2ff3-41d1-b204-68de7f5fea13_1600x1066.png",
+      "/articles/incorruptible-markets-and-confidential-stablecoin-rails.png",
     newsHeader:
       "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
     newsBody:
@@ -150,8 +148,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://academy-public.coinmarketcap.com/srd-optimized-uploads/ed43ef9b80ce489fb99f48e863bc99de.jpg",
+    imageUrl: "/articles/fairblock-q2-2025-overview.png",
     newsHeader: "Fairblock Q2 2025 Overview",
     newsBody:
       "Fairblock is building the Incorruptible Computer. It delivers fair and credible decentralized markets and autonomous machines through institutional-grade confidentiality. The outcome is provably fair trades, transfers, bids, and AI decisions that preserve trust and credibility.",
@@ -161,8 +158,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*nqeeFwC-zmdEylSXtIMGQg.png",
+    imageUrl: "/articles/fairblock-x-ritual.png",
     newsHeader: "Trustless and Unstoppable Al with Fairblock and Ritual",
     newsBody:
       "Fairblock and Ritual are collaborating for Trustless and Unstoppable Al economies through decentralized confidential computing.",
@@ -172,8 +168,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*Fadf2P2PH7_UvkNa",
+    imageUrl: "/articles/fairblock-x-arbitrum.png",
     newsHeader:
       "Permissionless and performant confidential computing for Arbitrum ecosystem",
     newsBody:
@@ -184,7 +179,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl: "/articles/ibe-ibe.jpg",
+    imageUrl: "/articles/ibe-ibe.png",
     newsHeader:
       "Intent-Based Execution through Identity-Based Encryption and Auctions",
     newsBody:
@@ -194,8 +189,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*3Yg5EJeVq7nI3GYu",
+    imageUrl: "/articles/fairblock-x-altlayer.png",
     newsHeader: "Encrypt Every Rollup",
     newsBody:
       "Bringing Dynamic Confidentiality to Rollup Developers with AltLayer.",
@@ -205,8 +199,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*7TfdDRazLdM0eumI",
+    imageUrl: "/articles/fairblock-x-camp.png",
     newsHeader:
       "Native Encryption for the OP Superchain with Camp and Fairblock",
     newsBody:
@@ -217,8 +210,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*iaGYDRZZiiYQ_TM4Mo_zpw.png",
+    imageUrl: "/articles/announcing-fairy-cow.png",
     newsHeader: "Announcing FairyCoW: Encrypted Orders for CoW Swap",
     newsBody:
       "FairyCoW improves onchain trading experiences by increasing capital efficiency and protecting against pre-execution order leakage without reliance on centralized parties.",
@@ -228,20 +220,18 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://blockworks.co/_next/image?url=https%3A%2F%2Fblockworks-co.imgix.net%2Fwp-content%2Fuploads%2F2024%2F03%2FED_hacks_20231105d-1-1.jpg&w=1920&q=75",
+    imageUrl: "/articles/fairblock-q2-2025-overview-1.png",
     newsHeader:
       "What is fully homomorphic encryption and how will it change blockchain?",
     newsBody:
       "FHE differs from zero-knowledge technology, as it can perform computation on top of encrypted data without revealing data points.",
-    newsLink:
-      "https://blockworks.co/news/what-is-fully-homomorphic-encryption",
+    newsLink: "https://blockworks.co/news/what-is-fully-homomorphic-encryption",
     site: "blockworks.co",
     type: "articles",
   },
   {
     imageUrl:
-      "https://website-0xfairblock.vercel.app/_next/image?url=https%3A%2F%2Fhackmd.io%2F_uploads%2FBJo97G8pC.png&w=1920&q=75",
+      "/articles/multimodal-cryptography-series-accountable-mpc-tee.png",
     newsHeader: "Multimodal Cryptography Series - Accountable MPC + TEE",
     newsBody:
       "Trusted Execution Environment (TEE) is a secure area within the memory and CPU of a device (computer or server), isolated from the rest of the system through encryption.",
@@ -251,7 +241,7 @@ export const ARTICLE_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://website-0xfairblock.vercel.app/_next/image?url=https%3A%2F%2Fethresear.ch%2Fuploads%2Fdefault%2Foptimized%2F3X%2Fc%2F0%2Fc06c6733354f18254792958d1ccf872057a2fbba_2_1132x586.png&w=1920&q=75",
+      "/articles/what-happened-to-our-decentralized-private-new-internet.png",
     newsHeader: "What happened to our decentralized private new internet?",
     newsBody:
       "The lack of onchain confidentiality has hindered the growth and adoption of even the most obvious applications.",
@@ -261,7 +251,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl: "https://hackmd.io/_uploads/SyTZb72nA.png",
+    imageUrl: "/articles/mpcs-going-harder-better-faster-and-stronger.png",
     newsHeader: "MPCs going Harder, Better, Faster, and Stronger",
     newsBody:
       "At Fairblock, we have implemented Joint Feldman DKG, which is one of the most widely used DKG schemes nowadays and consists of (n) parallel verifiable secret sharing (VSS) instances.",
@@ -270,8 +260,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*h_3IGs2zfe6MM9D3",
+    imageUrl: "/articles/fairblock-x-symbiotic.png",
     newsHeader: "Introducing Dynamic Operator Sets: Secured by Symbiotic",
     newsBody:
       "Fairblock's dynamic operator sets allow protocol and application developers looking for more cryptographic flexibility to leverage multiple solutions within a tailored network.",
@@ -281,8 +270,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*fA7a4_g_dy21yetbBIcrnA.png",
+    imageUrl: "/articles/fairblock-public-testnet-is-now-live.png",
     newsHeader: "Fairblock Public Testnet is Now Live",
     newsBody:
       "We're thrilled to announce the launch of our first public testnet, FairyRing.",
@@ -293,7 +281,7 @@ export const ARTICLE_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://ethresear.ch/uploads/default/original/3X/5/f/5fa5f78d2b4b44708e03133cf29d1de097113e36.jpeg",
+      "/articles/accessible-encryption-for-ethereum-rollups-with-fairomon.png",
     newsHeader: "Accessible Encryption for Ethereum Rollups with Fairomon",
     newsBody:
       "Fairomon is a special fairy type pokemon that combines the work of Fairblock and Monomer - a framework that enables builders to create Ethereum rollups with built-in encryption with minimal lift.",
@@ -303,8 +291,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*MmLvof7ahhmnlWOZ",
+    imageUrl: "/articles/no-more-plain-vanilla-defi.png",
     newsHeader: "No More Plain Vanilla DeFi - We Need More Flavors",
     newsBody:
       "The Vitalik doesn't support DeFi' narrative is misunderstood. DeFi accounts for the lionshare of onchain activity and supports the weight of Ethereum's security budget — Vitalik and the Ethereum community understand this.",
@@ -314,8 +301,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*zeb3NhzUNr9qeioTVRLmwQ.png",
+    imageUrl: "/articles/fairblock-raises-2.5m-to-build.png",
     newsHeader: "Fairblock raises 2.5M",
     newsBody:
       "Fairblock raises 2.5M to build toward conditional decryption and programmable privacy.",
@@ -325,8 +311,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*0aJtme7AEE3OZCN-",
+    imageUrl: "/articles/encryption-is-the-prescription.png",
     newsHeader: "Encryption is the Prescription",
     newsBody:
       "Encryption is a prerequisite for blockchains to become the future of the internet.",
@@ -336,8 +321,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*kaDqFWboWQAAGtt-acvJEQ.png",
+    imageUrl: "/articles/fairblock-x-secret.png",
     newsHeader: "Fresh Wave of Privacy-Enhancing",
     newsBody:
       "Fairblock and Secret Network Partner To Develop New Generation of Privacy-Enhancing Products.",
@@ -347,8 +331,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*FiCnyeT7PkLHq5ymsyJRqg.png",
+    imageUrl: "/articles/fast-fairy-series.png",
     newsHeader: "Fast Fairy Series: Programmable Privacy in DeFi",
     newsBody:
       "Decentralized finance is a radically new and distinct means of conducting financial activities.",
@@ -358,8 +341,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*gNvXTdwBIvW9EZnhDt5fmw.png",
+    imageUrl: "/articles/fast-fairy-series-three-cryptographic.png",
     newsHeader:
       "Fast Fairy Series: Three Cryptographic Schemes Advancing Programmable Privacy",
     newsBody:
@@ -370,8 +352,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*WCB1z7nqszzz0vLc",
+    imageUrl: "/articles/fast-fairy-series-fairblocks-vision.png",
     newsHeader: "Fast Fairy Series: Fairblock's Vision",
     newsBody:
       "Fairblock Delivers the Practical Privacy Tools Enabling Novel Web3 Applications",
@@ -381,8 +362,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*-72ly7032FCqPhzP",
+    imageUrl: "/articles/fast-fairy-series-private-governance.png",
     newsHeader: "Fast Fairy Series: Private Governance",
     newsBody:
       'In the second installment of the Fast Fairy Series, we delve into "private governance", an application made possible by Fairblock infrastructure.',
@@ -392,8 +372,7 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/1*0Pdpg3fVY1zeVdfcNFkQTw.png",
+    imageUrl: "/articles/fast-fairy-series-fairyring-architecture.png",
     newsHeader: "Fast Fairy Series: FairyRing Architecture I",
     newsBody:
       "In the Fast Fairy Series, we are going to publish a series of articles to cover our architecture,design, potential applications, cryptography, and our long-term vision.",
@@ -453,7 +432,6 @@ export const NEWS_CARDS_ARRAY_2 = [
   },
 ];
 
-
 type NewsCardProps = {
   imageUrl: string;
   newsHeader: string;
@@ -475,7 +453,7 @@ const Card = ({
       <a href={newsLink} target="_blank">
         <div className="mb-4">
           <img
-            className="h-56 sm:h-48 lg:h-44 object-cover rounded-xl w-full"
+            className="object-cover rounded-xl w-full"
             src={imageUrl}
             alt={newsHeader}
           />
