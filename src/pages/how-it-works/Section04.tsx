@@ -7,7 +7,7 @@ const FirstTab = () => {
     <div className="flex flex-col gap-8">
       <p className="font-eb-garamond mx-auto text-xl text-center">
         Powering secure, fast, and confidential applications
-        <br /> (cApps) with dynamic, multimodal cryptography
+        <br className="hidden sm:block" /> (cApps) with dynamic, multimodal cryptography
       </p>
       <div className="w-full">
         <img

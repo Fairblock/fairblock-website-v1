@@ -21,7 +21,7 @@ const SwitchTabs = ({
 
   return (
     <div className="flex flex-col gap-12">
-      <div className="flex flex-nowrap rounded-lg mx-auto text-lg sm:text-2xl w-full sm:w-[550px]">
+      <div className="flex flex-nowrap justify-center rounded-lg mx-auto text-lg sm:text-2xl w-full sm:w-[550px]">
         <button
           className={`${
             activeTab === firstTabLabel ? "bg-primary-blue" : "bg-primary-blue/10"
