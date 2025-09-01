@@ -12,7 +12,7 @@ const FirstTab = () => {
       <div className="w-full">
         <img
           className="mx-auto w-full lg:max-w-[60%]"
-          src="/how-it-works/multimodal-confidentiality.svg"
+          src="/how-it-works/multimodal-confidentiality.png"
           alt="multimodal-confidentiality"
         />
       </div>
