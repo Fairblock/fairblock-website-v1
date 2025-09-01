@@ -5,13 +5,13 @@ import SwitchTabs from "../../common/SwitchTabs";
 const FirstTab = () => {
   return (
     <div className="flex flex-col gap-8">
-      <p className="mx-auto text-xl text-center">
+      <p className="font-eb-garamond mx-auto text-xl text-center">
         Powering secure, fast, and confidential applications
         <br /> (cApps) with dynamic, multimodal cryptography
       </p>
       <div className="w-full">
         <img
-          className="mx-auto w-full lg:max-w-[70%]"
+          className="mx-auto w-full lg:max-w-[60%]"
           src="/how-it-works/multimodal-confidentiality.svg"
           alt="multimodal-confidentiality"
         />

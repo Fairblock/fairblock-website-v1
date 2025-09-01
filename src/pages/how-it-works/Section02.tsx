@@ -6,7 +6,7 @@ const FirstTab = () => {
   return (
     <div className="w-full">
       <img
-        className="mx-auto w-full lg:max-w-[70%]"
+        className="mx-auto w-full lg:max-w-[75%]"
         src="/how-it-works/general-user-flow.svg"
         alt="general-user-flow"
       />
