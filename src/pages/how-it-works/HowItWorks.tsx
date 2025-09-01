@@ -29,22 +29,28 @@ const HowItWorks = () => {
         alt=""
       />
       <Section1 />
-      <img
+
+      {/* <img
         className="absolute w-[1000px] top-[29%] lg:top-[13%] -left-[50%] xl:-left-[30%] -z-50"
         src="/how-it-works/user-flow-bg-gradient.svg"
         alt=""
-      />
-      <img
+        />
+        <img
         className="absolute w-[1000px] top-[29%] lg:top-[13%] -right-[50%] xl:-right-[30%] scale-x-[-1] -z-50"
         src="/how-it-works/user-flow-bg-gradient.svg"
         alt=""
-      />
-      <Section02 />
-      <div className="bg-[url(/how-it-works/bg-2.svg)]">
-        <Section03 />
-      </div>
-      <div className="bg-[url(/how-it-works/bg-3.svg)] pb-8">
-        <Section04 />
+        /> */}
+
+      <div>
+        <div className="bg-[url(/how-it-works/bg-1.svg)] bg-cover py-5 sm:py-8">
+          <Section02 />
+        </div>
+        <div className="bg-[url(/how-it-works/bg-2.svg)] py-5 sm:py-8">
+          <Section03 />
+        </div>
+        <div className="bg-[url(/how-it-works/bg-3.svg)] py-5 sm:py-8">
+          <Section04 />
+        </div>
       </div>
       {/* <Section2 /> */}
       {/* <Section3 /> */}
