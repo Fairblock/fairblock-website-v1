@@ -30,12 +30,12 @@ const HowItWorks = () => {
       />
       <Section1 />
       <img
-        className="absolute w-[1000px] top-[16%] lg:top-[13%] -left-[50%] xl:-left-[30%] -z-50"
+        className="absolute w-[1000px] top-[29%] lg:top-[13%] -left-[50%] xl:-left-[30%] -z-50"
         src="/how-it-works/user-flow-bg-gradient.svg"
         alt=""
       />
       <img
-        className="absolute w-[1000px] top-[16%] lg:top-[13%] -right-[50%] xl:-right-[30%] scale-x-[-1] -z-50"
+        className="absolute w-[1000px] top-[29%] lg:top-[13%] -right-[50%] xl:-right-[30%] scale-x-[-1] -z-50"
         src="/how-it-works/user-flow-bg-gradient.svg"
         alt=""
       />
