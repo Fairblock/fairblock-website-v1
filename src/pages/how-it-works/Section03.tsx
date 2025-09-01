@@ -54,7 +54,7 @@ const Section2 = () => {
         <Title title="Architecture" />
       </div>
       <SwitchTabs
-        firstTabLabel="CoreComponents"
+        firstTabLabel="Core Components"
         secondTabLabel="Frictionless UX"
         FirstTabComponent={FirstTab}
         SecondTabComponent={SecondTab}
