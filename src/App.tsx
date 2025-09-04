@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./common/Header/Header";
 import Home from "./pages/home/Home";
 import HowItWorks from "./pages/how-it-works/HowItWorks";
-// import Ecosystem from "./pages/ecosystem/Ecosystem";
+import Ecosystem from "./pages/ecosystem/Ecosystem";
 import CApps from "./pages/c-apps/CApps";
 import Footer from "./common/Footer/Footer";
 import Articles from "./pages/articles/Articles";
@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="how-it-works" element={<HowItWorks />} />
-          {/* <Route path="ecosystem" element={<Ecosystem />} /> */}
+          <Route path="ecosystem" element={<Ecosystem />} />
           <Route path="capps" element={<CApps />} />
           <Route path="articles" element={<Articles />} />
         </Routes>

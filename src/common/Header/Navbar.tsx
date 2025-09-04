@@ -32,12 +32,12 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         Articles
       </Link>
-      {/* <Link
+      <Link
         to="ecosystem"
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
       >
         Ecosystem
-      </Link> */}
+      </Link>
       <Link
         to="capps"
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
