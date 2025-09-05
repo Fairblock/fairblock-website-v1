@@ -29,10 +29,11 @@ const buttons: string[] = [
 
 const Card = ({ ecosystem }: CardProps) => {
   return (
-    <div className="border border-primary-blue hover:bg-primary-blue cursor-pointer duration-150 flex flex-col gap-4 group p-5 rounded-lg min-h-[250px] hover:text-black">
+    <div className="border border-primary-blue hover:bg-primary-blue duration-150 flex flex-col gap-4 group p-5 rounded-lg min-h-[250px] hover:text-black">
       {/* logo + tags */}
       <div className="flex justify-between">
         <a
+          className="cursor-pointer"
           href={ecosystem.projectLink}
           rel="noopener noreferrer"
           target="_blank"
@@ -70,6 +71,7 @@ const Card = ({ ecosystem }: CardProps) => {
       {/* title + description */}
       <div className="font-eb-garamond flex flex-col gap-2">
         <a
+          className="cursor-pointer"
           href={ecosystem.projectLink}
           rel="noopener noreferrer"
           target="_blank"
@@ -81,7 +83,7 @@ const Card = ({ ecosystem }: CardProps) => {
         <p className="font-medium line-clamp-3">{ecosystem.description}</p>
         {ecosystem.readMoreLink && (
           <a
-            className="mt-2 text-sm underline"
+            className="cursor-pointer mt-2 text-sm underline"
             href={ecosystem.readMoreLink}
             rel="noopener noreferrer"
             target="_blank"
