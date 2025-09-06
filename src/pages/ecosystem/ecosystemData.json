@@ -112,13 +112,13 @@
   {
     "id": 11,
     "category": ["Confidential Stablecoins"],
-    "projectName": "TRON DAO",
-    "description": "DAO for TRON network: L1 widely used for high-volume USDT transfers and payments.",
-    "projectLink": "https://trondao.org/",
+    "projectName": "MyntUSD",
+    "description": "Yield-bearing stablecoin that uses SP1 ZKPs to keep balances private and composable.",
+    "projectLink": "https://myntusd.com/",
     "coreCryptography": ["mpc-ibe", "he"],
-    "imageUrl": "/ecosystem/logos/tron-dao.svg",
-    "readMoreLink": null,
-    "readMoreText": null
+    "imageUrl": "/ecosystem/logos/mynt.svg",
+    "readMoreLink": "https://x.com/0xfairblock/status/1930637049859870764",
+    "readMoreText": "Lean how Fairblock and MyntUSD bringing confidential stablecoin transfers to the Monad ecosystem."
   },
   {
     "id": 12,

@@ -10,10 +10,16 @@ const Section1 = () => {
             Ecosystem
           </h1>
           <h6 className="font-light font-eb-garamond text-lg lg:text-2xl w-3/4 md:w-2/3 lg:w-1/2">
-            Apps, chains, and protocols building compliant stablecoin rails and
-            incorruptible markets & machines with Fairblock
+            Discover a growing network of confidential applications (cApps)
+            across stablecoins, protected trading, and incorruptible AI.
           </h6>
-          <Button buttonText="Start building" />
+          <a
+            href="https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button buttonText="Start building" />
+          </a>
         </div>
       </div>
     </div>
