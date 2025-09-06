@@ -88,7 +88,7 @@ const Card = ({ ecosystem }: CardProps) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            Read more: {ecosystem.readMoreText}
+            {ecosystem.readMoreText}
           </a>
         )}
       </div>
