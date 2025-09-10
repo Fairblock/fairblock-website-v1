@@ -33,7 +33,7 @@ const Footer = () => {
           >
             <FaDiscord />
           </a>
-          <a href="" rel="noopener noreferrer" target="_blank">
+          <a href="https://t.me/+HvfLo4NFTvw3NTU0" rel="noopener noreferrer" target="_blank">
             <RiTelegram2Fill />
           </a>
         </div>
