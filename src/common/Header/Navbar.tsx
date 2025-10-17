@@ -18,14 +18,14 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         How it works
       </Link>
-      <a
+      {/* <a
         href="https://docs.fairblock.network/docs/welcome/Vision"
         rel="noopener noreferrer"
         target="_blank"
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
       >
         Docs
-      </a>
+      </a> */}
       <Link
         to="articles"
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}

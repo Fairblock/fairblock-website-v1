@@ -41,13 +41,13 @@ const Footer = () => {
 
       <div className="flex gap-4 sm:gap-8 sm:pr-4 font-roboto font-light text-primary-blue text-sm sm:text-base">
         <div className="flex flex-col gap-4">
-          <a
+          {/* <a
             href="https://docs.fairblock.network/docs/welcome/Vision"
             rel="noopener noreferrer"
             target="_blank"
           >
             Docs
-          </a>
+          </a> */}
           <a
             href="https://github.com/Fairblock"
             rel="noopener noreferrer"
