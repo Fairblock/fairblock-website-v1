@@ -36,12 +36,12 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
           <PiArrowUpRightBold className="text-white" />
         </span>
         <div className="flex justify-between">
-          <h4 className="text-2xl">{title}</h4>
+          <h4 className="font-test-tiempos-headline text-2xl">{title}</h4>
           <span className="sm:hidden bg-primary-blue p-1 rounded-full w-fit h-fit">
             <PiArrowUpRightBold className="text-white" />
           </span>
         </div>
-        <p className="font-eb-garamond text-lg lg:text-xl text-neutral-300">
+        <p className="text-lg lg:text-xl text-neutral-300">
           {content}
         </p>
       </a>
@@ -125,7 +125,7 @@ const C_APPS_LIST = [
 const Section2 = () => {
   return (
     <div className="flex flex-col gap-4 p-4 sm:px-8">
-      <p className="font-eb-garamond pb-8 text-lg lg:text-xl text-center">
+      <p className="pb-8 text-lg lg:text-xl text-center">
         Below is a showcase of our impactful and functional{" "}
         <span className="font-bold">confidential applications (cApps).</span>
       </p>

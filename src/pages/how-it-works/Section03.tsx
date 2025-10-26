@@ -42,7 +42,7 @@ const FirstTab = () => {
 const SecondTab = () => {
   return (
     <div className="w-full">
-      <img className="mx-auto w-full lg:max-w-[65%]" src="/how-it-works/frictionless-ux.svg" alt="frictionless-ux" />
+      <img className="mx-auto w-full lg:max-w-[50%]" src="/how-it-works/frictionless-ux.png" alt="frictionless-ux" />
     </div>
   );
 };

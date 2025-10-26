@@ -5,7 +5,7 @@ import { VscDebugBreakpointLog } from "react-icons/vsc";
 
 const CAppList = () => {
   return (
-    <ul className="font-eb-garamond flex flex-col gap-2 text-lg lg:text-xl">
+    <ul className="flex flex-col gap-2 text-lg lg:text-xl">
       <li className="flex gap-2 items-start">
         <VscDebugBreakpointLog className="flex-shrink-0 h-3 w-3 relative top-2" />{" "}
         Confidential and Compliant Stablecoins for payment networks, institutions, treasuries, and
@@ -42,7 +42,7 @@ const Section1 = () => {
           <Title title="Our Applications" />
         </div>
         <div className="flex flex-col gap-8 w-full">
-          <p className="font-eb-garamond text-lg lg:text-xl text-justify mx-auto lg:w-3/5">
+          <p className="text-lg lg:text-xl text-justify mx-auto lg:w-3/5">
             Fairblock is product-first. Rather than being a general-purpose
             infrastructure project focused solely on cryptography research or
             marketing, we prioritize building and collaborating on real,
@@ -63,7 +63,7 @@ const Section1 = () => {
             >
               {/* Content layer */}
               <div className="absolute inset-0 grid place-items-center px-8">
-                <h4 className="text-primary-blue text-3xl">cAPPS</h4>
+                <h4 className="text-primary-blue text-3xl">cApps</h4>
               </div>
             </div>
           </div>

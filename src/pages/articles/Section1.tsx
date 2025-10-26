@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { LuExternalLink } from "react-icons/lu";
+import "./Section1.css"
 
 export const TWEETS_ARRAY = [
   <blockquote className="twitter-tweet" data-theme="dark">
@@ -459,9 +460,9 @@ const Card = ({
           />
         </div>
         <div className="text-base">
-          <h4 className="font-semibold py-2">{newsHeader}</h4>
-          <p className="font-eb-garamond line-clamp-3 my-2">{newsBody}</p>
-          <p className="flex font-semibold items-center gap-2 py-2 text-neutral-400">
+          <h4 className="font-test-tiempos-headline font-semibold py-2">{newsHeader}</h4>
+          <p className="line-clamp-3 my-2">{newsBody}</p>
+          <p className="flex items-center gap-2 py-2 text-neutral-400">
             <span>{site}</span> <LuExternalLink />
           </p>
         </div>
@@ -545,7 +546,7 @@ const Section1 = () => {
         </h2>
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4">
           {TWEETS_ARRAY.map((item) => (
-            <div>{item}</div>
+            <div id="tweeter-card-container">{item}</div>
           ))}
         </div>
       </div>

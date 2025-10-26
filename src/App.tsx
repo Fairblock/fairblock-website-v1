@@ -14,7 +14,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="font-marlide">
+    <div className="font-maison-neue">
       <BrowserRouter>
         <Header />
         <Routes>

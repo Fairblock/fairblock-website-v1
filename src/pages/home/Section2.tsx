@@ -5,19 +5,21 @@ import Title from "../../common/Title";
 import Button from "../../common/Button";
 
 const Section2 = () => {
-  const [buttonText, setButtonText] = useState<string>("Confidential Stablecoins");
+  const [buttonText, setButtonText] = useState<string>(
+    "Confidential Stablecoins"
+  );
 
   useEffect(() => {
-  const interval = setInterval(() => {
-    setButtonText((prevText) =>
-      prevText === "Confidential Stablecoins"
-        ? "Protected trading"
-        : "Confidential Stablecoins"
-    );
-  }, 1000);
+    const interval = setInterval(() => {
+      setButtonText((prevText) =>
+        prevText === "Confidential Stablecoins"
+          ? "Protected trading"
+          : "Confidential Stablecoins"
+      );
+    }, 1000);
 
-  return () => clearInterval(interval); // cleanup
-}, []);
+    return () => clearInterval(interval); // cleanup
+  }, []);
 
   return (
     <div className="flex flex-col sm:flex-row items-center gap-12 p-4 sm:px-8 mx-auto max-w-screen-xl">
@@ -33,20 +35,29 @@ const Section2 = () => {
           />
         </div>
         <div
-  className="font-eb-garamond flex flex-col gap-4 text-lg lg:text-xl lg:text-left"
-  style={{ textAlign: "justify" }}
->
-
+          className="flex flex-col gap-4 text-lg lg:text-xl lg:text-left"
+          style={{ textAlign: "justify" }}
+        >
           <p>
-            Most Web2 and even many Web3 applications rely on fully trusted intermediaries, making them vulnerable to security breaches and silent manipulation. But fully exposed blockchains are not the answer either: they leak sensitive data like stablecoin transfers, liquidation triggers, and private AI inputs. Whether it's blind trust or reckless data exposure, both models invite exploitation, distort price discovery, and ultimately block the next wave of impactful onchain applications.
+            Most Web2 and even many Web3 applications rely on fully trusted
+            intermediaries, making them vulnerable to security breaches and
+            silent manipulation. But fully exposed blockchains are not the
+            answer either: they leak sensitive data like stablecoin transfers,
+            liquidation triggers, and private AI inputs. Whether it's blind
+            trust or reckless data exposure, both models invite exploitation,
+            distort price discovery, and ultimately block the next wave of
+            impactful onchain applications.
           </p>
           <p>
-            Fairblock solves this with dynamic confidential computing eliminating information leakage and manipulation. The results: encrypted stablecoins, new financial primitives, better pricing and trustworthy financial rails for institutions.
+            Fairblock solves this with dynamic confidential computing
+            eliminating information leakage and manipulation. The results:
+            encrypted stablecoins, new financial primitives, better pricing and
+            trustworthy financial rails for institutions.
           </p>
         </div>
         <div className="flex justify-center lg:justify-start">
           <Link to="capps">
-            <Button buttonText={buttonText} size="w-64" />
+            <Button buttonText={buttonText} size="w-72" />
           </Link>
         </div>
       </div>

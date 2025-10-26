@@ -40,7 +40,7 @@ const Card = ({ ecosystem }: CardProps) => {
         >
           <img className="grayscale" src={ecosystem.imageUrl} alt={ecosystem.projectName} />
         </a>
-        <div className="duration-300 flex font-eb-garamond font-medium gap-2 text-sm">
+        <div className="duration-300 flex font-medium gap-2 text-sm">
           {ecosystem.coreCryptography.includes("mpc") && (
             <span className="border border-[#58BDF6] group-hover:border-[#A7C7FF] bg-[#58BDF6]/20 group-hover:bg-[#718BD2] duration-150 h-fit px-2 rounded-sm group-hover:text-black transition-all">
               MPC
@@ -69,14 +69,14 @@ const Card = ({ ecosystem }: CardProps) => {
         </div>
       </div>
       {/* title + description */}
-      <div className="font-eb-garamond flex flex-col gap-2">
+      <div className="flex flex-col gap-2">
         <a
           className="cursor-pointer"
           href={ecosystem.projectLink}
           rel="noopener noreferrer"
           target="_blank"
         >
-          <h3 className="font-bold line-clamp-1 text-2xl">
+          <h3 className="font-bold font-test-tiempos-headline line-clamp-1 text-2xl">
             {ecosystem.projectName}
           </h3>
         </a>
@@ -134,7 +134,7 @@ const Section2 = () => {
             <button
               className={`${
                 selectedFilter === button ? "bg-primary-blue" : "bg-white"
-              } border border-primary-blue cursor-pointer flex-shrink-0 font-eb-garamond font-medium px-4 py-1 rounded-md text-black text-lg`}
+              } border border-primary-blue cursor-pointer flex-shrink-0 font-medium px-4 py-1 rounded-md text-black text-lg`}
               onClick={() => {
                 handleFilter(button);
                 setSelectedFilter(button);
@@ -145,7 +145,7 @@ const Section2 = () => {
             </button>
           ))}
         </div>
-        <div className="bg-white border border-primary-blue flex font-eb-garamond font-medium gap-2 items-center px-2 py-1 rounded-md text-black w-full sm:w-fit">
+        <div className="bg-white border border-primary-blue flex font-medium gap-2 items-center px-2 py-1 rounded-md text-black w-full sm:w-fit">
           <IoIosSearch className="text-2xl" />
           <form onSubmit={handleSearch}>
             <input

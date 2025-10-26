@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import type { Dispatch, SetStateAction } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { type Dispatch, type SetStateAction } from "react";
 // icons
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 import { RiTelegram2Fill } from "react-icons/ri";
@@ -10,11 +10,14 @@ export type NavbarProps = {
 };
 
 const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
+  const location = useLocation();
+
   return (
     <>
       <Link
-        to="how-it-works"
+        className={`${location.pathname === "/how-it-works" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        to="how-it-works"
       >
         How it works
       </Link>
@@ -27,20 +30,23 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         Docs
       </a> */}
       <Link
-        to="articles"
+        className={`${location.pathname === "/articles" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        to="articles"
       >
         Articles
       </Link>
       <Link
-        to="ecosystem"
+        className={`${location.pathname === "/ecosystem" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        to="ecosystem"
       >
         Ecosystem
       </Link>
       <Link
-        to="capps"
+        className={`${location.pathname === "/capps" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        to="capps"
       >
         cApps
       </Link>

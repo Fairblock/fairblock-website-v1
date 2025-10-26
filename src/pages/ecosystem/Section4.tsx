@@ -18,7 +18,7 @@ const CAppHighlightCard = ({ title, subTitle, content }: CAppHighlightCardProps)
           <h3 className="font-medium text-2xl">{title}</h3>
           <p className="text-lg">{subTitle}</p>
         </div>
-        <p className="font-eb-garamond text-lg/5">{content}</p>
+        <p className="text-lg/5">{content}</p>
       </div>
     </div>
   );

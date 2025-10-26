@@ -9,11 +9,10 @@ const Footer = () => {
       <div className="flex flex-col gap-6">
         <div className="flex gap-2 sm:gap-4 items-center">
           <img
-            className="w-12 sm:w-[72px]"
+            className="h-8 sm:h-14"
             src="/common/fairblock-logo.svg"
             alt="fairblock-logo"
           />
-          <span className="font-light text-4xl sm:text-6xl">Fairblock</span>
         </div>
         <p className="text-base sm:text-2xl">
           © 2025 Fairblock. All rights reserved.
@@ -39,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 sm:gap-8 sm:pr-4 font-roboto font-light text-primary-blue text-sm sm:text-base">
+      <div className="flex gap-4 sm:gap-8 sm:pr-4 font-light text-primary-blue text-sm sm:text-base">
         <div className="flex flex-col gap-4">
           {/* <a
             href="https://docs.fairblock.network/docs/welcome/Vision"

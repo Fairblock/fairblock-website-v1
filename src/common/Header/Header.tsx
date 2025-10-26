@@ -30,15 +30,14 @@ const Header = () => {
         visible ? "translate-y-0" : "-translate-y-[120px]"
       } fixed top-4 xl:top-8 left-0 right-0 flex justify-center transition-transform duration-300 z-50`}
     >
-      <div className="bg-primary-blue flex items-center justify-between px-4 sm:px-8 py-3 rounded-xl w-[95%] max-w-[1800px] transition-all duration-300 relative text-black z-10">
+      <div className="bg-primary-blue font-test-tiempos-headline flex items-center justify-between px-4 sm:px-8 py-6 rounded-xl w-[95%] max-w-[1800px] transition-all duration-300 relative text-black z-10">
         {/* Logo */}
         <Link to="/" className="flex gap-2 items-center">
           <img
-            className="h-9 invert"
+            className="h-6 sm:h-8 invert"
             src="/common/fairblock-logo.svg"
             alt="fairblock-logo"
           />
-          <span className="font-light text-3xl">Fairblock</span>
         </Link>
 
         {/* Desktop nav */}

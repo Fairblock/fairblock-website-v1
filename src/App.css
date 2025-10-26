@@ -1,66 +1,92 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
-/* Adding custom font - MarlideDisplay (Headers) - START */
+/* Adding custom font - Test Tiempos Headline (Heading) - START */
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_Light.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_Light.ttf") format("truetype");
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Light.otf") format("otf");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_Regular.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_Regular.ttf") format("truetype");
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Regular.otf") format("otf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_Medium.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_Medium.ttf") format("truetype");
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Medium.otf") format("otf");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_Bold.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_Bold.ttf") format("truetype");
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Semibold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Bold.otf") format("otf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_ExtraBold.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_ExtraBold.ttf") format("truetype");
-  font-weight: 800;
+  font-family: "Test Tiempos Headline";
+  src: url("/TestTiemposHeadline-Black.otf") format("otf");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Adding custom font - Test Tiempos Headline - END */
+
+/* Adding custom font - Maison Neue (Body) - START */
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/MaisonNeue-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Marlide Display";
-  src: url("/fonts/MarlideDisplay_Heavy.woff2") format("woff2"),
-    url("/fonts/MarlideDisplay_Heavy.ttf") format("truetype");
-  font-weight: 900;
+  font-family: "Maison Neue";
+  src: url("/MaisonNeue-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-/* Adding custom font - MarlideDisplay - END */
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/MaisonNeue-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/MaisonNeue-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* Adding custom font - Maison Neue - END */
 
 @theme {
-  --font-eb-garamond: "EB Garamond", serif;
-  --font-roboto: "Roboto", sans-serif;
-  --font-marlide: "Marlide Display", serif;
+  --font-maison-neue: "Maison Neue", serif;
+  --font-test-tiempos-headline: "Test Tiempos Headline", serif;
   --color-primary-blue: #58bdf6;
   --color-primary-darkBlue: #000D14;
   --breakpoint-3xl: 1920px

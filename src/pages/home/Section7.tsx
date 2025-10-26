@@ -20,7 +20,7 @@ const StartBuildingCard = ({ imageUrl, title, content, link }: CardProps) => {
       </div>
       <div className="text-center">
         <h3 className="font-light text-3xl mb-1">{title}</h3>
-        <p className="font-eb-garamond mx-auto text-lg/5 lg:text-xl/5 w-4/5">
+        <p className="mx-auto text-lg/5 lg:text-xl/5 w-4/5">
           {content}
         </p>
       </div>
