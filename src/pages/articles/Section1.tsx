@@ -159,24 +159,14 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl: "/articles/fairblock-x-ritual.png",
-    newsHeader: "Trustless and Unstoppable Al with Fairblock and Ritual",
-    newsBody:
-      "Fairblock and Ritual are collaborating for Trustless and Unstoppable Al economies through decentralized confidential computing.",
-    newsLink:
-      "https://medium.com/@0xfairblock/confidential-rituals-trustless-and-unstoppable-ai-with-dynamic-confidentiality-95ecaee66e4c",
-    site: "medium.com",
-    type: "articles",
-  },
-  {
     imageUrl: "/articles/fairblock-x-arbitrum.png",
     newsHeader:
       "Permissionless and performant confidential computing for Arbitrum ecosystem",
     newsBody:
-      "Fairblock and Arbitrum are collaborating for permissionless and efficient confidential computing in EVM L2s.",
+      "Fairblock and Arbitrum are collaborating for trustless and efficient confidential computing in EVM L2s.",
     newsLink:
-      "https://medium.com/@0xfairblock/unlocking-arbitrum-with-dynamic-confidentiality-c376f4dd3000",
-    site: "medium.com",
+      "https://blog.arbitrum.io/how-fairblock-is-unlocking-confidential-payments-and-auctions-on-arbitrum/",
+    site: "arbitrum.io",
     type: "articles",
   },
   {
@@ -184,7 +174,7 @@ export const ARTICLE_CARDS_ARRAY = [
     newsHeader:
       "Intent-Based Execution through Identity-Based Encryption and Auctions",
     newsBody:
-      "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in intent matching, lending markets, token launches, and RWA/NFT sales.",
+      "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in lending, intent matching, and token launches.",
     newsLink: "https://eprint.iacr.org/2025/241",
     site: "eprint.iacr.org",
     type: "articles",
@@ -196,17 +186,6 @@ export const ARTICLE_CARDS_ARRAY = [
       "Bringing Dynamic Confidentiality to Rollup Developers with AltLayer.",
     newsLink:
       "https://medium.com/@0xfairblock/encrypting-every-rollup-ae95cfcad848",
-    site: "medium.com",
-    type: "articles",
-  },
-  {
-    imageUrl: "/articles/fairblock-x-camp.png",
-    newsHeader:
-      "Native Encryption for the OP Superchain with Camp and Fairblock",
-    newsBody:
-      "Fairblock and Camp Network are collaborating to bring confidential computing to Optimism Superchain and Camp Ecosystem of Al and consumer applications.",
-    newsLink:
-      "https://medium.com/@0xfairblock/native-encryption-for-the-op-superchain-with-camp-and-fairblock-e003dc62c648",
     site: "medium.com",
     type: "articles",
   },
