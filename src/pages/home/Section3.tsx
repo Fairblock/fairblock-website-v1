@@ -12,13 +12,13 @@ type CardProps = {
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
     <div
-      className="border border-primary-blue cursor-pointer flex flex-col gap-4 items-center p-4 rounded-2xl min-w-72"
+      className="border border-primary-blue cursor-pointer flex flex-col gap-4 items-center p-4 rounded-2xl min-w-[265px]"
     >
       <h3 className="font-light font-test-tiempos-headline text-4xl">{title}</h3>
       <div className="w-48">
         <img className="w-full" src={imageUrl} alt={title} />
       </div>
-      <p className="font-test-tiempos-headline text-lg lg:text-xl text-center">{content}</p>
+      <p className="text-center">{content}</p>
     </div>
   );
 };

@@ -80,7 +80,7 @@ const Card = ({ ecosystem }: CardProps) => {
             {ecosystem.projectName}
           </h3>
         </a>
-        <p className="font-medium line-clamp-3">{ecosystem.description}</p>
+        <p className="line-clamp-3">{ecosystem.description}</p>
         {ecosystem.readMoreLink && (
           <a
             className="cursor-pointer mt-2 text-sm underline"

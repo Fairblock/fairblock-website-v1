@@ -15,8 +15,8 @@ const HowItWorksCard = ({ imageUrl, title, content }: HowItWorksCardProps) => {
         />
       </div>
       <div className="flex flex-col gap-4 text-center">
-        <h3 className="text-3xl">{title}</h3>
-        <p className="text-lg/5 lg:text-xl/5">{content}</p>
+        <h3 className="font-test-tiempos-headline text-3xl">{title}</h3>
+        <p className="lg:text-lg">{content}</p>
       </div>
     </div>
   );

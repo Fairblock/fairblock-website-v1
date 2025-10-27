@@ -41,7 +41,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
             <PiArrowUpRightBold className="text-white" />
           </span>
         </div>
-        <p className="text-lg lg:text-xl text-neutral-300">
+        <p className="lg:text-lg text-neutral-300">
           {content}
         </p>
       </a>

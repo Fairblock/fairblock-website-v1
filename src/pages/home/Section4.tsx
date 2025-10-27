@@ -9,7 +9,7 @@ const Section4 = () => {
       <div className="px-4">
         <Title title="Seamless Confidential Apps" />
       </div>
-      <div className="mx-auto lg:w-3/5 xl:1/2 max-w-full">
+      <div className="mx-auto lg:w-3/5 xl:w-1/2 max-w-full">
         <img className="w-full" src="/home/dynamic-confidential-compute.png" alt="" />
       </div>
       <Link to="how-it-works" className="mx-auto mt-8">

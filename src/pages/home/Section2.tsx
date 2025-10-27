@@ -16,7 +16,7 @@ const Section2 = () => {
           ? "Protected trading"
           : "Confidential Stablecoins"
       );
-    }, 1000);
+    }, 1250);
 
     return () => clearInterval(interval); // cleanup
   }, []);
@@ -35,7 +35,7 @@ const Section2 = () => {
           />
         </div>
         <div
-          className="flex flex-col gap-4 text-lg lg:text-xl lg:text-left"
+          className="flex flex-col gap-4 lg:text-lg lg:text-left"
           style={{ textAlign: "justify" }}
         >
           <p>
@@ -57,7 +57,7 @@ const Section2 = () => {
         </div>
         <div className="flex justify-center lg:justify-start">
           <Link to="capps">
-            <Button buttonText={buttonText} size="w-72" />
+            <Button buttonText={buttonText} size="w-[321px]" />
           </Link>
         </div>
       </div>

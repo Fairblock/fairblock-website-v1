@@ -5,7 +5,7 @@ import SwitchTabs from "../../common/SwitchTabs";
 const FirstTab = () => {
   return (
     <div className="flex flex-col gap-8">
-      <p className="mx-auto text-xl text-center">
+      <p className="mx-auto lg:text-lg text-center">
         Powering secure, fast, and confidential applications
         <br className="hidden sm:block" /> (cApps) with dynamic, multimodal cryptography
       </p>
@@ -30,7 +30,7 @@ const SecondTab = () => {
           alt="dynamic-confidentiality"
         />
       </div>
-      <div className="flex flex-col gap-6 leading-relaxed mx-auto text-lg lg:text-xl text-left max-w-4xl">
+      <div className="flex flex-col gap-6 leading-relaxed mx-auto lg:text-lg text-left max-w-4xl">
         <p>
           Simplicity is the ultimate form of art. We prioritize simplicity and
           usability through a multimodal, dynamic design fine-tuning performance

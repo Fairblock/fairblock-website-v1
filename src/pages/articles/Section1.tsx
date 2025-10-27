@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { LuExternalLink } from "react-icons/lu";
-import "./Section1.css"
+import Title from "../../common/Title";
 
 export const TWEETS_ARRAY = [
   <blockquote className="twitter-tweet" data-theme="dark">
@@ -439,7 +439,7 @@ const Card = ({
           />
         </div>
         <div className="text-base">
-          <h4 className="font-test-tiempos-headline font-semibold py-2">{newsHeader}</h4>
+          <h4 className="font-test-tiempos-headline font-medium py-2">{newsHeader}</h4>
           <p className="line-clamp-3 my-2">{newsBody}</p>
           <p className="flex items-center gap-2 py-2 text-neutral-400">
             <span>{site}</span> <LuExternalLink />
@@ -486,9 +486,9 @@ const Section1 = () => {
     <div>
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 lg:py-12">
         {/* SECTION 01 - ARTICLES & RESEARCH */}
-        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center mb-8 xl:mb-12">
-          Articles & Research
-        </h2>
+        <div className="mb-8">
+          <Title title="Articles & Research" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {ARTICLE_CARDS_ARRAY.map((item, index) => (
             <Card

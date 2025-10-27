@@ -14,7 +14,7 @@ const Footer = () => {
             alt="fairblock-logo"
           />
         </div>
-        <p className="text-base sm:text-2xl">
+        <p className="text-base sm:text-lg">
           © 2025 Fairblock. All rights reserved.
         </p>
         <div className="flex gap-6 text-primary-blue text-2xl sm:text-3xl">
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 sm:gap-8 sm:pr-4 font-light text-primary-blue text-sm sm:text-base">
+      <div className="flex gap-4 sm:pr-4 font-light text-primary-blue text-sm sm:text-base">
         <div className="flex flex-col gap-4">
           {/* <a
             href="https://docs.fairblock.network/docs/welcome/Vision"
