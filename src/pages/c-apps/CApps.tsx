@@ -9,7 +9,7 @@ const CApps = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-10 sm:gap-16 pt-24 xl:pt-32">
+    <div className="flex flex-col gap-10 pt-24 xl:pt-32">
       <Section1 />
       <Section2 />
     </div>

@@ -39,7 +39,7 @@ const Section5 = () => {
         />
 
         {/* BACKERS */}
-        <div className="flex flex-col gap-12 justify-center items-center">
+        <div className="flex flex-col gap-10 justify-center items-center">
           <Title title="Backers" />
           {/* PLATFORM IMAGES */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 lg:gap-12 items-center justify-between">

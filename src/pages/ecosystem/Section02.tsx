@@ -40,29 +40,29 @@ const Card = ({ ecosystem }: CardProps) => {
         >
           <img className="grayscale" src={ecosystem.imageUrl} alt={ecosystem.projectName} />
         </a>
-        <div className="duration-300 flex font-medium gap-2 text-sm">
+        <div className="duration-300 flex gap-2 text-sm">
           {ecosystem.coreCryptography.includes("mpc") && (
-            <span className="border border-[#58BDF6] group-hover:border-[#A7C7FF] bg-[#58BDF6]/20 group-hover:bg-[#718BD2] duration-150 h-fit px-2 rounded-sm group-hover:text-black transition-all">
+            <span className="border border-[#58BDF6] group-hover:border-[#A7C7FF] bg-[#58BDF6]/20 group-hover:bg-[#718BD2] duration-150 h-fit pt-1 px-2 rounded-sm group-hover:text-black transition-all">
               MPC
             </span>
           )}
           {ecosystem.coreCryptography.includes("mpc-ibe") && (
-            <span className="border border-[#58BDF6] group-hover:border-[#A7C7FF] bg-[#58BDF6]/20 group-hover:bg-[#718BD2] duration-150 h-fit px-2 rounded-sm group-hover:text-black transition-all">
+            <span className="border border-[#58BDF6] group-hover:border-[#A7C7FF] bg-[#58BDF6]/20 group-hover:bg-[#718BD2] duration-150 h-fit pt-1 px-2 rounded-sm group-hover:text-black transition-all">
               MPC - IBE
             </span>
           )}
           {ecosystem.coreCryptography.includes("he") && (
-            <span className="border border-[#D4FA62] bg-[#D4FA62]/20 group-hover:bg-[#A5AB56] duration-300 h-fit px-2 rounded-sm group-hover:text-black transition-all">
+            <span className="border border-[#D4FA62] bg-[#D4FA62]/20 group-hover:bg-[#A5AB56] duration-300 h-fit pt-1 px-2 rounded-sm group-hover:text-black transition-all">
               HE
             </span>
           )}
           {ecosystem.coreCryptography.includes("tee") && (
-            <span className="border border-[#FFB164] bg-[#FFB164]/20 group-hover:bg-[#EE7D4D] duration-300 h-fit px-2 rounded-sm group-hover:text-black transition-all">
+            <span className="border border-[#FFB164] bg-[#FFB164]/20 group-hover:bg-[#EE7D4D] duration-300 h-fit pt-1 px-2 rounded-sm group-hover:text-black transition-all">
               TEE
             </span>
           )}
           {ecosystem.coreCryptography.includes("fhe") && (
-            <span className="border border-[#F6AAFF] bg-[#F6AAFF]/20 group-hover:bg-[#9D7BA1] duration-300 h-fit px-2 rounded-sm group-hover:text-black transition-all">
+            <span className="border border-[#F6AAFF] bg-[#F6AAFF]/20 group-hover:bg-[#9D7BA1] duration-300 h-fit pt-1 px-2 rounded-sm group-hover:text-black transition-all">
               FHE
             </span>
           )}
@@ -134,7 +134,7 @@ const Section2 = () => {
             <button
               className={`${
                 selectedFilter === button ? "bg-primary-blue" : "bg-white"
-              } border border-primary-blue cursor-pointer flex-shrink-0 font-medium px-4 py-1 rounded-md text-black text-lg`}
+              } border border-primary-blue cursor-pointer flex-shrink-0 px-4 pt-2 pb-1 rounded-md text-black text-lg`}
               onClick={() => {
                 handleFilter(button);
                 setSelectedFilter(button);
@@ -145,7 +145,7 @@ const Section2 = () => {
             </button>
           ))}
         </div>
-        <div className="bg-white border border-primary-blue flex font-medium gap-2 items-center px-2 py-1 rounded-md text-black w-full sm:w-fit">
+        <div className="bg-white border border-primary-blue flex gap-2 items-center pl-3 pr-2 pt-2 pb-1 rounded-md text-black w-full sm:w-fit">
           <IoIosSearch className="text-2xl" />
           <form onSubmit={handleSearch}>
             <input

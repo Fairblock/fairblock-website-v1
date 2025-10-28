@@ -50,7 +50,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         cApps
       </Link>
-      <div className="flex gap-4">
+      <div className="flex pl-4 gap-4">
         <a
           href="https://x.com/0xfairblock"
           rel="noopener noreferrer"

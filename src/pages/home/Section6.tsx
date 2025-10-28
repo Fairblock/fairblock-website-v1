@@ -4,8 +4,8 @@ import Slider from "../../common/Slider";
 
 const Section6 = () => {
   return (
-    <div className="flex flex-col gap-8">
-      <div className="mb-8">
+    <div className="flex flex-col gap-10 p-4 sm:px-8">
+      <div className="mb-4">
         <Title title="Ecosystem" />
       </div>
       <div className="lg:mx-auto lg:w-4/5">

@@ -41,7 +41,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex gap-4 items-center">
+        <nav className="hidden md:flex gap-4 items-center text-lg">
           <Navbar isMobileNav={false} setMenuOpen={setMenuOpen} />
         </nav>
 

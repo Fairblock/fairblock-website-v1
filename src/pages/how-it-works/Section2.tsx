@@ -1,21 +1,44 @@
 // components
 import Title from "../../common/Title";
+import SwitchTabs from "../../common/SwitchTabs";
 
-const Section2 = () => {
+const FirstTab = () => {
   return (
-    <div className="flex flex-col items-center">
-      <div className="">
-        <Title title={"General User Flow"} />
-      </div>
-      <div className="relative overflow-hidden pt-8 w-full">
-        <img
-          className="mx-auto lg:w-[90%] sm:max-w-[700px] p-2"
-          src="/how-it-works/user-flow.svg"
-          alt=""
-        />
-      </div>
+    <div className="w-full">
+      <img
+        className="mx-auto w-full lg:max-w-[80%]"
+        src="/how-it-works/general-user-flow.svg"
+        alt="general-user-flow"
+      />
     </div>
   );
 };
 
+const SecondTab = () => {
+  return (
+    <div className="w-full">
+      <img
+        className="mx-auto w-full lg:max-w-[80%]"
+        src="/how-it-works/confidential-stablecoins.png"
+        alt="confidential-stablecoins.svg"
+      />
+    </div>
+  );
+};
+
+const Section2 = () => {
+  return (
+    <div className="flex flex-col gap-8 p-4 sm:px-8 items-center">
+      <div>
+        <Title title="UserFlow" />
+      </div>
+      <SwitchTabs
+        firstTabLabel="General"
+        secondTabLabel="Confidential Stablecoins"
+        FirstTabComponent={FirstTab}
+        SecondTabComponent={SecondTab}
+      />
+    </div>
+  );
+};
 export default Section2;

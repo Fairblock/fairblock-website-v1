@@ -1,13 +1,9 @@
 // components
 import { useEffect } from "react";
-import Section02 from "./Section02";
-import Section03 from "./Section03";
-import Section04 from "./Section04";
 import Section1 from "./Section1";
-// import Section2 from "./Section2";
-// import Section3 from "./Section3";
-// import Section4 from "./Section4";
-// import Section5 from "./Section5";
+import Section2 from "./Section2";
+import Section3 from "./Section3";
+import Section4 from "./Section4";
 
 const HowItWorks = () => {
   useEffect(() => {
@@ -29,33 +25,17 @@ const HowItWorks = () => {
         alt=""
       />
       <Section1 />
-
-      {/* <img
-        className="absolute w-[1000px] top-[29%] lg:top-[13%] -left-[50%] xl:-left-[30%] -z-50"
-        src="/how-it-works/user-flow-bg-gradient.svg"
-        alt=""
-        />
-        <img
-        className="absolute w-[1000px] top-[29%] lg:top-[13%] -right-[50%] xl:-right-[30%] scale-x-[-1] -z-50"
-        src="/how-it-works/user-flow-bg-gradient.svg"
-        alt=""
-        /> */}
-
       <div>
         <div className="bg-[url(/how-it-works/bg-1.svg)] bg-cover py-5 sm:pb-8 sm:pt-10">
-          <Section02 />
+          <Section2 />
         </div>
         <div className="bg-[url(/how-it-works/bg-2.svg)] py-5 sm:py-8">
-          <Section03 />
+          <Section3 />
         </div>
         <div className="bg-[url(/how-it-works/bg-3.svg)] py-5 sm:pb-8 sm:pt-10">
-          <Section04 />
+          <Section4 />
         </div>
       </div>
-      {/* <Section2 /> */}
-      {/* <Section3 /> */}
-      {/* <Section4 /> */}
-      {/* <Section5 /> */}
     </div>
   );
 };

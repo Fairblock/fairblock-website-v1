@@ -439,7 +439,9 @@ const Card = ({
           />
         </div>
         <div className="text-base">
-          <h4 className="font-test-tiempos-headline font-medium py-2">{newsHeader}</h4>
+          <h4 className="font-test-tiempos-headline font-medium py-2">
+            {newsHeader}
+          </h4>
           <p className="line-clamp-3 my-2">{newsBody}</p>
           <p className="flex items-center gap-2 py-2 text-neutral-400">
             <span>{site}</span> <LuExternalLink />
@@ -503,9 +505,9 @@ const Section1 = () => {
         </div>
 
         {/* SECTION 02 - NEWS */}
-        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center my-8 xl:my-12">
-          News
-        </h2>
+        <div className="my-8">
+          <Title title="News" />
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {NEWS_CARDS_ARRAY_2.map((item, index) => (
             <Card
@@ -520,9 +522,9 @@ const Section1 = () => {
         </div>
 
         {/* SECTION 03 - TWEETS */}
-        <h2 className="font-marlide text-primary-blue text-4xl lg:text-5xl text-center my-8 xl:my-12">
-          Tweets
-        </h2>
+        <div className="my-8">
+          <Title title="Tweets" />
+        </div>
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4">
           {TWEETS_ARRAY.map((item) => (
             <div id="tweeter-card-container">{item}</div>

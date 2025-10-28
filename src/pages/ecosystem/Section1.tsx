@@ -9,7 +9,7 @@ const Section1 = () => {
           <h1 className="font-medium font-test-tiempos-headline text-primary-blue text-6xl lg:text-8xl">
             Ecosystem
           </h1>
-          <h6 className="lg:text-lg w-3/4 md:w-2/3 lg:w-1/2">
+          <h6 className="lg:text-lg w-3/4 md:w-2/3 lg:w-1/2 xl:w-[38%]">
             Discover a growing network of confidential applications (cApps)
             across stablecoins, protected trading, and incorruptible AI.
           </h6>

@@ -24,16 +24,16 @@ const SwitchTabs = ({
       <div className="flex flex-nowrap justify-center rounded-lg mx-auto text-lg sm:text-xl w-full sm:w-[600px]">
         <button
           className={`${
-            activeTab === firstTabLabel ? "bg-primary-blue" : "bg-primary-blue/10"
-          } border border-primary-blue cursor-pointer p-2 rounded-l-md sm:rounded-l-xl text-nowrap min-w-[180px] sm:min-w-1/2`}
+            activeTab === firstTabLabel ? "bg-primary-blue text-black" : "bg-primary-blue/10"
+          } border border-primary-blue cursor-pointer font-test-tiempos-headline px-2 py-3 rounded-l-md sm:rounded-l-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
           onClick={() => handleTabSelect(firstTabLabel)}
         >
           {firstTabLabel}
         </button>
         <button
           className={`${
-            activeTab === secondTabLabel ? "bg-primary-blue" : "bg-primary-blue/10"
-          } border border-primary-blue cursor-pointer p-2 rounded-r-md sm:rounded-r-xl text-nowrap min-w-[180px] sm:min-w-1/2`}
+            activeTab === secondTabLabel ? "bg-primary-blue text-black" : "bg-primary-blue/10"
+          } border border-primary-blue cursor-pointer font-test-tiempos-headline px-2 py-3 rounded-r-md sm:rounded-r-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
           onClick={() => handleTabSelect(secondTabLabel)}
         >
           {secondTabLabel}
