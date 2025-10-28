@@ -13,7 +13,7 @@ const Section2 = () => {
     const interval = setInterval(() => {
       setButtonText((prevText) =>
         prevText === "Confidential Stablecoins"
-          ? "Protected trading"
+          ? "Protected Trading"
           : "Confidential Stablecoins"
       );
     }, 1250);

@@ -14,7 +14,7 @@ const Footer = () => {
             alt="fairblock-logo"
           />
         </div>
-        <p className="text-base sm:text-lg">
+        <p className="text-sm sm:text-base">
           © 2025 Fairblock. All rights reserved.
         </p>
         <div className="flex gap-6 text-primary-blue text-2xl sm:text-3xl">

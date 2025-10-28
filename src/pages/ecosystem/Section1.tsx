@@ -18,7 +18,7 @@ const Section1 = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <Button buttonText="Start building" />
+            <Button buttonText="Start Building" />
           </a>
         </div>
       </div>

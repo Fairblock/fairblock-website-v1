@@ -5,7 +5,7 @@ import Button from "../../common/Button";
 
 const Section4 = () => {
   return (
-    <div className="flex flex-col gap-4 lg:gap-10 p-4 sm:px-8 mx-auto max-w-screen-2xl">
+    <div className="flex flex-col gap-8 lg:gap-10 p-4 sm:px-8 mx-auto max-w-screen-2xl">
       <div className="px-4">
         <Title title="Seamless Confidential Apps" />
       </div>
@@ -17,7 +17,7 @@ const Section4 = () => {
         />
       </div>
       <Link to="how-it-works" className="mx-auto">
-        <Button buttonText="How it works" />
+        <Button buttonText="How it Works" />
       </Link>
     </div>
   );
