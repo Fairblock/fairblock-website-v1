@@ -56,7 +56,7 @@ const Header = () => {
 
       {/* Mobile menu (slides down separately) */}
       <div
-        className={`absolute top-6 bg-primary-blue duration-300 flex flex-col gap-6 p-6 pt-16 md:hidden rounded-xl shadow-lg text-xl text-black w-[95%] max-w-[1800px] origin-top transition-all ${
+        className={`absolute top-6 bg-primary-blue duration-300 font-test-tiempos-headline flex flex-col gap-6 p-6 pt-16 md:hidden rounded-xl shadow-lg text-xl text-black w-[95%] max-w-[1800px] origin-top transition-all ${
           menuOpen
             ? "opacity-100 translate-y-0 scale-y-100"
             : "opacity-0 -translate-y-4 scale-y-0 pointer-events-none"

@@ -72,7 +72,7 @@ const Footer = () => {
           >
             Building&ensp;
             <br className="sm:hidden" />
-            program
+            Program
           </a>
         </div>
       </div>
