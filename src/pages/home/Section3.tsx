@@ -52,14 +52,14 @@ const Section3 = () => {
               content={`Pluggable confidential logic\ninto any application.`}
             />,
             <Card
-              title="Dynamic"
-              imageUrl="/home/compliant.svg"
-              content="Fine-tuned performance and security for each application."
-            />,
-            <Card
               title="Compliance-Friendly"
               imageUrl="/home/expansive.svg"
               content="Zero compliance risks with post-transaction accountability."
+            />,
+            <Card
+              title="Dynamic"
+              imageUrl="/home/compliant.svg"
+              content="Fine-tuned performance and security for each application."
             />,
           ]}
         />
