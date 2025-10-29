@@ -6,7 +6,7 @@ const FirstTab = () => {
   return (
     <div className="w-full">
       <img
-        className="mx-auto w-full lg:max-w-[80%]"
+        className="mx-auto w-full lg:max-w-[75%]"
         src="/how-it-works/general-user-flow.svg"
         alt="general-user-flow"
       />
@@ -19,7 +19,7 @@ const SecondTab = () => {
     <div className="w-full">
       <img
         className="mx-auto w-full lg:max-w-[80%]"
-        src="/how-it-works/confidential-stablecoins.png"
+        src="/how-it-works/confidential-stablecoins.svg"
         alt="confidential-stablecoins.svg"
       />
     </div>

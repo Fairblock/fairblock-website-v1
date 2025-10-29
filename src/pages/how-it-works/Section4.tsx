@@ -11,7 +11,7 @@ const FirstTab = () => {
       </p>
       <div className="w-full">
         <img
-          className="mx-auto w-full lg:max-w-[60%]"
+          className="mx-auto w-full lg:max-w-[70%]"
           src="/how-it-works/multimodal-confidentiality.png"
           alt="multimodal-confidentiality"
         />
@@ -26,7 +26,7 @@ const SecondTab = () => {
       <div className="w-full">
         <img
           className="mx-auto w-full lg:max-w-[70%]"
-          src="/how-it-works/dynamic-confidentiality.png"
+          src="/how-it-works/dynamic-confidentiality.svg"
           alt="dynamic-confidentiality"
         />
       </div>

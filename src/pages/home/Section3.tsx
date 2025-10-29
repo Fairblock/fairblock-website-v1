@@ -43,7 +43,7 @@ const Section3 = () => {
             />,
             <Card
               title="Expansive"
-              imageUrl="/home/expansive.svg"
+              imageUrl="/home/dynamic.svg"
               content={`Unlocking impactful DeFi\n and Al apps.`}
             />,
             <Card
@@ -53,12 +53,12 @@ const Section3 = () => {
             />,
             <Card
               title="Dynamic"
-              imageUrl="/home/dynamic.svg"
+              imageUrl="/home/compliant.svg"
               content="Fine-tuned performance and security for each application."
             />,
             <Card
               title="Compliant"
-              imageUrl="/home/compliant.svg"
+              imageUrl="/home/expansive.svg"
               content="Zero compliance risks with post-transaction accountability."
             />,
           ]}
