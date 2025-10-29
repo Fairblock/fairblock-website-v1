@@ -57,7 +57,7 @@ const Section2 = () => {
         </div>
         <div className="flex justify-center lg:justify-start">
           <Link to="capps">
-            <Button buttonText={buttonText} size="w-[210px] sm:w-[321px]" />
+            <Button buttonText={buttonText} size="w-[210px] sm:w-[310px]" />
           </Link>
         </div>
       </div>

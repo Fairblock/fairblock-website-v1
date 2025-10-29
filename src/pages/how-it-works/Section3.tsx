@@ -26,7 +26,7 @@ const FirstTab = () => {
   return (
     <div className="flex flex-col sm:flex-row gap-8 lg:gap-16 items-center justify-center mt-8">
       <HowItWorksCard
-        imageUrl="/how-it-works/fairy-ring.svg"
+        imageUrl="/how-it-works/fairy-ring.png"
         title="FairyRing"
         content={`A dynamic and decentralized network that hosts app-specific secure and performant confidential computing.`}
       />

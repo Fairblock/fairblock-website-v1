@@ -12,13 +12,13 @@ type CardProps = {
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
     <div className="border border-primary-blue cursor-pointer flex flex-col gap-4 items-center p-4 rounded-2xl min-w-[265px]">
-      <h3 className="font-light font-test-tiempos-headline text-4xl">
+      <h3 className="font-light font-test-tiempos-headline text-2xl">
         {title}
       </h3>
       <div className="w-48">
         <img className="w-full" src={imageUrl} alt={title} />
       </div>
-      <p className="leading-5 text-center whitespace-pre-line">{content}</p>
+      <p className="font-test-tiempos-headline leading-5 text-center whitespace-pre-line">{content}</p>
     </div>
   );
 };
@@ -57,7 +57,7 @@ const Section3 = () => {
               content="Fine-tuned performance and security for each application."
             />,
             <Card
-              title="Compliant"
+              title="Compliance-Friendly"
               imageUrl="/home/expansive.svg"
               content="Zero compliance risks with post-transaction accountability."
             />,

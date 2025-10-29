@@ -19,8 +19,8 @@ const SecondTab = () => {
     <div className="w-full">
       <img
         className="mx-auto w-full lg:max-w-[80%]"
-        src="/how-it-works/confidential-stablecoins.svg"
-        alt="confidential-stablecoins.svg"
+        src="/how-it-works/confidential-stablecoins.png"
+        alt="confidential-stablecoins"
       />
     </div>
   );
