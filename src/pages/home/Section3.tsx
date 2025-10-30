@@ -1,6 +1,5 @@
 // components
 import Title from "../../common/Title";
-import SubTitle from "../../common/SubTitle";
 import Slider from "../../common/Slider";
 // types
 type CardProps = {
@@ -25,8 +24,7 @@ const Card = ({ title, imageUrl, content }: CardProps) => {
 
 const Section3 = () => {
   return (
-    <div className="flex flex-col gap-6 lg:gap-8 p-4 sm:px-8">
-      <SubTitle title="Features" />
+    <div className="flex flex-col gap-8 lg:gap-10 p-4 sm:px-8">
       <Title title="Built to Be Used" />
       <div className="lg:mx-auto lg:w-4/5">
         <Slider
