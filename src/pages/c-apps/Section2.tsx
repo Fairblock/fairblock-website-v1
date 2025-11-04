@@ -52,7 +52,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
 const C_APPS_LIST = [
   {
     imageUrl: "/c-apps/demos/confidential-stablecoins.png",
-    title: "StableTrust: Confidential Stablecoins",
+    title: "Stabletrust: Confidential Stablecoins",
     content:
       "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack.",
     link: "https://stabletrust.fairblock.network",
