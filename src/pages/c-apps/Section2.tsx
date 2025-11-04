@@ -59,35 +59,35 @@ const C_APPS_LIST = [
   },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
-    title: "Protected Lending: Fairates",
+    title: "Fairates: Protected Lending",
     content:
       "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
     link: "https://fairates.fairblock.network/",
   },
   {
     videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
-    title: "Protected Intents: FairyCoW Swap",
+    title: "FairyCoW: Protected Intents",
     content:
       "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
     link: "https://swap.fairycow.fi/",
   },
   {
     imageUrl: "/c-apps/demos/time-machine-img.png",
-    title: "Protected Predictions: Time Machine",
+    title: "Time Machine: Protected Predictions",
     content:
       "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation.",
     link: "https://timemachine.fairblock.network/",
   },
   {
     imageUrl: "/c-apps/demos/unruggable-ai.jpg",
-    title: "Unruggable AI",
+    title: "Unruggable AI: Protected Agents",
     content:
       "TEEs lose keys on failure or restart. Unruggable AI solves this with TEEs, Fairblock’s MPC, and private decryption to securely back up and recover keys without centralization.",
     link: "https://github.com/Fairblock/Unruggable-AI",
   },
   {
     videoUrl: "/c-apps/demos/lazy-killer.mp4",
-    title: "Lazy Killer",
+    title: "Lazy Killer: Protected Secrets",
     content:
       "Lazy Killer is a multi-player murder mystery game that utilizes MPC and encryption to keep the suspects in the shadows until the truth emerges.",
     link: "https://lazykiller.fairblock.network/",
@@ -108,14 +108,14 @@ const C_APPS_LIST = [
   },
   {
     videoUrl: "/c-apps/demos/private-governance.mp4",
-    title: "Private Governance",
+    title: "Private Governance: Protected Votes",
     content:
       "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
     link: "https://governance.fairblock.network/",
   },
   {
     imageUrl: "/c-apps/demos/fair-ex-img.png",
-    title: "FairEx",
+    title: "FairEx: Protected Orders",
     content:
       "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay confidential until the trigger price hits, then execute onchain.",
     link: "https://dex.fairblock.network/swap",
