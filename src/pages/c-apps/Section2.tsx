@@ -52,38 +52,31 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
 const C_APPS_LIST = [
   {
     imageUrl: "/c-apps/demos/confidential-stablecoins.png",
-    title: "Confidential Stablecoins",
+    title: "Confidential and Compliant Stablecoins",
     content:
-      "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack. Check out this educational demo.",
-    link: "https://confidential-usdc-demo.vercel.app/",
+      "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack.",
+    link: "https://stabletrust.fairblock.network",
   },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
-    title: "Fairates",
+    title: "Protected Lending: Fairates",
     content:
       "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
     link: "https://fairates.fairblock.network/",
   },
   {
     videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
-    title: "FairyCoW Swap",
+    title: "Protected Intents: FairyCoW Swap",
     content:
       "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
     link: "https://swap.fairycow.fi/",
   },
   {
     imageUrl: "/c-apps/demos/time-machine-img.png",
-    title: "Time Machine",
+    title: "Protected Predictions: Time Machine",
     content:
       "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation.",
     link: "https://timemachine.fairblock.network/",
-  },
-  {
-    imageUrl: "/c-apps/demos/fair-ex-img.png",
-    title: "FariEx",
-    content:
-      "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay confidential until the trigger price hits, then execute onchain.",
-    link: "https://dex.fairblock.network/swap",
   },
   {
     imageUrl: "/c-apps/demos/unruggable-ai.jpg",
@@ -119,6 +112,13 @@ const C_APPS_LIST = [
     content:
       "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
     link: "https://governance.fairblock.network/",
+  },
+  {
+    imageUrl: "/c-apps/demos/fair-ex-img.png",
+    title: "FairEx",
+    content:
+      "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay confidential until the trigger price hits, then execute onchain.",
+    link: "https://dex.fairblock.network/swap",
   },
 ];
 
