@@ -55,7 +55,7 @@ const C_APPS_LIST = [
     title: "Confidential Stablecoins",
     content:
       "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack. Check out this educational demo.",
-    link: "https://confidential-usdc-demo.vercel.app/",
+    link: "https://stabletrust.io/",
   },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
