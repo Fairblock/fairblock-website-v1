@@ -30,11 +30,11 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         Docs
       </a> */}
       <Link
-        className={`${location.pathname === "/articles" && "font-semibold"}`}
+        className={`${location.pathname === "/capps" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
-        to="articles"
+        to="capps"
       >
-        Articles
+        cApps
       </Link>
       <Link
         className={`${location.pathname === "/ecosystem" && "font-semibold"}`}
@@ -44,11 +44,11 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         Ecosystem
       </Link>
       <Link
-        className={`${location.pathname === "/capps" && "font-semibold"}`}
+        className={`${location.pathname === "/articles" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
-        to="capps"
+        to="articles"
       >
-        cApps
+        Articles
       </Link>
       <div className="flex sm:pl-4 gap-4">
         <a
