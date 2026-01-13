@@ -131,7 +131,7 @@ export const ARTICLE_CARDS_ARRAY = [
       "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*BrRMBnNU37te2g6pXvFOGw.jpeg",
     newsHeader: "Forget Privacy Clichés: Confidentiality Means Profit",
     newsBody:
-      "Fairblock enables confidential stablecoin transactions by encrypting amounts while keeping addresses transparent. With growing interest from enterprise payment networks like Stripe, Robinhood and PayPal, it offers compliance-ready selective disclosure, high performance, and seamless multi-chain integration.",
+      "Fairblock enables confidential stablecoin transactions.",
     newsLink:
       "https://medium.com/@0xfairblock/forget-privacy-clich%C3%A9s-confidentiality-means-profit-c4c31cbb1bbc",
     site: "medium.com",
