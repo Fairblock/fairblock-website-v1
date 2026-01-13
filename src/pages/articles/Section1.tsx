@@ -139,6 +139,17 @@ export const ARTICLE_CARDS_ARRAY = [
   },
   {
     imageUrl:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GcFSj2Sd8xER8EwnfE2nBA.jpeg",
+    newsHeader: "Privacy vs Compliance Was a Lie",
+    newsBody:
+      "Confidentiality can be fully compliant for institutions and retail. Read about Fairblock's approach.",
+    newsLink:
+      "https://medium.com/@0xfairblock/privacy-vs-compliance-was-a-lie-043f99339ce3",
+    site: "medium.com",
+    type: "articles",
+  },
+  {
+    imageUrl:
       "/articles/incorruptible-markets-and-confidential-stablecoin-rails.png",
     newsHeader:
       "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
