@@ -2,7 +2,6 @@
 import { useEffect } from "react";
 import Section1 from "./Section1";
 import Section2 from "./Section2";
-import Section3 from "./Section3";
 import Section4 from "./Section4";
 
 const HowItWorks = () => {
@@ -28,9 +27,6 @@ const HowItWorks = () => {
       <div>
         <div className="bg-[url(/how-it-works/bg-1.svg)] bg-cover py-5 sm:pb-8 sm:pt-10">
           <Section2 />
-        </div>
-        <div className="bg-[url(/how-it-works/bg-2.svg)] py-5 sm:py-8">
-          <Section3 />
         </div>
         <div className="bg-[url(/how-it-works/bg-3.svg)] py-5 sm:pb-8 sm:pt-10">
           <Section4 />
