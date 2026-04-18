@@ -24,8 +24,7 @@ const Section1 = () => {
           protecting payroll, treasury, revenue, and trading activity, and private AI
           for enterprises that need persistent, accessible models without exposing
           confidential data. Privacy is a compliance and profitability requirement
-          for enterprises, and performance and usability are the only barriers we
-          are solving.
+          for enterprises, and performance. We're making it usable.
         </p>
       </div>
     </div>
