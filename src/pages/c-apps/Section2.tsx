@@ -119,13 +119,6 @@ const C_APPS_LIST = [
       "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
     link: "https://governance.fairblock.network/",
   },
-  {
-    imageUrl: "/c-apps/demos/fair-ex-img.png",
-    title: "FairEx: Protected Orders",
-    content:
-      "FairEx lets you place encrypted limit orders on Uniswap via Arbitrum One. Orders stay confidential until the trigger price hits, then execute onchain.",
-    link: "https://dex.fairblock.network/swap",
-  },
 ];
 
 const Section2 = () => {
