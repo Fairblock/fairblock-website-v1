@@ -25,7 +25,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
     <>
       {location.pathname !== "/" && (
         <Link
-          className="flex items-center gap-1 font-semibold"
+          className="flex items-center gap-1 font-heading font-semibold"
           onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
           to="/"
         >
@@ -33,21 +33,21 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         </Link>
       )}
       <Link
-        className={`${location.pathname === "/how-it-works" && "font-semibold"}`}
+        className={`font-heading ${location.pathname === "/how-it-works" ? "font-semibold" : "font-normal"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="how-it-works"
       >
         How it works
       </Link>
       <Link
-        className={`${location.pathname === "/capps" && "font-semibold"}`}
+        className={`font-heading ${location.pathname === "/capps" ? "font-semibold" : "font-normal"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="capps"
       >
         Solutions
       </Link>
       <Link
-        className={`${location.pathname === "/articles" && "font-semibold"}`}
+        className={`font-heading ${location.pathname === "/articles" ? "font-semibold" : "font-normal"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="articles"
       >
