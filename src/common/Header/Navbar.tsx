@@ -1,15 +1,26 @@
 import { Link, useLocation } from "react-router-dom";
-import { type Dispatch, type SetStateAction } from "react";
+import { useState, type Dispatch, type SetStateAction } from "react";
 // icons
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 // types
 export type NavbarProps = {
   isMobileNav: boolean;
   setMenuOpen: Dispatch<SetStateAction<boolean>>;
 };
 
+const EMAIL = "hello@fairblock.network";
+
 const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
   const location = useLocation();
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(EMAIL);
+    setCopied(true);
+    if (isMobileNav) setMenuOpen(false);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <>
@@ -50,6 +61,16 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         <a href="https://discord.com/invite/fairblock" rel="noopener noreferrer" target="_blank">
           <FaDiscord />
         </a>
+        <button
+          onClick={handleCopy}
+          title={copied ? "Copied!" : EMAIL}
+          className="flex items-center justify-center w-8 h-8 rounded-full border border-black/30 hover:border-black/60 bg-white/10 hover:bg-white/20 transition-all duration-200"
+        >
+          {copied
+            ? <span className="text-black text-xs font-semibold">✓</span>
+            : <MdEmail className="text-black text-lg" />
+          }
+        </button>
       </div>
     </>
   );
