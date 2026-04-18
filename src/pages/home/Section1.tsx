@@ -61,7 +61,7 @@ const Section1 = () => {
       <h2 className="hidden absolute bottom-[10%] font-heading font-normal sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
         <WordFade sentence={text} />
       </h2>
-      <h2 className="sm:hidden absolute bottom-[22%] font-heading font-normal flex flex-col gap-1 items-center justify-center text-xl w-full px-6 text-center">
+      <h2 className="sm:hidden absolute bottom-[17%] font-heading font-normal flex flex-col gap-1 items-center justify-center text-xl w-full px-6 text-center">
         <div><WordFade sentence="Powering Incorruptible" /></div>
         <div><WordFade sentence="Markets and Machines" /></div>
       </h2>
