@@ -10,6 +10,7 @@ import Articles from "./pages/articles/Articles";
 import CursorGlow from "./common/CursorGlow";
 import ScrollProgress from "./common/ScrollProgress";
 import PageTransition from "./common/PageTransition";
+import ContactModal from "./common/ContactModal";
 
 // css
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <CursorGlow />
         <ScrollProgress />
+        <ContactModal />
         <Header />
         <PageTransition>
           <Routes>

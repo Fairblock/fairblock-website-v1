@@ -12,12 +12,12 @@ const SectionContact = () => {
         <p className="opacity-60 text-lg max-w-xl">
           Join financial institutions and AI companies building with Fairblock.
         </p>
-        <a
-          href="mailto:hello@fairblock.network"
+        <button
           className="bg-primary-blue text-black font-semibold px-8 py-4 rounded-xl text-lg hover:brightness-110 transition-all duration-200"
+          onClick={() => window.dispatchEvent(new CustomEvent("openContact"))}
         >
-          Book a Demo
-        </a>
+          Get in Touch
+        </button>
       </div>
     </FadeIn>
   );
