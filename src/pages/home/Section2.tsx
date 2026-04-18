@@ -1,26 +1,7 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 // components
 import Title from "../../common/Title";
-import Button from "../../common/Button";
 
 const Section2 = () => {
-  const [buttonText, setButtonText] = useState<string>(
-    "Confidential Stablecoins"
-  );
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setButtonText((prevText) =>
-        prevText === "Confidential Stablecoins"
-          ? "Private AI"
-          : "Confidential Stablecoins"
-      );
-    }, 1250);
-
-    return () => clearInterval(interval); // cleanup
-  }, []);
-
   return (
     <div className="flex flex-col sm:flex-row items-center gap-12 p-4 sm:px-8 mx-auto max-w-screen-xl">
       <div className="flex flex-col gap-8 lg:w-2/3">
@@ -56,11 +37,6 @@ const Section2 = () => {
             profitability requirement. The only barriers are performance and
             usability, and that is exactly what we are solving.
           </p>
-        </div>
-        <div className="flex justify-center lg:justify-start">
-          <Link to="capps">
-            <Button buttonText={buttonText} size="w-[210px] sm:w-[310px]" />
-          </Link>
         </div>
       </div>
       <div className="hidden lg:block lg:w-1/3">
