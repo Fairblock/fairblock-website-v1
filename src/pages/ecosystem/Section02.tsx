@@ -76,7 +76,7 @@ const Card = ({ ecosystem }: CardProps) => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          <h3 className="font-bold font-heading line-clamp-1 text-2xl">
+          <h3 className="font-heading font-normal line-clamp-1 text-2xl">
             {ecosystem.projectName}
           </h3>
         </a>
