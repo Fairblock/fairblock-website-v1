@@ -1,71 +1,101 @@
 import { useState, useEffect, useRef } from "react";
 
-const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&<>?";
-const SCRAMBLE_PASSES = 3;
+// Cipher-only chars — looks like real encrypted text, not keyboard noise
+const CIPHER = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const rand = () => CIPHER[Math.floor(Math.random() * CIPHER.length)];
 
 type ScrambleTextProps = {
   text: string;
-  speed: number;
+  speed?: number; // ms cascade delay between each character resolving
   scrambleOnLoad?: boolean;
   scrambleOnHover?: boolean;
 };
 
 const ScrambleText = ({
   text,
-  speed = 50,
+  speed = 15,
   scrambleOnLoad = false,
   scrambleOnHover = false,
 }: ScrambleTextProps) => {
-  const [displayedText, setDisplayedText] = useState(scrambleOnLoad ? "" : text);
+  const chars = text.split("");
+
+  const [displayed, setDisplayed] = useState<string[]>(() =>
+    scrambleOnLoad ? chars.map(c => (c === " " ? " " : rand())) : chars
+  );
   const [hoverActive, setHoverActive] = useState(false);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
 
-  const runScramble = (onComplete?: () => void) => {
-    if (intervalRef.current) clearInterval(intervalRef.current);
-    let frame = 0;
-    const totalFrames = text.length * SCRAMBLE_PASSES;
+  const clearAll = () => {
+    timers.current.forEach(t => clearTimeout(t));
+    timers.current = [];
+  };
 
-    intervalRef.current = setInterval(() => {
-      const lockedCount = Math.floor(frame / SCRAMBLE_PASSES);
-      const result = text
-        .split("")
-        .map((char, i) => {
-          if (char === " ") return " ";
-          if (i < lockedCount) return char;
-          return CHARS[Math.floor(Math.random() * CHARS.length)];
-        })
-        .join("");
+  const runDecrypt = (onComplete?: () => void) => {
+    clearAll();
+    const resolved = new Array(chars.length).fill(false);
 
-      setDisplayedText(result);
-      frame++;
+    // Background noise: unresolved chars keep cycling at 55ms
+    const noise = setInterval(() => {
+      setDisplayed(prev => {
+        const next = [...prev];
+        for (let i = 0; i < chars.length; i++) {
+          if (!resolved[i] && chars[i] !== " ") next[i] = rand();
+        }
+        return next;
+      });
+    }, 55);
+    timers.current.push(noise as unknown as ReturnType<typeof setTimeout>);
 
-      if (frame > totalFrames) {
-        clearInterval(intervalRef.current!);
-        setDisplayedText(text);
-        onComplete?.();
-      }
-    }, Math.max(6, speed / SCRAMBLE_PASSES));
+    // Cascade: each char resolves after i * speed ms
+    const FLICKERS = 4;
+    const FLICKER_MS = 38;
+
+    chars.forEach((char, i) => {
+      if (char === " ") { resolved[i] = true; return; }
+
+      const start = setTimeout(() => {
+        let f = 0;
+        const flicker = setInterval(() => {
+          if (f < FLICKERS) {
+            setDisplayed(prev => { const n = [...prev]; n[i] = rand(); return n; });
+            f++;
+          } else {
+            clearInterval(flicker);
+            resolved[i] = true;
+            setDisplayed(prev => { const n = [...prev]; n[i] = char; return n; });
+          }
+        }, FLICKER_MS);
+        timers.current.push(flicker as unknown as ReturnType<typeof setTimeout>);
+      }, i * speed);
+
+      timers.current.push(start);
+    });
+
+    // Stop noise and finalize after everything resolves
+    const total = chars.length * speed + FLICKERS * FLICKER_MS + 80;
+    const done = setTimeout(() => {
+      clearInterval(noise);
+      setDisplayed(chars);
+      onComplete?.();
+    }, total);
+    timers.current.push(done);
   };
 
   useEffect(() => {
-    if (!scrambleOnLoad) {
-      setDisplayedText(text);
-      return;
-    }
-    const timeout = setTimeout(() => runScramble(), 150);
-    return () => {
-      clearTimeout(timeout);
-      if (intervalRef.current) clearInterval(intervalRef.current);
-    };
-  }, [text, speed, scrambleOnLoad]);
+    if (!scrambleOnLoad) { setDisplayed(chars); return; }
+    const t = setTimeout(() => runDecrypt(), 120);
+    timers.current.push(t);
+    return clearAll;
+  }, [text]);
 
   const handleMouseEnter = () => {
     if (!scrambleOnHover || hoverActive) return;
     setHoverActive(true);
-    runScramble(() => setHoverActive(false));
+    setDisplayed(chars.map(c => (c === " " ? " " : rand())));
+    setTimeout(() => runDecrypt(() => setHoverActive(false)), 30);
   };
 
-  return <span onMouseEnter={handleMouseEnter}>{displayedText}</span>;
+  return <span onMouseEnter={handleMouseEnter}>{displayed.join("")}</span>;
 };
 
 export default ScrambleText;
