@@ -14,6 +14,15 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
 
   return (
     <>
+      {location.pathname !== "/" && (
+        <Link
+          className="flex items-center gap-1 font-semibold"
+          onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+          to="/"
+        >
+          ← Home
+        </Link>
+      )}
       <Link
         className={`${location.pathname === "/how-it-works" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
