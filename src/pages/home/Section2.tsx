@@ -1,25 +1,17 @@
-// components
 import Title from "../../common/Title";
 
 const Section2 = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-12 p-4 sm:px-8 mx-auto max-w-screen-xl">
-      <div className="flex flex-col gap-8 lg:w-2/3">
-        <div className="flex justify-center lg:justify-start mx-auto w-4/5 sm:w-full">
-          <Title title="Enterprise Privacy Solutions" />
-        </div>
-        <div className="lg:hidden">
-          <img
-            className="mx-auto w-3/4 sm:w-1/2"
-            src="/home/fairy-ring.svg"
-            alt="Fairy ring"
-          />
-        </div>
-        <div
-          className="flex flex-col gap-4 lg:text-lg lg:text-left"
-          style={{ textAlign: "justify" }}
-        >
-          <p>
+    <div className="flex flex-col gap-10 p-4 sm:px-8 mx-auto max-w-screen-xl w-full">
+      <div className="flex justify-center lg:justify-start">
+        <Title title="Enterprise Privacy Solutions" />
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4">
+          <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
+            Confidential Finance
+          </h3>
+          <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
             As institutional adoption of stablecoins accelerates, enterprises
             and financial institutions demand privacy to protect their payroll,
             treasury, revenue, and trading activity. Exposed on-chain
@@ -28,7 +20,12 @@ const Section2 = () => {
             and RWA that integrate in 30 minutes by developers, with no extra
             clicks for end-users.
           </p>
-          <p>
+        </div>
+        <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4">
+          <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
+            Private AI
+          </h3>
+          <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
             Enterprise AI adoption is surging, but businesses cannot share
             confidential data with cloud models. They need AI that is persistent
             and accessible without exposing sensitive information. This is not
@@ -38,9 +35,6 @@ const Section2 = () => {
             usability, and that is exactly what we are solving.
           </p>
         </div>
-      </div>
-      <div className="hidden lg:block lg:w-1/3">
-        <img src="/home/fairy-ring.svg" alt="Fairy ring" />
       </div>
     </div>
   );
