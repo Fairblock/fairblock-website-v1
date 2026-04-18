@@ -42,20 +42,19 @@ const Section2 = () => {
             As institutional adoption of stablecoins accelerates, enterprises
             and financial institutions demand privacy to protect their payroll,
             treasury, revenue, and trading activity. Exposed on-chain
-            transactions are not just a security risk — they are a compliance
-            liability. We are building performant, compliant, cross-chain
-            confidential stablecoins and RWA that integrate with any frontend,
-            neobank, wallet, or agentic finance platform in 30 minutes.
+            transactions are a compliance and profitability liability. We are
+            building performant, compliant, cross-chain confidential stablecoins
+            and RWA that integrate in 30 minutes by developers, with no extra
+            clicks for end-users.
           </p>
           <p>
             Enterprise AI adoption is surging, but businesses cannot share
-            confidential data with cloud models. They need AI that is
-            persistent and accessible without exposing sensitive information —
-            this is not just a preference, it is a compliance requirement.
-            Privacy is not a retail feature. For enterprises, it is the
-            difference between being compliant and profitable or not. The only
-            barriers are performance and usability — and that is exactly what
-            we are solving.
+            confidential data with cloud models. They need AI that is persistent
+            and accessible without exposing sensitive information. This is not
+            just a preference, it is a compliance requirement. Privacy is not a
+            retail feature. For enterprises, it is a compliance and
+            profitability requirement. The only barriers are performance and
+            usability, and that is exactly what we are solving.
           </p>
         </div>
         <div className="flex justify-center lg:justify-start">
