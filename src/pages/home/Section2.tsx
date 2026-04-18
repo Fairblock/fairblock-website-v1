@@ -37,7 +37,7 @@ const Typewriter = () => {
   }, [displayed, isDeleting, phraseIndex]);
 
   return (
-    <p className="text-primary-blue text-lg sm:text-xl text-center lg:text-left h-7">
+    <p className="text-primary-blue text-lg sm:text-xl text-center lg:text-left min-h-7">
       {displayed}
       <span className="animate-pulse">|</span>
     </p>

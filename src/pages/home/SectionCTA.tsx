@@ -73,7 +73,7 @@ const SectionCTA = () => {
           {steps.map((step, index) => (
             <FadeIn key={step.number} delay={index * 200}>
               <div className="flex flex-col gap-3">
-                <span className="font-heading font-normal text-primary-blue text-5xl">
+                <span className="font-heading font-normal text-primary-blue text-4xl sm:text-5xl">
                   {step.number}
                 </span>
                 <h3 className="font-heading font-normal text-2xl">{step.title}</h3>

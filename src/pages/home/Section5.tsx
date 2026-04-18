@@ -42,7 +42,7 @@ const Section5 = () => {
         <div className="flex flex-col gap-10 justify-center items-center">
           <Title title="Backers" />
           {/* PLATFORM IMAGES */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 lg:gap-12 items-center justify-between">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 lg:gap-12 items-center justify-between">
             {PLATFORMS.map((item, index) => (
               <img
                 loading="lazy"
@@ -58,7 +58,7 @@ const Section5 = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center items-center justify-center">
             {INVESTORS.map((item, index) => (
               <span
-                className="px-4 py-1 text-xl"
+                className="px-2 py-1 text-sm sm:text-base md:text-lg"
                 key={index}
               >
                 {item}

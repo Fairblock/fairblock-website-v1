@@ -16,10 +16,10 @@ const SectionContact = () => {
   return (
     <FadeIn>
       <div
-        className="mx-4 sm:mx-8 rounded-2xl border border-primary-blue/40 p-12 lg:p-16 flex flex-col items-center gap-6 text-center"
+        className="mx-4 sm:mx-8 rounded-2xl border border-primary-blue/40 p-6 sm:p-10 lg:p-16 flex flex-col items-center gap-6 text-center"
         style={{ background: "radial-gradient(ellipse at center, rgba(88,189,246,0.06) 0%, transparent 70%)" }}
       >
-        <h2 className="font-heading font-normal text-4xl sm:text-5xl max-w-2xl leading-tight">
+        <h2 className="font-heading font-normal text-2xl sm:text-4xl lg:text-5xl max-w-2xl leading-tight">
           Ready to bring privacy to your enterprise?
         </h2>
         <p className="opacity-60 text-lg max-w-xl">
