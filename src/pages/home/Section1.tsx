@@ -31,41 +31,25 @@ const Section1 = () => {
         preload="auto"
         src={videoSrc}
       />
-      <div className="hidden absolute bottom-[6%] sm:flex flex-col items-center gap-5 w-full">
-        <h2 className="font-test-tiempos-headline text-4xl sm:text-5xl">
-          <ScrambleText
-            text="Powering Incorruptible Markets and Machines"
-            speed={40}
-            scrambleOnLoad={true}
-          />
-        </h2>
-        <a
-          href="mailto:hello@fairblock.network"
-          className="bg-white text-black text-sm font-semibold px-6 py-3 rounded-xl hover:bg-primary-blue transition-colors duration-300"
-        >
-          Book a Demo
-        </a>
-      </div>
-      <div className="sm:hidden absolute bottom-[4%] font-test-tiempos-headline flex flex-col gap-3 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
-        <h2 className="flex flex-col gap-2 items-center">
-          <ScrambleText
-            text="Powering Incorruptible"
-            speed={40}
-            scrambleOnLoad={true}
-          />
-          <ScrambleText
-            text="Markets and Machines"
-            speed={40}
-            scrambleOnLoad={true}
-          />
-        </h2>
-        <a
-          href="mailto:hello@fairblock.network"
-          className="bg-white text-black text-sm font-semibold px-5 py-2 rounded-xl hover:bg-primary-blue transition-colors duration-300"
-        >
-          Book a Demo
-        </a>
-      </div>
+      <h2 className="hidden absolute bottom-[10%] font-test-tiempos-headline sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
+        <ScrambleText
+          text="Powering Incorruptible Markets and Machines"
+          speed={40}
+          scrambleOnLoad={true}
+        />
+      </h2>
+      <h2 className="sm:hidden absolute bottom-[4%] font-test-tiempos-headline flex flex-col gap-2 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
+        <ScrambleText
+          text="Powering Incorruptible"
+          speed={40}
+          scrambleOnLoad={true}
+        />
+        <ScrambleText
+          text="Markets and Machines"
+          speed={40}
+          scrambleOnLoad={true}
+        />
+      </h2>
     </div>
   );
 };
