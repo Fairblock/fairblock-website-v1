@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const text = "Powering Incorruptible Markets and Machines";
-const words = text.split(" ");
 
 const WordFade = ({ sentence }: { sentence: string }) => {
   const ws = sentence.split(" ");
