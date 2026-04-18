@@ -60,7 +60,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         </a>
         <a
           href="mailto:hello@fairblock.network"
-          className="bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors duration-200 whitespace-nowrap"
+          className="bg-white/20 backdrop-blur-sm border border-black/20 text-black text-sm font-semibold px-5 py-2 rounded-xl hover:bg-white hover:shadow-md transition-all duration-200 whitespace-nowrap"
           onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         >
           Book a Demo
