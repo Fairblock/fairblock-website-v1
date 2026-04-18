@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState, type Dispatch, type SetStateAction } from "react";
+import { type Dispatch, type SetStateAction } from "react";
 // icons
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 // types
@@ -8,18 +8,8 @@ export type NavbarProps = {
   setMenuOpen: Dispatch<SetStateAction<boolean>>;
 };
 
-const EMAIL = "hello@fairblock.network";
-
 const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
   const location = useLocation();
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(EMAIL);
-    setCopied(true);
-    if (isMobileNav) setMenuOpen(false);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   return (
     <>
@@ -60,12 +50,6 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         <a href="https://discord.com/invite/fairblock" rel="noopener noreferrer" target="_blank">
           <FaDiscord />
         </a>
-        <button
-          className="bg-white/20 backdrop-blur-sm border border-black/20 text-black text-sm font-semibold px-5 py-2 rounded-xl hover:bg-white hover:shadow-md transition-all duration-200 whitespace-nowrap"
-          onClick={handleCopy}
-        >
-          {copied ? "Copied!" : "Get in Touch"}
-        </button>
       </div>
     </>
   );

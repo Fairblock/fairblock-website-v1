@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdEmail } from "react-icons/md";
 import FadeIn from "../../common/FadeIn";
 
 const EMAIL = "hello@fairblock.network";
@@ -26,11 +27,15 @@ const SectionContact = () => {
         </p>
         <button
           onClick={handleCopy}
-          className="group flex items-center gap-3 bg-primary-blue text-black font-semibold px-8 py-4 rounded-xl text-lg hover:brightness-110 transition-all duration-200"
+          className="flex items-center justify-center w-14 h-14 rounded-full border border-primary-blue/60 bg-primary-blue/10 hover:bg-primary-blue/20 hover:border-primary-blue transition-all duration-200"
+          title={copied ? "Copied!" : EMAIL}
         >
-          <span>{copied ? "Copied!" : EMAIL}</span>
+          {copied
+            ? <span className="text-primary-blue text-xs font-semibold">✓</span>
+            : <MdEmail className="text-primary-blue text-2xl" />
+          }
         </button>
-        <p className="opacity-30 text-sm">Click to copy email</p>
+        <p className="opacity-30 text-sm">{copied ? "Copied to clipboard" : "Click to copy email"}</p>
       </div>
     </FadeIn>
   );
