@@ -37,13 +37,6 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         cApps
       </Link>
       <Link
-        className={`${location.pathname === "/ecosystem" && "font-semibold"}`}
-        onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
-        to="ecosystem"
-      >
-        Ecosystem
-      </Link>
-      <Link
         className={`${location.pathname === "/articles" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="articles"
