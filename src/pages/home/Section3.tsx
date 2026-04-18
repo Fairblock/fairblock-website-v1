@@ -46,7 +46,7 @@ const Section3 = () => {
           content="Enterprise AI that never sees your confidential data."
         />
         <Card
-          title="30-Min Integration"
+          title="Composable"
           imageUrl="/home/compliant.svg"
           content="Plug into any frontend, neobank, wallet, or agentic platform instantly."
         />
