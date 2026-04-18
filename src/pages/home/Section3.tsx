@@ -25,7 +25,7 @@ const Card = ({ title, imageUrl, content }: CardProps) => {
 const Section3 = () => {
   return (
     <div className="flex flex-col gap-8 lg:gap-10 p-4 sm:px-8">
-      <Title title="Built for Enterprise" />
+      <Title title="Built To Be Used" />
       <div className="lg:mx-auto lg:w-4/5">
         <Slider
           gap="7rem"
