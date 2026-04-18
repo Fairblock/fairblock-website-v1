@@ -45,7 +45,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="capps"
       >
-        Applications
+        Showcase
       </Link>
       <Link
         className={`font-heading ${location.pathname === "/articles" ? "font-medium" : "font-normal"}`}
