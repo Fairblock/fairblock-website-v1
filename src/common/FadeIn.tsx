@@ -37,8 +37,8 @@ const FadeIn = ({ children, delay = 0, className = "", direction = "up" }: FadeI
       className={className}
       style={{
         opacity: 0,
-        transform: direction === "up" ? "translateY(28px)" : "none",
-        transition: "opacity 0.65s ease, transform 0.65s ease",
+        transform: direction === "up" ? "translateY(44px)" : "none",
+        transition: "opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1)",
         willChange: "opacity, transform",
       }}
     >
