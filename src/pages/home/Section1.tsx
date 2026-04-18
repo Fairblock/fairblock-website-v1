@@ -31,14 +31,14 @@ const Section1 = () => {
         preload="auto"
         src={videoSrc}
       />
-      <h2 className="hidden absolute bottom-[10%] font-maison-neue font-bold tracking-tight sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
+      <h2 className="hidden absolute bottom-[10%] font-heading font-bold sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
         <ScrambleText
           text="Powering Incorruptible Markets and Machines"
           speed={40}
           scrambleOnLoad={true}
         />
       </h2>
-      <h2 className="sm:hidden absolute bottom-[4%] font-maison-neue font-bold tracking-tight flex flex-col gap-2 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
+      <h2 className="sm:hidden absolute bottom-[4%] font-heading font-bold flex flex-col gap-2 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
         <ScrambleText
           text="Powering Incorruptible"
           speed={40}
