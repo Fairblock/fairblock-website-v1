@@ -63,18 +63,6 @@ const Footer = () => {
             Brandkit
           </a>
         </div>
-        <div className="flex flex-col gap-4">
-          <a href="mailto:hello@fairblock.network" rel="noopener noreferrer">Contact</a>
-          <a
-            href="https://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            Building&ensp;
-            <br className="sm:hidden" />
-            Program
-          </a>
-        </div>
       </div>
     </div>
   );
