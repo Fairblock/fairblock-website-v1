@@ -59,7 +59,7 @@ const C_APPS_LIST = [
   },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
-    title: "Fairates: Protected Lending",
+    title: "Fairrates: Protected Lending",
     content:
       "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
     link: "https://fairates.fairblock.network/",
