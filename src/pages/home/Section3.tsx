@@ -33,7 +33,7 @@ const Section3 = () => {
         <Card
           title="Compliant"
           imageUrl="/home/dynamic.svg"
-          content="Privacy as a compliance requirement, not a trade-off."
+          content="Privacy as a business profitability requirement."
         />
         <Card
           title="Cross-Chain"
