@@ -7,13 +7,6 @@ const Section1 = () => {
         <div className="mb-10">
           <Title title="Privacy in Production" />
         </div>
-        <p className="lg:text-lg text-justify mx-auto lg:w-3/5">
-          Fairblock is product-first. Rather than being a general-purpose
-          infrastructure project focused solely on cryptography research or
-          marketing, we prioritize building and collaborating on real,
-          seamless, and high-impact applications that deliver measurable value
-          to users.
-        </p>
       </div>
     </div>
   );
