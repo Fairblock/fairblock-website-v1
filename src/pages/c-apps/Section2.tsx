@@ -125,10 +125,6 @@ const C_APPS_LIST = [
 const Section2 = () => {
   return (
     <div className="flex flex-col gap-4 p-4 sm:px-8">
-      <p className="pb-8 text-lg lg:text-xl text-center">
-        Below is a showcase of our{" "}
-        <span className="font-bold">confidential applications (cApps).</span>
-      </p>
       {C_APPS_LIST.map((cApp) => {
         return (
           <Card
