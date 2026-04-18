@@ -1,22 +1,48 @@
 import { useEffect, useState } from "react";
-// components
-import ScrambleText from "../../common/ScrambleText";
+
+const text = "Powering Incorruptible Markets and Machines";
+const words = text.split(" ");
+
+const WordFade = ({ sentence }: { sentence: string }) => {
+  const ws = sentence.split(" ");
+  const [visible, setVisible] = useState<boolean[]>(ws.map(() => false));
+
+  useEffect(() => {
+    const timers = ws.map((_, i) =>
+      setTimeout(() => setVisible(prev => { const n = [...prev]; n[i] = true; return n; }), 120 + i * 140)
+    );
+    return () => timers.forEach(clearTimeout);
+  }, []);
+
+  return (
+    <>
+      {ws.map((word, i) => (
+        <span
+          key={i}
+          style={{
+            display: "inline-block",
+            opacity: visible[i] ? 1 : 0,
+            transform: visible[i] ? "translateY(0)" : "translateY(18px)",
+            transition: "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)",
+            marginRight: i < ws.length - 1 ? "0.3em" : 0,
+          }}
+        >
+          {word}
+        </span>
+      ))}
+    </>
+  );
+};
 
 const Section1 = () => {
   const [videoSrc, setVideoSrc] = useState("/home/hero-desktop.mp4");
 
   useEffect(() => {
     const updateVideo = () => {
-      if (window.innerWidth < 640) {
-        setVideoSrc("/home/hero-mobile.mp4");
-      } else {
-        setVideoSrc("/home/hero-desktop.mp4");
-      }
+      setVideoSrc(window.innerWidth < 640 ? "/home/hero-mobile.mp4" : "/home/hero-desktop.mp4");
     };
-
-    updateVideo(); // run on mount
+    updateVideo();
     window.addEventListener("resize", updateVideo);
-
     return () => window.removeEventListener("resize", updateVideo);
   }, []);
 
@@ -32,23 +58,11 @@ const Section1 = () => {
         src={videoSrc}
       />
       <h2 className="hidden absolute bottom-[10%] font-heading font-normal sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
-        <ScrambleText
-          text="Powering Incorruptible Markets and Machines"
-          speed={14}
-          scrambleOnLoad={true}
-        />
+        <WordFade sentence={text} />
       </h2>
       <h2 className="sm:hidden absolute bottom-[4%] font-heading font-normal flex flex-col gap-2 items-center justify-center pb-1 text-3xl w-full overflow-hidden">
-        <ScrambleText
-          text="Powering Incorruptible"
-          speed={14}
-          scrambleOnLoad={true}
-        />
-        <ScrambleText
-          text="Markets and Machines"
-          speed={14}
-          scrambleOnLoad={true}
-        />
+        <WordFade sentence="Powering Incorruptible" />
+        <WordFade sentence="Markets and Machines" />
       </h2>
     </div>
   );
