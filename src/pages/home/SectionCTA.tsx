@@ -1,4 +1,5 @@
 import Title from "../../common/Title";
+import FadeIn from "../../common/FadeIn";
 
 const steps = [
   {
@@ -24,16 +25,20 @@ const steps = [
 const SectionCTA = () => {
   return (
     <div className="flex flex-col gap-10 p-4 sm:px-8 border-t border-white/10">
-      <Title title="How It Works" />
+      <FadeIn>
+        <Title title="How It Works" />
+      </FadeIn>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-16 mx-auto max-w-screen-xl w-full">
-        {steps.map((step) => (
-          <div key={step.number} className="flex flex-col gap-3">
-            <span className="font-test-tiempos-headline text-primary-blue text-5xl font-light">
-              {step.number}
-            </span>
-            <h3 className="font-test-tiempos-headline text-2xl">{step.title}</h3>
-            <p className="leading-relaxed opacity-80">{step.description}</p>
-          </div>
+        {steps.map((step, index) => (
+          <FadeIn key={step.number} delay={index * 180}>
+            <div className="flex flex-col gap-3">
+              <span className="font-test-tiempos-headline text-primary-blue text-5xl font-light">
+                {step.number}
+              </span>
+              <h3 className="font-test-tiempos-headline text-2xl">{step.title}</h3>
+              <p className="leading-relaxed opacity-80">{step.description}</p>
+            </div>
+          </FadeIn>
         ))}
       </div>
     </div>

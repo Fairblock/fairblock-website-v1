@@ -1,4 +1,5 @@
 import Title from "../../common/Title";
+import FadeIn from "../../common/FadeIn";
 
 type CardProps = {
   content: string;
@@ -8,7 +9,7 @@ type CardProps = {
 
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
-    <div className="border border-primary-blue flex flex-col gap-4 items-center p-6 rounded-2xl">
+    <div className="border border-primary-blue flex flex-col gap-4 items-center p-6 rounded-2xl h-full">
       <h3 className="font-test-tiempos-headline text-2xl font-light">
         {title}
       </h3>
@@ -20,36 +21,26 @@ const Card = ({ title, imageUrl, content }: CardProps) => {
   );
 };
 
+const cardData = [
+  { title: "Performant", imageUrl: "/home/accessible.svg", content: "High throughput for large payments and institutional volumes." },
+  { title: "Compliant", imageUrl: "/home/dynamic.svg", content: "Zero compliance risks." },
+  { title: "Cross-Chain", imageUrl: "/home/composable.svg", content: "Privacy without the bridge or wallet hassle." },
+  { title: "Private AI", imageUrl: "/home/expansive.svg", content: "Enterprise AI that never sees your confidential data." },
+  { title: "Composable", imageUrl: "/home/compliant.svg", content: "Plug into any frontend, neobank, wallet, or agentic platform instantly." },
+];
+
 const Section3 = () => {
   return (
     <div className="flex flex-col gap-8 lg:gap-10 p-4 sm:px-8">
-      <Title title="Built To Be Used" />
+      <FadeIn>
+        <Title title="Built To Be Used" />
+      </FadeIn>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:mx-auto lg:w-4/5">
-        <Card
-          title="Performant"
-          imageUrl="/home/accessible.svg"
-          content="High throughput for large payments and institutional volumes."
-        />
-        <Card
-          title="Compliant"
-          imageUrl="/home/dynamic.svg"
-          content="Zero compliance risks."
-        />
-        <Card
-          title="Cross-Chain"
-          imageUrl="/home/composable.svg"
-          content="Privacy without the bridge or wallet hassle."
-        />
-        <Card
-          title="Private AI"
-          imageUrl="/home/expansive.svg"
-          content="Enterprise AI that never sees your confidential data."
-        />
-        <Card
-          title="Composable"
-          imageUrl="/home/compliant.svg"
-          content="Plug into any frontend, neobank, wallet, or agentic platform instantly."
-        />
+        {cardData.map((card, index) => (
+          <FadeIn key={card.title} delay={index * 120} className="flex">
+            <Card {...card} />
+          </FadeIn>
+        ))}
       </div>
     </div>
   );
