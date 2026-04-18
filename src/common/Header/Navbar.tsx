@@ -64,11 +64,11 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         <button
           onClick={handleCopy}
           title={copied ? "Copied!" : EMAIL}
-          className="flex items-center justify-center w-8 h-8 rounded-full border border-black/30 hover:border-black/60 bg-white/10 hover:bg-white/20 transition-all duration-200"
+          className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity duration-200"
         >
           {copied
             ? <span className="text-black text-xs font-semibold">✓</span>
-            : <MdEmail className="text-black text-lg" />
+            : <MdEmail className="text-black text-xl" />
           }
         </button>
       </div>
