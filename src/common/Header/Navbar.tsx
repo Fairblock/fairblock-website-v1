@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { type Dispatch, type SetStateAction } from "react";
 // icons
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
-import { RiTelegram2Fill } from "react-icons/ri";
 // types
 export type NavbarProps = {
   isMobileNav: boolean;
@@ -58,13 +57,6 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
           target="_blank"
         >
           <FaDiscord />
-        </a>
-        <a
-          href="https://t.me/+HvfLo4NFTvw3NTU0"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <RiTelegram2Fill />
         </a>
         <a
           href="mailto:hello@fairblock.network"
