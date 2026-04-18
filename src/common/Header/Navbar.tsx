@@ -47,6 +47,13 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         Solutions
       </Link>
+      <Link
+        className={`font-heading ${location.pathname === "/articles" ? "font-medium" : "font-normal"}`}
+        onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        to="articles"
+      >
+        Articles
+      </Link>
       <div className="flex sm:pl-4 gap-4 items-center">
         <a href="https://x.com/0xfairblock" rel="noopener noreferrer" target="_blank">
           <FaXTwitter />
