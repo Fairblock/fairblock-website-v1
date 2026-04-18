@@ -25,7 +25,7 @@ const Card = ({ title, imageUrl, content }: CardProps) => {
 const Section3 = () => {
   return (
     <div className="flex flex-col gap-8 lg:gap-10 p-4 sm:px-8">
-      <Title title="Built to Be Used" />
+      <Title title="Built for Enterprise" />
       <div className="lg:mx-auto lg:w-4/5">
         <Slider
           gap="7rem"
@@ -35,29 +35,29 @@ const Section3 = () => {
           play={false}
           items={[
             <Card
-              title="Accessible"
+              title="Performant"
               imageUrl="/home/accessible.svg"
-              content={`Confidentiality is always\none click away.`}
+              content={`High throughput for large\npayments and institutional volumes.`}
             />,
             <Card
-              title="Expansive"
+              title="Compliant"
               imageUrl="/home/dynamic.svg"
-              content={`Unlocking impactful DeFi\n and Al apps.`}
+              content={`Privacy as a compliance\nrequirement, not a trade-off.`}
             />,
             <Card
-              title="Composable"
+              title="Cross-Chain"
               imageUrl="/home/composable.svg"
-              content={`Pluggable confidential logic\ninto any application.`}
+              content={`Confidential assets deployable\nacross any chain.`}
             />,
             <Card
-              title="Compliance-Friendly"
+              title="Private AI"
               imageUrl="/home/expansive.svg"
-              content="Zero compliance risks with post-transaction accountability."
+              content="Enterprise AI that never sees your confidential data."
             />,
             <Card
-              title="Dynamic"
+              title="30-Min Integration"
               imageUrl="/home/compliant.svg"
-              content="Fine-tuned performance and security for each application."
+              content="Plug into any frontend, neobank, wallet, or agentic platform instantly."
             />,
           ]}
         />

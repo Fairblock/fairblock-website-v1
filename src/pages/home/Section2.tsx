@@ -13,7 +13,7 @@ const Section2 = () => {
     const interval = setInterval(() => {
       setButtonText((prevText) =>
         prevText === "Confidential Stablecoins"
-          ? "Protected Trading"
+          ? "Private AI"
           : "Confidential Stablecoins"
       );
     }, 1250);
@@ -39,20 +39,23 @@ const Section2 = () => {
           style={{ textAlign: "justify" }}
         >
           <p>
-            Most Web2 and even many Web3 applications rely on fully trusted
-            intermediaries, making them vulnerable to security breaches and
-            silent manipulation. But fully exposed blockchains are not the
-            answer either: they leak sensitive data like stablecoin transfers,
-            liquidation triggers, and private AI inputs. Whether it's blind
-            trust or reckless data exposure, both models invite exploitation,
-            distort price discovery, and ultimately block the next wave of
-            impactful onchain applications.
+            As institutional adoption of stablecoins accelerates, enterprises
+            and financial institutions demand privacy to protect their payroll,
+            treasury, revenue, and trading activity. Exposed on-chain
+            transactions are not just a security risk — they are a compliance
+            liability. We are building performant, compliant, cross-chain
+            confidential stablecoins and RWA that integrate with any frontend,
+            neobank, wallet, or agentic finance platform in 30 minutes.
           </p>
           <p>
-            Fairblock solves this with dynamic confidential computing
-            eliminating information leakage and manipulation. The results:
-            encrypted stablecoins, new financial primitives, better pricing and
-            trustworthy financial rails for institutions.
+            Enterprise AI adoption is surging, but businesses cannot share
+            confidential data with cloud models. They need AI that is
+            persistent and accessible without exposing sensitive information —
+            this is not just a preference, it is a compliance requirement.
+            Privacy is not a retail feature. For enterprises, it is the
+            difference between being compliant and profitable or not. The only
+            barriers are performance and usability — and that is exactly what
+            we are solving.
           </p>
         </div>
         <div className="flex justify-center lg:justify-start">
