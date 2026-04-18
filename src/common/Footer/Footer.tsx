@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 // icons
 import { FaXTwitter, FaDiscord } from "react-icons/fa6";
 import { RiTelegram2Fill } from "react-icons/ri";
@@ -54,7 +53,6 @@ const Footer = () => {
           >
             Github
           </a>
-          <Link to="/articles">News</Link>
           <a
             href="https://ballistic-sail-a4e.notion.site/Fairblock-Brand-Kit-4602243ba91c44b385dfdc9fccc426dc"
             rel="noopener noreferrer"
