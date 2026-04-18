@@ -33,12 +33,12 @@ const Section3 = () => {
         <Card
           title="Compliant"
           imageUrl="/home/dynamic.svg"
-          content="Zero-compliance risks"
+          content="Zero compliance risks."
         />
         <Card
           title="Cross-Chain"
           imageUrl="/home/composable.svg"
-          content="Privacy without the bridge or wallet hassle"
+          content="Privacy without the bridge or wallet hassle."
         />
         <Card
           title="Private AI"
