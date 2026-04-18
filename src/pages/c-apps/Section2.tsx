@@ -10,11 +10,14 @@ type Card = {
 };
 
 const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
-  console.log("V-URL", videoUrl);
-
   return (
-    <div className="border border-primary-blue hover:bg-gradient-to-b from-transparent via-transparent to-primary-blue/20 cursor-pointer flex flex-col sm:flex-row gap-4 items-center justify-between p-4 relative rounded-2xl mx-auto max-w-screen-lg duration-300 transition-all">
-      <div className="w-full sm:w-[35%]">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="border border-primary-blue hover:bg-gradient-to-b from-transparent via-transparent to-primary-blue/20 flex flex-col sm:flex-row gap-4 items-center justify-between p-4 relative rounded-2xl mx-auto max-w-screen-lg duration-300 transition-all w-full hover:border-primary-blue/80 group"
+    >
+      <div className="w-full sm:w-[35%]" onClick={videoUrl ? e => e.preventDefault() : undefined}>
         {imageUrl && (
           <img
             className="border border-primary-blue object-cover min-h-44 sm:min-h-32 lg:min-h-40 rounded-xl h-full w-full"
@@ -28,24 +31,17 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
             src={videoUrl}
             muted
             controls
-          ></video>
+          />
         )}
       </div>
-      <a className="flex flex-col gap-2 w-full sm:w-[65%]" href={link}>
-        <span className="hidden sm:block absolute top-4 right-4 bg-primary-blue p-1 rounded-full w-fit h-fit">
+      <div className="flex flex-col gap-2 w-full sm:w-[65%]">
+        <span className="absolute top-4 right-4 bg-primary-blue p-1 rounded-full w-fit h-fit group-hover:scale-110 transition-transform duration-200">
           <PiArrowUpRightBold className="text-white" />
         </span>
-        <div className="flex justify-between">
-          <h4 className="font-heading text-2xl">{title}</h4>
-          <span className="sm:hidden bg-primary-blue p-1 rounded-full w-fit h-fit">
-            <PiArrowUpRightBold className="text-white" />
-          </span>
-        </div>
-        <p className="lg:text-lg text-neutral-300">
-          {content}
-        </p>
-      </a>
-    </div>
+        <h4 className="font-heading text-2xl">{title}</h4>
+        <p className="lg:text-lg text-neutral-300">{content}</p>
+      </div>
+    </a>
   );
 };
 
