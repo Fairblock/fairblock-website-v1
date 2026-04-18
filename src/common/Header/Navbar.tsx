@@ -19,7 +19,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
           onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
           to="/"
         >
-          ← Home
+          Home
         </Link>
       )}
       <Link
