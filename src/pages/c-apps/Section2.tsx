@@ -79,6 +79,7 @@ const C_APPS_LIST = [
     link: "https://timemachine.fairblock.network/",
   },
   {
+    imageUrl: "/c-apps/demos/fairsplit.png",
     title: "FairSplit: Confidential Expense Splitting",
     content:
       "Split stable tokens with confidential transfers. Create expense splits in USDC, track payments from participants, and settle balances on-chain — revealing only what's required.",
