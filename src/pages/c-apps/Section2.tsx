@@ -65,13 +65,6 @@ const C_APPS_LIST = [
     link: "https://fairates.fairblock.network/",
   },
   {
-    videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
-    title: "FairyCoW: Protected Intents",
-    content:
-      "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
-    link: "https://swap.fairycow.fi/",
-  },
-  {
     imageUrl: "/c-apps/demos/time-machine-img.png",
     title: "Time Machine: Protected Predictions",
     content:
@@ -79,18 +72,25 @@ const C_APPS_LIST = [
     link: "https://timemachine.fairblock.network/",
   },
   {
-    imageUrl: "/c-apps/demos/fairsplit.png",
-    title: "FairSplit: Confidential Expense Splitting",
-    content:
-      "Split stable tokens with confidential transfers. Create expense splits in USDC, track payments from participants, and settle balances on-chain — revealing only what's required.",
-    link: "https://fairsplit-repro.vercel.app/",
-  },
-  {
     imageUrl: "/c-apps/demos/unruggable-ai.jpg",
     title: "Unruggable AI: Protected Agents",
     content:
       "TEEs lose keys on failure or restart. Unruggable AI solves this with TEEs, Fairblock’s MPC, and private decryption to securely back up and recover keys without centralization.",
     link: "https://github.com/Fairblock/Unruggable-AI",
+  },
+  {
+    videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
+    title: "FairyCoW: Protected Intents",
+    content:
+      "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
+    link: "https://swap.fairycow.fi/",
+  },
+  {
+    imageUrl: "/c-apps/demos/fairsplit.png",
+    title: "FairSplit: Confidential Expense Splitting",
+    content:
+      "Split stable tokens with confidential transfers. Create expense splits in USDC, track payments from participants, and settle balances on-chain — revealing only what’s required.",
+    link: "https://fairsplit-repro.vercel.app/",
   },
   {
     videoUrl: "/c-apps/demos/lazy-killer.mp4",
