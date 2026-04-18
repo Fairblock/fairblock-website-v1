@@ -29,8 +29,7 @@ const Section2 = () => {
             Enterprise AI adoption is surging, but businesses cannot share
             confidential data with cloud models. They need AI that is persistent
             and accessible without exposing sensitive information. This is not
-            just a preference, it is a compliance requirement. Privacy is not a
-            retail feature. For enterprises, it is a compliance and
+            just a preference, it is a compliance requirement. For enterprises, it is a compliance and
             profitability requirement. The only barriers are performance and
             usability, and that is exactly what we are solving.
           </p>
