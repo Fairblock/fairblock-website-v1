@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 
 const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&<>?";
-const SCRAMBLE_PASSES = 8;
+const SCRAMBLE_PASSES = 3;
 
 type ScrambleTextProps = {
   text: string;
@@ -44,7 +44,7 @@ const ScrambleText = ({
         setDisplayedText(text);
         onComplete?.();
       }
-    }, Math.max(10, speed / SCRAMBLE_PASSES));
+    }, Math.max(6, speed / SCRAMBLE_PASSES));
   };
 
   useEffect(() => {
