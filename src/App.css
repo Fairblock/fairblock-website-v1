@@ -85,7 +85,7 @@
 /* Adding custom font - Maison Neue - END */
 
 @theme {
-  --font-maison-neue: "Maison Neue", sans-serif;
+  --font-maison-neue: "Space Grotesk", sans-serif;
   --color-primary-blue: #58bdf6;
   --color-primary-darkBlue: #000D14;
   --breakpoint-3xl: 1920px
