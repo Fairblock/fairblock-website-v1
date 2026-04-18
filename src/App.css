@@ -92,6 +92,11 @@
   --breakpoint-3xl: 1920px
 }
 
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .custom-border-left {
   border-image-source: url('/public/how-it-works/key-benefits-border-left.svg');
   border-image-slice: 40; /* How the image is divided into corners & edges */
