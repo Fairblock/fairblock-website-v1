@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
-    <div className="border border-primary-blue flex flex-col gap-4 items-center p-6 rounded-2xl h-full">
+    <div className="border border-primary-blue flex flex-col gap-4 items-center p-6 rounded-2xl h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-all duration-300">
       <h3 className="font-test-tiempos-headline text-2xl font-light">
         {title}
       </h3>

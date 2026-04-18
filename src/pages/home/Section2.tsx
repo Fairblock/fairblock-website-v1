@@ -11,7 +11,7 @@ const Section2 = () => {
       </FadeIn>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <FadeIn delay={150} className="flex">
-          <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full">
+          <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-all duration-300">
             <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
               Confidential Finance
             </h3>
@@ -27,7 +27,7 @@ const Section2 = () => {
           </div>
         </FadeIn>
         <FadeIn delay={300} className="flex">
-          <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full">
+          <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-all duration-300">
             <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
               Private AI
             </h3>

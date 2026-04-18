@@ -19,7 +19,13 @@ const Section1 = () => {
           <Title title="What's Fairblock?" />
         </div>
         <p className="mx-auto p-4 sm:px-8 text-justify lg:text-lg max-w-4xl leading-relaxed break-words">
-        Fairblock is a dynamic, decentralized cryptographic computer enabling fast, secure execution of cryptographic logic. It hosts low-cost, high-performance native cApps and seamlessly delivers these capabilities into ecosystems such as Arbitrum, Hyperliquid, Solana, Base, and Cosmos.
+          Fairblock is a performant, compliant privacy infrastructure for enterprises.
+          We power confidential stablecoins and RWA for financial institutions
+          protecting payroll, treasury, revenue, and trading activity, and private AI
+          for enterprises that need persistent, accessible models without exposing
+          confidential data. Privacy is a compliance and profitability requirement
+          for enterprises, and performance and usability are the only barriers we
+          are solving.
         </p>
       </div>
     </div>

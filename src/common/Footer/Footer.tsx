@@ -15,7 +15,7 @@ const Footer = () => {
           />
         </div>
         <p className="text-sm sm:text-base">
-          © 2025 Fairblock. All rights reserved.
+          © 2026 Fairblock. All rights reserved.
         </p>
         <div className="flex gap-6 text-primary-blue text-2xl sm:text-3xl">
           <a
@@ -64,7 +64,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col gap-4">
-          <Link to="/careers">Careers</Link>
+          <a href="mailto:hello@fairblock.network" rel="noopener noreferrer">Contact</a>
           <a
             href="https://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
             rel="noopener noreferrer"

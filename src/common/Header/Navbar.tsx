@@ -21,20 +21,12 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         How it works
       </Link>
-      {/* <a
-        href="https://docs.fairblock.network/docs/welcome/Vision"
-        rel="noopener noreferrer"
-        target="_blank"
-        onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
-      >
-        Docs
-      </a> */}
       <Link
         className={`${location.pathname === "/capps" && "font-semibold"}`}
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="capps"
       >
-        cApps
+        Solutions
       </Link>
       <Link
         className={`${location.pathname === "/articles" && "font-semibold"}`}
@@ -43,7 +35,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         Articles
       </Link>
-      <div className="flex sm:pl-4 gap-4">
+      <div className="flex sm:pl-4 gap-4 items-center">
         <a
           href="https://x.com/0xfairblock"
           rel="noopener noreferrer"
@@ -64,6 +56,13 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
           target="_blank"
         >
           <RiTelegram2Fill />
+        </a>
+        <a
+          href="mailto:hello@fairblock.network"
+          className="bg-black text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-gray-900 transition-colors duration-200 whitespace-nowrap"
+          onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
+        >
+          Book a Demo
         </a>
       </div>
     </>
