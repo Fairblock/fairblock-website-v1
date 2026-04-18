@@ -25,7 +25,7 @@ const Section2 = () => {
     <div className="flex flex-col sm:flex-row items-center gap-12 p-4 sm:px-8 mx-auto max-w-screen-xl">
       <div className="flex flex-col gap-8 lg:w-2/3">
         <div className="flex justify-center lg:justify-start mx-auto w-4/5 sm:w-full">
-          <Title title="Trustworthy Rails for Open Finance" />
+          <Title title="Enterprise Privacy Solutions" />
         </div>
         <div className="lg:hidden">
           <img
