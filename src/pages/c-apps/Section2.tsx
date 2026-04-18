@@ -36,7 +36,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
           <PiArrowUpRightBold className="text-white" />
         </span>
         <div className="flex justify-between">
-          <h4 className="font-test-tiempos-headline text-2xl">{title}</h4>
+          <h4 className="font-maison-neue text-2xl">{title}</h4>
           <span className="sm:hidden bg-primary-blue p-1 rounded-full w-fit h-fit">
             <PiArrowUpRightBold className="text-white" />
           </span>

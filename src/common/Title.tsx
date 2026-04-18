@@ -1,6 +1,6 @@
 const Title = ({ title }: { title: string }) => {
   return (
-    <h2 className="font-test-tiempos-headline text-primary-blue text-4xl sm:text-5xl text-center">
+    <h2 className="font-maison-neue font-bold text-primary-blue text-4xl sm:text-5xl text-center tracking-tight">
       {title}
     </h2>
   );

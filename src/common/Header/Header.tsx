@@ -30,7 +30,7 @@ const Header = () => {
         visible ? "translate-y-0" : "-translate-y-[120px]"
       } fixed top-4 xl:top-8 left-0 right-0 flex justify-center transition-transform duration-300 z-50`}
     >
-      <div className="bg-primary-blue font-test-tiempos-headline flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 rounded-xl w-[95%] max-w-[1800px] transition-all duration-300 relative text-black z-10">
+      <div className="bg-primary-blue font-maison-neue flex items-center justify-between px-4 sm:px-8 py-4 sm:py-6 rounded-xl w-[95%] max-w-[1800px] transition-all duration-300 relative text-black z-10">
         {/* Logo */}
         <Link to="/" className="flex gap-2 items-center">
           <img
@@ -56,7 +56,7 @@ const Header = () => {
 
       {/* Mobile menu (slides down separately) */}
       <div
-        className={`absolute top-6 bg-primary-blue duration-300 font-test-tiempos-headline flex flex-col gap-6 p-6 pt-16 md:hidden rounded-xl shadow-lg text-xl text-black w-[95%] max-w-[1800px] origin-top transition-all ${
+        className={`absolute top-6 bg-primary-blue duration-300 font-maison-neue flex flex-col gap-6 p-6 pt-16 md:hidden rounded-xl shadow-lg text-xl text-black w-[95%] max-w-[1800px] origin-top transition-all ${
           menuOpen
             ? "opacity-100 translate-y-0 scale-y-100"
             : "opacity-0 -translate-y-4 scale-y-0 pointer-events-none"

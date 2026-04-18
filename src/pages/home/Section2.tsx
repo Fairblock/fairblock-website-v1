@@ -57,7 +57,7 @@ const Section2 = () => {
         <FadeIn delay={150} className="flex h-full">
           <TiltCard className="w-full h-full">
             <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-colors duration-300">
-              <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
+              <h3 className="font-maison-neue font-semibold text-primary-blue text-2xl">
                 Confidential Finance
               </h3>
               <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
@@ -75,7 +75,7 @@ const Section2 = () => {
         <FadeIn delay={300} className="flex h-full">
           <TiltCard className="w-full h-full">
             <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-colors duration-300">
-              <h3 className="font-test-tiempos-headline text-primary-blue text-2xl">
+              <h3 className="font-maison-neue font-semibold text-primary-blue text-2xl">
                 Private AI
               </h3>
               <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>

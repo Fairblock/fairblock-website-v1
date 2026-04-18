@@ -450,7 +450,7 @@ const Card = ({
           />
         </div>
         <div className="text-base">
-          <h4 className="font-test-tiempos-headline font-medium py-2">
+          <h4 className="font-maison-neue font-medium py-2">
             {newsHeader}
           </h4>
           <p className="line-clamp-3 my-2">{newsBody}</p>

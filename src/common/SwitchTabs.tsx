@@ -25,7 +25,7 @@ const SwitchTabs = ({
         <button
           className={`${
             activeTab === firstTabLabel ? "bg-primary-blue text-black" : "bg-primary-blue/10"
-          } border border-primary-blue cursor-pointer font-test-tiempos-headline px-2 py-3 rounded-l-md sm:rounded-l-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
+          } border border-primary-blue cursor-pointer font-maison-neue px-2 py-3 rounded-l-md sm:rounded-l-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
           onClick={() => handleTabSelect(firstTabLabel)}
         >
           {firstTabLabel}
@@ -33,7 +33,7 @@ const SwitchTabs = ({
         <button
           className={`${
             activeTab === secondTabLabel ? "bg-primary-blue text-black" : "bg-primary-blue/10"
-          } border border-primary-blue cursor-pointer font-test-tiempos-headline px-2 py-3 rounded-r-md sm:rounded-r-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
+          } border border-primary-blue cursor-pointer font-maison-neue px-2 py-3 rounded-r-md sm:rounded-r-xl text-sm sm:text-2xl text-nowrap min-w-[180px] sm:min-w-[55%]`}
           onClick={() => handleTabSelect(secondTabLabel)}
         >
           {secondTabLabel}

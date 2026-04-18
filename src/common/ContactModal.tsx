@@ -47,7 +47,7 @@ const ContactModal = () => {
 
         {!submitted ? (
           <>
-            <h2 className="font-test-tiempos-headline text-3xl mb-1">Get in Touch</h2>
+            <h2 className="font-maison-neue text-3xl mb-1">Get in Touch</h2>
             <p className="opacity-50 text-sm mb-6">Tell us about your use case and we will get back to you.</p>
             <form onSubmit={handleSubmit} className="flex flex-col gap-3">
               <input
@@ -91,8 +91,8 @@ const ContactModal = () => {
           </>
         ) : (
           <div className="flex flex-col items-center gap-4 py-8 text-center">
-            <span className="text-primary-blue text-5xl font-test-tiempos-headline">✓</span>
-            <h2 className="font-test-tiempos-headline text-3xl">
+            <span className="text-primary-blue text-5xl font-maison-neue">✓</span>
+            <h2 className="font-maison-neue text-3xl">
               Thanks, {form.name.split(" ")[0]}!
             </h2>
             <p className="opacity-50 text-sm max-w-xs">
