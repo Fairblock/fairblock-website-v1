@@ -2,14 +2,117 @@
 import Title from "../../common/Title";
 import SwitchTabs from "../../common/SwitchTabs";
 
+const SANS = "'Maison Neue', Inter, sans-serif";
+const SERIF = "'TestTiemposHeadline', 'Playfair Display', serif";
+const BLUE = "#58bdf6";
+
+interface FlowNode {
+  label: string;
+  sub?: string;
+  highlight?: boolean;
+}
+
+interface FlowArrow {
+  label: string;
+  direction: "down" | "up";
+}
+
+const nodes: FlowNode[] = [
+  { label: "dApp", highlight: true },
+  { label: "Gateway Contract" },
+  { label: "Relayer" },
+  { label: "Decentralized Cryptography Network", highlight: true },
+];
+
+const downArrows: FlowArrow[] = [
+  { label: "Encrypted transaction submitted", direction: "down" },
+  { label: "Message forwarded to Fairblock", direction: "down" },
+  { label: "Compute request processed", direction: "down" },
+];
+
+const returnLabel = "Decryption key, or result of encrypted computations";
+
+const FlowNodeBox = ({ node }: { node: FlowNode }) => (
+  <div
+    className="relative flex items-center justify-center px-6 py-4 rounded-xl border text-center w-full max-w-sm mx-auto"
+    style={{
+      borderColor: node.highlight ? BLUE : "rgba(255,255,255,0.15)",
+      background: node.highlight ? "rgba(88,189,246,0.08)" : "rgba(255,255,255,0.03)",
+      boxShadow: node.highlight ? `0 0 24px rgba(88,189,246,0.12)` : "none",
+    }}
+  >
+    <span
+      className="text-base md:text-lg font-medium leading-snug"
+      style={{
+        fontFamily: SERIF,
+        color: node.highlight ? BLUE : "white",
+      }}
+    >
+      {node.label}
+    </span>
+  </div>
+);
+
+const ArrowDown = ({ label }: { label: string }) => (
+  <div className="flex items-center gap-4 w-full max-w-sm mx-auto py-1">
+    <div className="flex flex-col items-center shrink-0">
+      <div className="w-px h-5 bg-white/20" />
+      <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+        <path d="M6 8L0.803848 0.5H11.1962L6 8Z" fill="rgba(255,255,255,0.3)" />
+      </svg>
+    </div>
+    <span
+      className="text-xs md:text-sm"
+      style={{ fontFamily: SANS, color: "rgba(255,255,255,0.4)" }}
+    >
+      {label}
+    </span>
+  </div>
+);
+
+const ReturnPath = () => (
+  <div className="w-full max-w-2xl mx-auto mt-2">
+    <div
+      className="flex items-center gap-3 rounded-xl border px-5 py-4"
+      style={{
+        borderColor: "rgba(88,189,246,0.25)",
+        background: "rgba(88,189,246,0.05)",
+      }}
+    >
+      <div className="shrink-0 flex flex-col items-center">
+        <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+          <path d="M6 0L11.1962 7.5H0.803848L6 0Z" fill={BLUE} fillOpacity="0.7" />
+        </svg>
+        <div className="w-px flex-1 h-8" style={{ background: `${BLUE}33` }} />
+      </div>
+      <div className="flex flex-col gap-0.5">
+        <span
+          className="text-xs uppercase tracking-widest"
+          style={{ fontFamily: SANS, color: `${BLUE}99` }}
+        >
+          Returns to dApp
+        </span>
+        <span
+          className="text-sm md:text-base"
+          style={{ fontFamily: SERIF, color: BLUE }}
+        >
+          {returnLabel}
+        </span>
+      </div>
+    </div>
+  </div>
+);
+
 const FirstTab = () => {
   return (
-    <div className="w-full">
-      <img
-        className="mx-auto w-full lg:max-w-[75%]"
-        src="/how-it-works/general-user-flow.svg"
-        alt="general-user-flow"
-      />
+    <div className="w-full flex flex-col items-center gap-0 py-4 lg:max-w-[60%] mx-auto">
+      {nodes.map((node, i) => (
+        <div key={node.label} className="w-full flex flex-col items-center">
+          <FlowNodeBox node={node} />
+          {i < downArrows.length && <ArrowDown label={downArrows[i].label} />}
+        </div>
+      ))}
+      <ReturnPath />
     </div>
   );
 };
