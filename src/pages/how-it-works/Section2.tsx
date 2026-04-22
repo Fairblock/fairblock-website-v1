@@ -22,7 +22,7 @@ const FLOW_NODES = [
   {
     num: "03",
     label: "Relayer",
-    sub: undefined,
+    sub: "Forwards encrypted state or inputs",
     highlight: false,
   },
   {
