@@ -183,7 +183,7 @@ const FirstTab = () => {
             className="text-[10px] uppercase tracking-[0.18em]"
             style={{ fontFamily: SANS, color: `${BLUE}66` }}
           >
-            Returns to Application
+            Returns to Gateway Contract and Application
           </span>
           <span
             className="text-sm md:text-base leading-snug"
