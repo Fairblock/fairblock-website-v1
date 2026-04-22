@@ -60,13 +60,13 @@ const FirstTab = () => {
     <div className="w-full py-6 px-2">
 
       {/* ── Desktop: horizontal row ── */}
-      <div className="hidden lg:flex items-start justify-center gap-0 w-full">
+      <div className="hidden lg:flex items-stretch justify-center gap-0 w-full">
         {FLOW_NODES.map((node, i) => (
-          <div key={node.num} className="flex items-center">
+          <div key={node.num} className="flex items-stretch">
 
             {/* Node card */}
             <div
-              className="flex flex-col items-center gap-3 px-5 py-5 rounded-2xl border w-44 xl:w-52 text-center"
+              className="flex flex-col items-center justify-between gap-3 px-5 py-5 rounded-2xl border w-44 xl:w-52 text-center"
               style={{
                 borderColor: node.highlight ? `${BLUE}55` : "rgba(255,255,255,0.1)",
                 background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(255,255,255,0.02)",
@@ -87,19 +87,17 @@ const FirstTab = () => {
               >
                 {node.label}
               </span>
-              {node.sub && (
-                <span
-                  className="text-xs leading-relaxed"
-                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
-                >
-                  {node.sub}
-                </span>
-              )}
+              <span
+                className="text-xs leading-relaxed min-h-[2.5rem] flex items-center justify-center"
+                style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
+              >
+                {node.sub ?? ""}
+              </span>
             </div>
 
             {/* Connector (not after last node) */}
             {i < FLOW_NODES.length - 1 && (
-              <div className="flex flex-col items-center mx-1 xl:mx-2 mt-6">
+              <div className="flex flex-col items-center justify-center mx-1 xl:mx-2">
                 <ArrowRight />
                 <span
                   className="text-[10px] mt-1 text-center max-w-[72px] leading-tight"
