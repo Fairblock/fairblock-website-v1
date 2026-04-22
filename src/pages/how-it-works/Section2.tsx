@@ -18,7 +18,7 @@ interface FlowArrow {
 }
 
 const nodes: FlowNode[] = [
-  { label: "dApp", highlight: true },
+  { label: "Application", highlight: true },
   { label: "Gateway Contract" },
   { label: "Relayer" },
   { label: "Decentralized Cryptography Network", highlight: true },
@@ -90,7 +90,7 @@ const ReturnPath = () => (
           className="text-xs uppercase tracking-widest"
           style={{ fontFamily: SANS, color: `${BLUE}99` }}
         >
-          Returns to dApp
+          Returns to Application
         </span>
         <span
           className="text-sm md:text-base"
