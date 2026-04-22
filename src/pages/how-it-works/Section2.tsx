@@ -10,7 +10,7 @@ const FLOW_NODES = [
   {
     num: "01",
     label: "Application",
-    sub: "Encryption of private inputs",
+    sub: ["Encryption of private inputs", "ZKP generation (if necessary)"],
     highlight: true,
   },
   {
@@ -87,12 +87,16 @@ const FirstTab = () => {
               >
                 {node.label}
               </span>
-              <span
-                className="text-xs leading-relaxed min-h-[2.5rem] flex items-center justify-center"
+              <div
+                className="text-xs leading-relaxed min-h-[2.5rem] flex flex-col items-center justify-center gap-0.5"
                 style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
               >
-                {node.sub ?? ""}
-              </span>
+                {node.sub
+                  ? Array.isArray(node.sub)
+                    ? node.sub.map((line, j) => <span key={j}>{line}</span>)
+                    : <span>{node.sub}</span>
+                  : null}
+              </div>
             </div>
 
             {/* Connector (not after last node) */}
