@@ -16,13 +16,13 @@ const FLOW_NODES = [
   {
     num: "02",
     label: "Gateway Contract",
-    sub: "Receives & locks assets on-chain",
+    sub: "Receives and stores encrypted messages or transactions",
     highlight: false,
   },
   {
     num: "03",
     label: "Relayer",
-    sub: "Bridges message to Fairblock",
+    sub: "Crosschain message passing",
     highlight: false,
   },
   {
@@ -183,7 +183,7 @@ const FirstTab = () => {
             className="text-sm md:text-base leading-snug"
             style={{ fontFamily: SERIF, color: `${BLUE}cc` }}
           >
-            Decryption key, or result of encrypted computations
+            Result of encrypted computations, or decryption key
           </span>
         </div>
       </div>
