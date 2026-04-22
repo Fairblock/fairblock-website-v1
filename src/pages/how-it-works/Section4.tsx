@@ -39,7 +39,7 @@ const BLOCKS: ContentBlock[] = [
   {
     heading: "Right Tool for the Right Job",
     paragraphs: [
-      "Fairblock takes a modular approach to privacy, selecting the most efficient cryptographic primitive for each use case rather than relying on a single heavy framework.",
+      "Fairblock takes a dynamic approach to privacy, selecting the most efficient cryptographic primitive for each use case rather than relying on a single heavy framework.",
       "For confidential transfers, we use lightweight homomorphic encryption and range proofs. This enables fast, sub-second transaction privacy without the overhead typically associated with zero-knowledge proofs, trusted execution environments, or multi-party computation.",
       "For applications that require pre-execution confidentiality — such as sealed-bid auctions, dark pools, and private data marketplaces — we leverage distributed key generation and threshold identity-based encryption. This enables conditional decryption with minimal bandwidth and computational overhead.",
       "For more advanced use cases involving computation over encrypted data, such as private AI inference, we incorporate secure multi-party computation and fully homomorphic encryption, including schemes such as threshold FHE (CKKS) and SPDZ.",
