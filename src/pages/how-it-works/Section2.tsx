@@ -22,7 +22,7 @@ const FLOW_NODES = [
   {
     num: "03",
     label: "Relayer",
-    sub: "Crosschain message passing",
+    sub: undefined,
     highlight: false,
   },
   {
@@ -87,12 +87,14 @@ const FirstTab = () => {
               >
                 {node.label}
               </span>
-              <span
-                className="text-xs leading-relaxed"
-                style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
-              >
-                {node.sub}
-              </span>
+              {node.sub && (
+                <span
+                  className="text-xs leading-relaxed"
+                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
+                >
+                  {node.sub}
+                </span>
+              )}
             </div>
 
             {/* Connector (not after last node) */}
@@ -137,12 +139,14 @@ const FirstTab = () => {
               >
                 {node.label}
               </span>
-              <span
-                className="text-xs leading-relaxed"
-                style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
-              >
-                {node.sub}
-              </span>
+              {node.sub && (
+                <span
+                  className="text-xs leading-relaxed"
+                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
+                >
+                  {node.sub}
+                </span>
+              )}
             </div>
             {i < FLOW_NODES.length - 1 && (
               <div className="flex flex-col items-center py-1">
