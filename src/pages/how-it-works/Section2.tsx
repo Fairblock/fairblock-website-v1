@@ -3,7 +3,7 @@ import Title from "../../common/Title";
 import SwitchTabs from "../../common/SwitchTabs";
 
 const SANS = "'Maison Neue', Inter, sans-serif";
-const SERIF = "'TestTiemposHeadline', 'Playfair Display', serif";
+const SERIF = "'Test Tiempos Headline', 'Playfair Display', serif";
 const BLUE = "#58bdf6";
 
 const FLOW_NODES = [
@@ -297,7 +297,7 @@ const StepBox = ({ step, index }: { step: Step; index: number }) => {
       </div>
       <h3
         className="text-white text-xl md:text-2xl leading-tight"
-        style={{ fontFamily: "'TestTiemposHeadline', 'Playfair Display', serif" }}
+        style={{ fontFamily: "'Test Tiempos Headline', 'Playfair Display', serif" }}
       >
         {step.title}
       </h3>

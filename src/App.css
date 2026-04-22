@@ -85,8 +85,8 @@
 /* Adding custom font - Maison Neue - END */
 
 @theme {
-  --font-heading: "Playfair Display", Georgia, serif;
-  --font-maison-neue: "Inter", system-ui, sans-serif;
+  --font-heading: "Test Tiempos Headline", "Playfair Display", Georgia, serif;
+  --font-maison-neue: "Maison Neue", "Inter", system-ui, sans-serif;
   --color-primary-blue: #58bdf6;
   --color-primary-darkBlue: #000D14;
   --breakpoint-3xl: 1920px

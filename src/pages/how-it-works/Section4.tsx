@@ -20,7 +20,7 @@ const FirstTab = () => {
 };
 
 const SANS = "’Maison Neue’, Inter, sans-serif";
-const SERIF = "’TestTiemposHeadline’, ‘Playfair Display’, serif";
+const SERIF = "’Test Tiempos Headline’, ‘Playfair Display’, serif";
 const BLUE = "#58bdf6";
 
 interface ContentBlock {
