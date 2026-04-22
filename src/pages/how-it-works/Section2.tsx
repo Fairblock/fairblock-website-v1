@@ -10,7 +10,7 @@ const FLOW_NODES = [
   {
     num: "01",
     label: "Application",
-    sub: "Initiates encrypted transaction",
+    sub: "Encryption of private inputs",
     highlight: true,
   },
   {
