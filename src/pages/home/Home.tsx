@@ -7,17 +7,7 @@ import SectionContact from "./SectionContact";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-10 sm:gap-20 mx-auto overflow-hidden relative max-w-[1920px]">
-      <img
-        className="absolute w-[1000px] top-[42%] -left-[25%] -z-50"
-        src="/home/flow-chart-left-gradient.svg"
-        alt=""
-      />
-      <img
-        className="absolute w-[1000px] top-[42%] -right-[25%] -z-50"
-        src="/home/flow-chart-right-gradient.svg"
-        alt=""
-      />
+    <div className="flex flex-col gap-4 sm:gap-10 mx-auto overflow-hidden relative max-w-[1920px]">
       <Section1 />
       <Section2 />
       <Section3 />

@@ -11,7 +11,7 @@ type CardProps = {
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
     <TiltCard className="h-full w-full">
-      <div className="border border-primary-blue flex flex-col gap-4 items-center p-6 rounded-2xl h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-colors duration-300">
+      <div className="border border-black/12 flex flex-col gap-4 items-center p-6 rounded-2xl h-full hover:bg-black/[0.025] hover:border-black/20 transition-colors duration-300">
         <h3 className="font-heading text-2xl font-semibold">
           {title}
         </h3>
@@ -25,11 +25,11 @@ const Card = ({ title, imageUrl, content }: CardProps) => {
 };
 
 const cardData = [
-  { title: "Performant", imageUrl: "/home/accessible.svg", content: "High throughput for large payments and institutional volumes." },
-  { title: "Compliant", imageUrl: "/home/dynamic.svg", content: "Zero compliance risks." },
-  { title: "Cross-Chain", imageUrl: "/home/composable.svg", content: "Privacy without the bridge or wallet hassle." },
-  { title: "Private AI", imageUrl: "/home/expansive.svg", content: "Enterprise AI that never sees your confidential data." },
-  { title: "Composable", imageUrl: "/home/compliant.svg", content: "Plug into any frontend, neobank, wallet, or agentic platform instantly." },
+  { title: "Performant",  imageUrl: "/home/accessible.svg",  content: "High throughput for large payments and institutional volumes." },
+  { title: "Compliant",   imageUrl: "/home/dynamic.svg",     content: "Zero compliance risks." },
+  { title: "Cross-Chain", imageUrl: "/home/composable.svg",  content: "Privacy without the bridge or wallet hassle." },
+  { title: "Private AI",  imageUrl: "/home/expansive.svg",   content: "Enterprise AI that never sees your confidential data." },
+  { title: "Composable",  imageUrl: "/home/compliant.svg",   content: "Plug into any frontend, neobank, wallet, or agentic platform instantly." },
 ];
 
 const Section3 = () => {
@@ -48,4 +48,5 @@ const Section3 = () => {
     </div>
   );
 };
+
 export default Section3;

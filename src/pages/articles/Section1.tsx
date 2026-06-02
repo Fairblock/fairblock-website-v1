@@ -97,7 +97,7 @@ export const TWEETS_ARRAY = [
       Supply Chain. <br />
       <br />
       Guy and Ravital both betting on 1-2 years for FHE to be reliably available
-      on-chain. Ambitious - I love it.{" "}
+      onchain. Ambitious - I love it.{" "}
       <a href="https://t.co/PyCTu2yr29">https://t.co/PyCTu2yr29</a>
     </p>
     &mdash; Liam McDonald (@maccanomics){" "}
@@ -440,7 +440,7 @@ const Card = ({
   site,
 }: NewsCardProps) => {
   return (
-    <div className="border border-primary-blue duration-300 p-4 rounded-2xl hover:scale-[1.03] will-change-transform shadow-md shadow-black/20 dark:shadow-black">
+    <div className="border border-primary-blue duration-300 p-4 rounded-2xl hover:scale-[1.03] will-change-transform">
       <a href={newsLink} target="_blank">
         <div className="mb-4">
           <img

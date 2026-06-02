@@ -13,7 +13,7 @@ type CardProps = {
 const StartBuildingCard = ({ imageUrl, title, content, link }: CardProps) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-b from-primary-blue via-primary-blue/50 to-primary-blue/20 rounded-3xl w-full md:w-80 max-w-80">
-      <div className="bg-primary-darkBlue hover:cursor-pointer duration-300 flex flex-col gap-4 items-center p-4 pt-8 m-[1px] relative rounded-3xl hover:shadow shadow-primary-blue">
+      <div className="bg-primary-darkBlue hover:cursor-pointer duration-300 flex flex-col gap-4 items-center p-4 pt-8 m-[1px] relative rounded-3xl hover:shadow shadow-primary-blue text-white">
       <PiArrowUpRightBold className="absolute top-3 right-3 bg-primary-blue p-1 rounded-full text-primary-darkBlue text-2xl" />
       <div className="w-56">
         <img className="w-full" src={imageUrl} alt={title} />

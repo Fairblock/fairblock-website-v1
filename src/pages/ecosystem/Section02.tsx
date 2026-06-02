@@ -29,7 +29,7 @@ const buttons: string[] = [
 
 const Card = ({ ecosystem }: CardProps) => {
   return (
-    <div className="border border-primary-blue hover:bg-primary-blue duration-150 flex flex-col gap-4 group p-5 rounded-lg min-h-[250px] hover:text-black">
+    <div className="border border-black/15 hover:border-black/25 hover:bg-black/[0.025] duration-150 flex flex-col gap-4 group p-5 rounded-lg min-h-[250px]">
       {/* logo + tags */}
       <div className="flex justify-between">
         <a

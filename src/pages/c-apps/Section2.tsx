@@ -15,7 +15,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border border-primary-blue hover:bg-gradient-to-b from-transparent via-transparent to-primary-blue/20 flex flex-col sm:flex-row gap-4 items-center justify-between p-4 relative rounded-2xl mx-auto max-w-screen-lg duration-300 transition-all w-full hover:border-primary-blue/80 group"
+      className="border border-black/15 hover:border-black/30 hover:bg-black/[0.02] flex flex-col sm:flex-row gap-4 items-center justify-between p-4 relative rounded-2xl mx-auto max-w-screen-lg duration-300 transition-all w-full group"
     >
       <div className="w-full sm:w-[35%]" onClick={videoUrl ? e => e.preventDefault() : undefined}>
         {imageUrl && (
@@ -39,7 +39,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
           <PiArrowUpRightBold className="text-white" />
         </span>
         <h4 className="font-heading text-2xl">{title}</h4>
-        <p className="lg:text-lg text-neutral-300">{content}</p>
+        <p className="lg:text-lg text-neutral-600">{content}</p>
       </div>
     </a>
   );
@@ -85,7 +85,7 @@ const C_APPS_LIST = [
     imageUrl: "/c-apps/demos/fairsplit.png",
     title: "FairSplit: Confidential Expense Splitting",
     content:
-      "Split stable tokens with confidential transfers. Create expense splits in USDC, track payments from participants, and settle balances on-chain — revealing only what’s required.",
+      "Split stable tokens with confidential transfers. Create expense splits in USDC, track payments from participants, and settle balances onchain — revealing only what’s required.",
     link: "https://fairsplit-repro.vercel.app/",
   },
   {

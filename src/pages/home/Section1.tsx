@@ -1,72 +1,74 @@
 import { useEffect, useState } from "react";
+import HeroNetworkAnimation from "./HeroNetworkAnimation";
 
-const text = "Powering Incorruptible Markets and Machines";
-
-const WordFade = ({ sentence }: { sentence: string }) => {
-  const ws = sentence.split(" ");
-  const [visible, setVisible] = useState<boolean[]>(ws.map(() => false));
-
+export default function Section1() {
+  const [visible, setVisible] = useState(false);
   useEffect(() => {
-    const timers = ws.map((_, i) =>
-      setTimeout(() => setVisible(prev => { const n = [...prev]; n[i] = true; return n; }), 120 + i * 140)
-    );
-    return () => timers.forEach(clearTimeout);
+    const t = setTimeout(() => setVisible(true), 80);
+    return () => clearTimeout(t);
   }, []);
 
-  return (
-    <>
-      {ws.map((word, i) => (
-        <span
-          key={i}
-          style={{
-            display: "inline-block",
-            opacity: visible[i] ? 1 : 0,
-            transform: visible[i] ? "translateY(0)" : "translateY(18px)",
-            transition: "opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1)",
-            marginRight: i < ws.length - 1 ? "0.3em" : 0,
-          }}
-        >
-          {word}
-        </span>
-      ))}
-    </>
-  );
-};
-
-const Section1 = () => {
-  const [videoSrc, setVideoSrc] = useState("/home/hero-desktop.mp4");
-
-  useEffect(() => {
-    const updateVideo = () => {
-      setVideoSrc(window.innerWidth < 640 ? "/home/hero-mobile.mp4" : "/home/hero-desktop.mp4");
-    };
-    updateVideo();
-    window.addEventListener("resize", updateVideo);
-    return () => window.removeEventListener("resize", updateVideo);
-  }, []);
+  const fade = (delay: number): React.CSSProperties => ({
+    opacity: visible ? 1 : 0,
+    transform: visible ? "translateY(0)" : "translateY(20px)",
+    transition: `opacity 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms, transform 0.75s cubic-bezier(0.16,1,0.3,1) ${delay}ms`,
+  });
 
   return (
-    <div className="relative sm:mt-[18vh] h-full w-full">
-      <video
-        className="w-full h-screen sm:h-[82vh] object-cover"
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        src={videoSrc}
-      />
-      {/* Bottom gradient for text legibility on mobile */}
-      <div className="sm:hidden absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
-      <h2 className="hidden absolute bottom-[10%] font-heading font-normal sm:flex justify-center pb-1 text-4xl sm:text-5xl w-full overflow-hidden">
-        <WordFade sentence={text} />
-      </h2>
-      <h2 className="sm:hidden absolute bottom-[17%] font-heading font-normal flex flex-col gap-1 items-center justify-center text-xl w-full px-6 text-center">
-        <div><WordFade sentence="Powering Incorruptible" /></div>
-        <div><WordFade sentence="Markets and Machines" /></div>
-      </h2>
-    </div>
-  );
-};
+    <section
+      className="relative w-full overflow-hidden"
+      style={{ minHeight: "90vh" }}
+    >
+      <div
+        className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-0 px-6 sm:px-10 lg:px-14"
+        style={{ minHeight: "90vh", paddingTop: "12vh", paddingBottom: "6vh" }}
+      >
+        {/* ── Left: Text ── */}
+        <div className="flex flex-col justify-center w-full lg:w-[42%] lg:pr-10">
+          {/* Eyebrow */}
+          <div style={{
+            fontFamily: "'JetBrains Mono', monospace",
+            fontSize: "10px",
+            letterSpacing: "0.16em",
+            textTransform: "uppercase",
+            color: "#8892A4",
+            display: "flex",
+            alignItems: "center",
+            gap: "8px",
+            marginBottom: "2.5rem",
+            ...fade(80),
+          }}>
+            <span className="hero-blink-dot" />
+            Fairblock Network
+          </div>
 
-export default Section1;
+          {/* Heading */}
+          <h1 className="font-heading font-normal" style={{ lineHeight: 1.05, letterSpacing: "-0.025em", fontSize: "clamp(3.2rem, 5.2vw, 6rem)" }}>
+            <span style={fade(120)}>Powering </span>
+            <em style={{ color: "#58BDF6", fontStyle: "italic", ...fade(210) }}>Incorruptible </em>
+            <span style={fade(300)}>Markets and Machines</span>
+          </h1>
+
+          {/* CTAs */}
+          <div className="flex gap-3 flex-wrap mt-10" style={fade(520)}>
+            <a href="https://docs.fairblock.network/docs/welcome/Vision"
+              target="_blank" rel="noopener noreferrer"
+              className="btn-ink">
+              Read the docs
+            </a>
+            <a href="https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/"
+              target="_blank" rel="noopener noreferrer"
+              className="btn-outline">
+              Start building
+            </a>
+          </div>
+        </div>
+
+        {/* ── Right: Animation ── */}
+        <div className="w-full lg:w-[58%] flex items-center" style={fade(300)}>
+          <HeroNetworkAnimation />
+        </div>
+      </div>
+    </section>
+  );
+}

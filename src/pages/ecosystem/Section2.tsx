@@ -6,7 +6,7 @@ const Section2 = () => {
     <div className="flex flex-col items-center p-4 sm:px-8">
       <div className="flex flex-col gap-8">
         <SubTitle title="Foundational Tech" />
-        <div className="text-center text-white/70 text-lg lg:text-xl">
+        <div className="text-center text-[#000D14]/70 text-lg lg:text-xl">
           <p>
             Powering secure, fast, and confidential applications <br />
             (cApps) with dynamic, multimodal cryptography
