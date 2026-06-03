@@ -11,7 +11,7 @@ type CardProps = {
 const Card = ({ title, imageUrl, content }: CardProps) => {
   return (
     <TiltCard className="h-full w-full">
-      <div className="border border-black/12 flex flex-col gap-4 items-center p-6 rounded-2xl h-full hover:bg-black/[0.025] hover:border-black/20 transition-colors duration-300">
+      <div className="border border-black/12 flex flex-col gap-4 items-center p-6 h-full hover:bg-black/[0.025] hover:border-black/20 transition-colors duration-300">
         <h3 className="font-heading text-2xl font-semibold">
           {title}
         </h3>

@@ -440,11 +440,11 @@ const Card = ({
   site,
 }: NewsCardProps) => {
   return (
-    <div className="border border-primary-blue duration-300 p-4 rounded-2xl hover:scale-[1.03] will-change-transform">
+    <div className="border border-primary-blue duration-300 p-4 hover:scale-[1.03] will-change-transform">
       <a href={newsLink} target="_blank">
         <div className="mb-4">
           <img
-            className="object-cover rounded-lg w-full"
+            className="object-cover w-full"
             src={imageUrl}
             alt={newsHeader}
           />

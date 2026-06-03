@@ -6,7 +6,7 @@ import type { HowItWorksCardProps } from "./types";
 
 const HowItWorksCard = ({ imageUrl, title, content }: HowItWorksCardProps) => {
   return (
-    <div className="bg-primary-blue cursor-pointer flex flex-col gap-8 p-4 lg:py-8 rounded-2xl hover:scale-[1.04] duration-300 transition-all will-change-transform text-black w-full max-w-72 lg:max-w-[340px]">
+    <div className="bg-primary-blue cursor-pointer flex flex-col gap-8 p-4 lg:py-8 hover:scale-[1.04] duration-300 transition-all will-change-transform text-black w-full max-w-72 lg:max-w-[340px]">
       <div className="">
         <img
           className="aspect-square mx-auto w-48 lg:w-60"

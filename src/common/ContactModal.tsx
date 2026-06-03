@@ -32,7 +32,7 @@ const ContactModal = () => {
     <div className="fixed inset-0 z-[10000] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={handleClose} />
       <div
-        className="relative border border-primary-blue/40 rounded-2xl p-8 w-full max-w-md shadow-[0_0_60px_rgba(88,189,246,0.2)]"
+        className="relative border border-primary-blue/40 p-8 w-full max-w-md shadow-[0_0_60px_rgba(88,189,246,0.2)]"
         style={{
           background: "linear-gradient(135deg, #000D14 0%, #001a2e 100%)",
           animation: "pageFadeIn 0.3s ease forwards",
@@ -56,7 +56,7 @@ const ContactModal = () => {
                 placeholder="Name"
                 value={form.name}
                 onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
+                className="bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
               />
               <input
                 required
@@ -64,7 +64,7 @@ const ContactModal = () => {
                 placeholder="Email"
                 value={form.email}
                 onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
+                className="bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
               />
               <input
                 required
@@ -72,18 +72,18 @@ const ContactModal = () => {
                 placeholder="Company"
                 value={form.company}
                 onChange={e => setForm(f => ({ ...f, company: e.target.value }))}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
+                className="bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 text-sm"
               />
               <textarea
                 placeholder="Message (optional)"
                 rows={3}
                 value={form.message}
                 onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-                className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 resize-none text-sm"
+                className="bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-primary-blue transition-colors placeholder:opacity-40 resize-none text-sm"
               />
               <button
                 type="submit"
-                className="bg-primary-blue text-black font-semibold py-3 rounded-xl hover:brightness-110 transition-all duration-200 mt-2 text-sm"
+                className="bg-primary-blue text-black font-semibold py-3 hover:brightness-110 transition-all duration-200 mt-2 text-sm"
               >
                 Send Message
               </button>
@@ -99,7 +99,7 @@ const ContactModal = () => {
               Your email client should have opened. We will get back to you shortly.
             </p>
             <button
-              className="mt-2 bg-primary-blue text-black font-semibold px-8 py-3 rounded-xl hover:brightness-110 transition-all duration-200 text-sm"
+              className="mt-2 bg-primary-blue text-black font-semibold px-8 py-3 hover:brightness-110 transition-all duration-200 text-sm"
               onClick={handleClose}
             >
               Close

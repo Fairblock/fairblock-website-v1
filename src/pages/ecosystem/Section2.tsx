@@ -13,7 +13,7 @@ const Section2 = () => {
           </p>
         </div>
       </div>
-      <div className="bg-gradient-to-b from-transparent via-transparent to-primary-blue/60 p-4 lg:p-12 rounded-b-3xl">
+      <div className="bg-gradient-to-b from-transparent via-transparent to-primary-blue/60 p-4 lg:p-12">
         <img
           className="mx-auto w-full xl:w-[75%]"
           src="/ecosystem/foundational-tech.svg"

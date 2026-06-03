@@ -15,7 +15,7 @@ const SectionContact = () => {
     <div className="p-4 sm:px-8">
       <FadeIn>
         <div
-          className="mx-0 rounded-2xl border border-primary-blue/40 p-6 sm:p-10 lg:p-16 flex flex-col items-center gap-6 text-center"
+          className="mx-0 border border-primary-blue/40 p-6 sm:p-10 lg:p-16 flex flex-col items-center gap-6 text-center"
           style={{ background: "radial-gradient(ellipse at center, rgba(88,189,246,0.06) 0%, transparent 70%)" }}
         >
           <h2 className="font-heading font-normal text-2xl sm:text-4xl lg:text-5xl max-w-2xl leading-tight">
@@ -26,7 +26,7 @@ const SectionContact = () => {
           </p>
           <button
             onClick={handleCopy}
-            className="flex items-center gap-2 px-6 py-3 rounded-full border border-black/15 text-sm font-medium hover:bg-black/10 hover:border-black/30 transition-colors duration-200"
+            className="flex items-center gap-2 px-6 py-3 border border-black/15 text-sm font-medium hover:bg-black/10 hover:border-black/30 transition-colors duration-200"
           >
             {copied ? (
               <span>✓ Copied</span>

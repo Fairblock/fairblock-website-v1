@@ -66,7 +66,7 @@ const FirstTab = () => {
 
             {/* Node card */}
             <div
-              className="flex flex-col items-center justify-between gap-3 px-5 py-5 rounded-2xl border w-44 xl:w-52 text-center"
+              className="flex flex-col items-center justify-between gap-3 px-5 py-5 border w-44 xl:w-52 text-center"
               style={{
                 borderColor: node.highlight ? `${BLUE}55` : "rgba(0,13,20,0.12)",
                 background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(0,13,20,0.03)",
@@ -120,7 +120,7 @@ const FirstTab = () => {
         {FLOW_NODES.map((node, i) => (
           <div key={node.num} className="flex flex-col items-center w-full max-w-xs">
             <div
-              className="flex flex-col items-center gap-2 px-5 py-4 rounded-2xl border w-full text-center"
+              className="flex flex-col items-center gap-2 px-5 py-4 border w-full text-center"
               style={{
                 borderColor: node.highlight ? `${BLUE}55` : "rgba(0,13,20,0.12)",
                 background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(0,13,20,0.03)",
@@ -167,7 +167,7 @@ const FirstTab = () => {
 
       {/* ── Return path ── */}
       <div
-        className="mt-8 mx-auto max-w-xl flex items-center gap-4 rounded-2xl border px-6 py-4"
+        className="mt-8 mx-auto max-w-xl flex items-center gap-4 border px-6 py-4"
         style={{
           borderColor: `${BLUE}33`,
           background: `rgba(88,189,246,0.04)`,
@@ -315,7 +315,7 @@ const SecondTab = () => {
   return (
     <div className="w-full mx-auto lg:max-w-[90%]">
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 rounded-xl overflow-hidden border border-black/10"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 overflow-hidden border border-black/10"
         style={{ background: "rgba(0,13,20,0.03)" }}
       >
         {STEPS.map((step, i) => (

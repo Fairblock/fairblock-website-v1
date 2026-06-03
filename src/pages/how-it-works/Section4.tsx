@@ -97,7 +97,7 @@ const FirstTab = () => {
         Powering secure, fast, and confidential applications with dynamic, multimodal cryptography
       </p>
       <div className="w-full">
-        <div className="mx-auto w-full lg:max-w-[70%] rounded-2xl overflow-hidden">
+        <div className="mx-auto w-full lg:max-w-[70%] overflow-hidden">
           <img
             className="w-full"
             style={{ filter: "invert(1) hue-rotate(180deg)" }}
@@ -153,7 +153,7 @@ const SecondTab = () => {
           {/* Section heading with blue left rule */}
           <div className="flex items-start gap-4">
             <div
-              className="w-0.5 shrink-0 mt-1 rounded-full"
+              className="w-0.5 shrink-0 mt-1"
               style={{ height: "1.4em", background: BLUE, opacity: 0.7 }}
             />
             <h3

@@ -31,7 +31,7 @@ const Header = () => {
       } fixed top-4 xl:top-6 left-0 right-0 flex justify-center transition-transform duration-300 z-50`}
     >
       <div
-        className={`font-maison-neue flex items-center justify-between px-5 sm:px-8 py-3 sm:py-4 rounded-2xl w-[95%] max-w-[1800px] transition-all duration-300 relative z-10 ${
+        className={`font-maison-neue flex items-center justify-between px-5 sm:px-8 py-3 sm:py-4 w-[95%] max-w-[1800px] transition-all duration-300 relative z-10 ${
           scrolled
             ? "bg-white/90 backdrop-blur-md shadow-[0_2px_24px_rgba(0,0,0,0.08)] border border-black/[0.07]"
             : "bg-white/70 backdrop-blur-sm border border-black/[0.06]"
@@ -62,7 +62,7 @@ const Header = () => {
 
       {/* Mobile menu */}
       <div
-        className={`absolute top-4 bg-white/95 backdrop-blur-md border border-black/[0.07] shadow-[0_8px_32px_rgba(0,0,0,0.1)] duration-300 font-maison-neue flex flex-col gap-5 p-6 pt-20 md:hidden rounded-2xl text-lg text-[#000D14] w-[95%] max-w-[1800px] origin-top transition-all ${
+        className={`absolute top-4 bg-white/95 backdrop-blur-md border border-black/[0.07] shadow-[0_8px_32px_rgba(0,0,0,0.1)] duration-300 font-maison-neue flex flex-col gap-5 p-6 pt-20 md:hidden text-lg text-[#000D14] w-[95%] max-w-[1800px] origin-top transition-all ${
           menuOpen
             ? "opacity-100 translate-y-0 scale-y-100"
             : "opacity-0 -translate-y-4 scale-y-0 pointer-events-none"

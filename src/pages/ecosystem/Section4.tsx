@@ -7,9 +7,9 @@ import type { CAppHighlightCardProps } from "./types";
 
 const CAppHighlightCard = ({ title, subTitle, content }: CAppHighlightCardProps) => {
   return (
-    <div className="bg-white hover:bg-black/[0.03] cursor-pointer duration-300 group p-4 lg:p-6 rounded-2xl text-black max-w-96 border border-black/10 hover:border-black/20">
+    <div className="bg-white hover:bg-black/[0.03] cursor-pointer duration-300 group p-4 lg:p-6 text-black max-w-96 border border-black/10 hover:border-black/20">
       <div className="flex justify-end mb-2">
-        <div className="bg-black/10 group-hover:bg-black/15 duration-300 p-3 rounded-full w-fit">
+        <div className="bg-black/10 group-hover:bg-black/15 duration-300 p-3 w-fit">
           <PiArrowUpRightBold className="duration-300 font-bold text-black/60 text-2xl group-hover:translate-x-2 group-hover:-translate-y-2 transition-all" />
         </div>
       </div>
