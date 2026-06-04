@@ -181,7 +181,7 @@
 }
 
 .custom-border-left {
-  border-image-source: url('/public/how-it-works/key-benefits-border-left.svg');
+  border-image-source: url('/how-it-works/key-benefits-border-left.svg');
   border-image-slice: 40; /* How the image is divided into corners & edges */
   border-image-repeat: stretch; /* or round / repeat */
 }
