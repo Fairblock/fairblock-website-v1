@@ -7,7 +7,7 @@ const Section1 = () => {
       {/* how-it-works image */}
       <div>
         <img
-          className="w-64"
+          className="w-64 invert opacity-80"
           src="/how-it-works/how-things-work.svg"
           alt="how-things-work"
         />

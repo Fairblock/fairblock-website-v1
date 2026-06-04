@@ -42,16 +42,16 @@ const CONNECTOR_LABELS = [
 // Thin SVG arrow for horizontal connectors
 const ArrowRight = () => (
   <svg width="32" height="16" viewBox="0 0 32 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line x1="0" y1="8" x2="26" y2="8" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-    <path d="M22 3L29 8L22 13" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <line x1="0" y1="8" x2="26" y2="8" stroke="rgba(0,13,20,0.2)" strokeWidth="1"/>
+    <path d="M22 3L29 8L22 13" stroke="rgba(0,13,20,0.35)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
   </svg>
 );
 
 // Thin SVG arrow for vertical connectors (mobile)
 const ArrowDown = () => (
   <svg width="16" height="32" viewBox="0 0 16 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line x1="8" y1="0" x2="8" y2="26" stroke="rgba(255,255,255,0.2)" strokeWidth="1"/>
-    <path d="M3 22L8 29L13 22" stroke="rgba(255,255,255,0.35)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
+    <line x1="8" y1="0" x2="8" y2="26" stroke="rgba(0,13,20,0.2)" strokeWidth="1"/>
+    <path d="M3 22L8 29L13 22" stroke="rgba(0,13,20,0.35)" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
   </svg>
 );
 
@@ -66,10 +66,10 @@ const FirstTab = () => {
 
             {/* Node card */}
             <div
-              className="flex flex-col items-center justify-between gap-3 px-5 py-5 rounded-2xl border w-44 xl:w-52 text-center"
+              className="flex flex-col items-center justify-between gap-3 px-5 py-5 border w-44 xl:w-52 text-center"
               style={{
-                borderColor: node.highlight ? `${BLUE}55` : "rgba(255,255,255,0.1)",
-                background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(255,255,255,0.02)",
+                borderColor: node.highlight ? `${BLUE}55` : "rgba(0,13,20,0.12)",
+                background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(0,13,20,0.03)",
               }}
             >
               <span
@@ -82,14 +82,14 @@ const FirstTab = () => {
                 className="text-sm xl:text-base leading-snug"
                 style={{
                   fontFamily: SERIF,
-                  color: node.highlight ? BLUE : "white",
+                  color: node.highlight ? BLUE : "#000D14",
                 }}
               >
                 {node.label}
               </span>
               <div
                 className="text-xs leading-relaxed min-h-[2.5rem] flex flex-col items-center justify-center gap-0.5"
-                style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
+                style={{ fontFamily: SANS, color: "rgba(0,13,20,0.5)" }}
               >
                 {node.sub
                   ? Array.isArray(node.sub)
@@ -105,7 +105,7 @@ const FirstTab = () => {
                 <ArrowRight />
                 <span
                   className="text-[10px] mt-1 text-center max-w-[72px] leading-tight"
-                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.28)" }}
+                  style={{ fontFamily: SANS, color: "rgba(0,13,20,0.4)" }}
                 >
                   {CONNECTOR_LABELS[i]}
                 </span>
@@ -120,10 +120,10 @@ const FirstTab = () => {
         {FLOW_NODES.map((node, i) => (
           <div key={node.num} className="flex flex-col items-center w-full max-w-xs">
             <div
-              className="flex flex-col items-center gap-2 px-5 py-4 rounded-2xl border w-full text-center"
+              className="flex flex-col items-center gap-2 px-5 py-4 border w-full text-center"
               style={{
-                borderColor: node.highlight ? `${BLUE}55` : "rgba(255,255,255,0.1)",
-                background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(255,255,255,0.02)",
+                borderColor: node.highlight ? `${BLUE}55` : "rgba(0,13,20,0.12)",
+                background: node.highlight ? `rgba(88,189,246,0.07)` : "rgba(0,13,20,0.03)",
               }}
             >
               <span
@@ -136,7 +136,7 @@ const FirstTab = () => {
                 className="text-base leading-snug"
                 style={{
                   fontFamily: SERIF,
-                  color: node.highlight ? BLUE : "white",
+                  color: node.highlight ? BLUE : "#000D14",
                 }}
               >
                 {node.label}
@@ -144,7 +144,7 @@ const FirstTab = () => {
               {node.sub && (
                 <span
                   className="text-xs leading-relaxed"
-                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.38)" }}
+                  style={{ fontFamily: SANS, color: "rgba(0,13,20,0.5)" }}
                 >
                   {node.sub}
                 </span>
@@ -155,7 +155,7 @@ const FirstTab = () => {
                 <ArrowDown />
                 <span
                   className="text-[10px] mt-0.5"
-                  style={{ fontFamily: SANS, color: "rgba(255,255,255,0.28)" }}
+                  style={{ fontFamily: SANS, color: "rgba(0,13,20,0.4)" }}
                 >
                   {CONNECTOR_LABELS[i]}
                 </span>
@@ -167,7 +167,7 @@ const FirstTab = () => {
 
       {/* ── Return path ── */}
       <div
-        className="mt-8 mx-auto max-w-xl flex items-center gap-4 rounded-2xl border px-6 py-4"
+        className="mt-8 mx-auto max-w-xl flex items-center gap-4 border px-6 py-4"
         style={{
           borderColor: `${BLUE}33`,
           background: `rgba(88,189,246,0.04)`,
@@ -269,8 +269,8 @@ const StepBox = ({ step, index }: { step: Step; index: number }) => {
   const row = Math.floor(index / 4);
 
   const borderClasses = [
-    col < 3 ? "border-r border-r-white/10" : "",
-    row === 0 ? "border-b border-b-white/10" : "",
+    col < 3 ? "border-r border-r-black/10" : "",
+    row === 0 ? "border-b border-b-black/10" : "",
   ]
     .filter(Boolean)
     .join(" ");
@@ -279,8 +279,8 @@ const StepBox = ({ step, index }: { step: Step; index: number }) => {
     step.indicator === "blue"
       ? "bg-[#58bdf6]"
       : step.indicator === "filled"
-      ? "bg-white/80"
-      : "border border-white/50 bg-transparent";
+      ? "bg-[#000D14]/80"
+      : "border border-[#000D14]/40 bg-transparent";
 
   return (
     <div className={`p-6 md:p-8 flex flex-col gap-3 ${borderClasses}`}>
@@ -296,13 +296,13 @@ const StepBox = ({ step, index }: { step: Step; index: number }) => {
         </span>
       </div>
       <h3
-        className="text-white text-xl md:text-2xl leading-tight"
+        className="text-[#000D14] text-xl md:text-2xl leading-tight"
         style={{ fontFamily: "'Test Tiempos Headline', 'Playfair Display', serif" }}
       >
         {step.title}
       </h3>
       <p
-        className="text-white/55 text-sm md:text-base leading-relaxed"
+        className="text-[#000D14]/55 text-sm md:text-base leading-relaxed"
         style={{ fontFamily: "'Maison Neue', Inter, sans-serif" }}
       >
         {step.description}
@@ -315,8 +315,8 @@ const SecondTab = () => {
   return (
     <div className="w-full mx-auto lg:max-w-[90%]">
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 rounded-xl overflow-hidden border border-white/10"
-        style={{ background: "rgba(255,255,255,0.03)" }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 overflow-hidden border border-black/10"
+        style={{ background: "rgba(0,13,20,0.03)" }}
       >
         {STEPS.map((step, i) => (
           <StepBox key={step.number} step={step} index={i} />

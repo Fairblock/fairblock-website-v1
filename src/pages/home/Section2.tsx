@@ -56,14 +56,14 @@ const Section2 = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         <FadeIn delay={150} className="flex h-full">
           <TiltCard className="w-full h-full">
-            <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-colors duration-300">
-              <h3 className="font-heading font-normal text-primary-blue text-2xl">
+            <div className="border border-black/12 p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-black/[0.025] transition-colors duration-300">
+              <h3 className="font-heading font-normal text-[#141210] text-2xl">
                 Confidential Finance
               </h3>
               <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
                 As institutional adoption of stablecoins accelerates, enterprises
                 and financial institutions demand privacy to protect their payroll,
-                treasury, revenue, and trading activity. Exposed on-chain
+                treasury, revenue, and trading activity. Exposed onchain
                 transactions are a compliance and profitability liability. We are
                 building performant, compliant, cross-chain confidential stablecoins
                 and RWA that integrate in 30 minutes by developers, with no extra
@@ -74,8 +74,8 @@ const Section2 = () => {
         </FadeIn>
         <FadeIn delay={300} className="flex h-full">
           <TiltCard className="w-full h-full">
-            <div className="border border-primary-blue rounded-2xl p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-primary-blue/10 hover:shadow-[0_0_24px_rgba(88,189,246,0.15)] transition-colors duration-300">
-              <h3 className="font-heading font-normal text-primary-blue text-2xl">
+            <div className="border border-black/12 p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-black/[0.025] transition-colors duration-300">
+              <h3 className="font-heading font-normal text-[#141210] text-2xl">
                 Private AI
               </h3>
               <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
@@ -92,4 +92,5 @@ const Section2 = () => {
     </div>
   );
 };
+
 export default Section2;

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap');
 
 /* Adding custom font - Test Tiempos Headline (Heading) - START */
 @font-face {
@@ -92,13 +93,95 @@
   --breakpoint-3xl: 1920px
 }
 
+.btn-ink {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background: #141210;
+  color: #FBF9F3;
+  border: 1px solid #141210;
+  text-decoration: none;
+  transition: all .2s;
+  font-family: 'Maison Neue', sans-serif;
+}
+.btn-ink:hover { background: #2B2722; border-color: #2B2722; }
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background: transparent;
+  color: #141210;
+  border: 1px solid #141210;
+  text-decoration: none;
+  transition: all .2s;
+  font-family: 'Maison Neue', sans-serif;
+}
+.btn-outline:hover { background: #141210; color: #FBF9F3; }
+
 @keyframes pageFadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes heroBeamDash {
+  to { stroke-dashoffset: -1900; }
+}
+
+@keyframes heroBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.hero-blink-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #58BDF6;
+  animation: heroBlink 1.6s ease-in-out infinite;
+}
+
+.hero-beam-p1 {
+  stroke-dasharray: 90 1800;
+  stroke-dashoffset: 0;
+  animation: heroBeamDash 5s linear infinite;
+}
+.hero-beam-p2 {
+  stroke-dasharray: 75 1820;
+  stroke-dashoffset: -400;
+  animation: heroBeamDash 6.5s linear infinite;
+  animation-delay: -1.2s;
+}
+.hero-beam-p3 {
+  stroke-dasharray: 60 1840;
+  stroke-dashoffset: -800;
+  animation: heroBeamDash 7s linear infinite;
+  animation-delay: -3s;
+}
+.hero-beam-p4 {
+  stroke-dasharray: 80 1810;
+  stroke-dashoffset: -200;
+  animation: heroBeamDash 5.5s linear infinite;
+  animation-delay: -0.7s;
+}
+.hero-beam-p5 {
+  stroke-dasharray: 70 1830;
+  stroke-dashoffset: -600;
+  animation: heroBeamDash 6s linear infinite;
+  animation-delay: -2.2s;
+}
+
 .custom-border-left {
-  border-image-source: url('/public/how-it-works/key-benefits-border-left.svg');
+  border-image-source: url('/how-it-works/key-benefits-border-left.svg');
   border-image-slice: 40; /* How the image is divided into corners & edges */
   border-image-repeat: stretch; /* or round / repeat */
 }
