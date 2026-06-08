@@ -11,22 +11,18 @@
     <!-- Preload logo -->
     <link rel="preload" as="image" href="/common/fairblock-logo.svg" type="image/svg+xml" />
 
-    <!-- Preload fonts -->
-    <link rel="preload" href="/fonts/MarlideDisplay_Regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/MarlideDisplay_Medium.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/MarlideDisplay_Bold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/MarlideDisplay_ExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/MarlideDisplay_Heavy.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/MarlideDisplay_Light.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- Preload critical custom fonts (most-used weights only) -->
+    <link rel="preload" href="/fonts/TestTiemposHeadline-Regular.otf" as="font" type="font/otf" crossorigin />
+    <link rel="preload" href="/fonts/MaisonNeue-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/fonts/MaisonNeue-Medium.ttf" as="font" type="font/ttf" crossorigin />
 
-    <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+    <!-- Google Fonts: JetBrains Mono + Instrument Serif -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 
-    <!-- Prefetch videos (load later) -->
-    <link rel="prefetch" as="video" href="/home/hero-desktop.mp4" type="video/mp4" />
-    <link rel="prefetch" as="video" href="/home/hero-mobile.mp4" type="video/mp4" />
+    <!-- Fallback fonts from Google (used as font-stack fallbacks) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div id="root"></div>

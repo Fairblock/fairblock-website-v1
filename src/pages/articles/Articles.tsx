@@ -2,7 +2,7 @@ import Section1 from "./Section1"
 
 const Articles = () => {
   return (
-    <div className="pt-24">
+    <div>
       <Section1 />
     </div>
   )
