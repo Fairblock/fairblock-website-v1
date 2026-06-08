@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap');
 
 /* Adding custom font - Test Tiempos Headline (Heading) - START */
 @font-face {
@@ -178,6 +177,17 @@
   stroke-dashoffset: -600;
   animation: heroBeamDash 6s linear infinite;
   animation-delay: -2.2s;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #eeece8 0px, #e4e2de 150px, #eeece8 300px);
+  background-size: 600px 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
 }
 
 .custom-border-left {
