@@ -1,7 +1,6 @@
 import Section1 from "./Section1";
 import Section2 from "./Section2";
 import Section3 from "./Section3";
-import Section5 from "./Section5";
 import SectionCTA from "./SectionCTA";
 import SectionContact from "./SectionContact";
 
@@ -13,7 +12,6 @@ const Home = () => {
       <Section3 />
       <SectionCTA />
       <SectionContact />
-      <Section5 />
     </div>
   );
 };
