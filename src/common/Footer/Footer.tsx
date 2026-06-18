@@ -5,6 +5,7 @@ const NAV_COLS = [
   {
     label: "Product",
     links: [
+      { text: "Solutions",    href: "/solutions/stablecoin-payments" },
       { text: "How it works", href: "/how-it-works" },
       { text: "Showcase",     href: "/showcase" },
       { text: "Ecosystem",    href: "/ecosystem" },
