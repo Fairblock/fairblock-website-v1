@@ -367,7 +367,7 @@ type Feature = { title: string; body: string };
 type Solution = {
   id: string; number: string; title: string; tagline: string;
   description: string; features: Feature[];
-  Graphic: () => JSX.Element;
+  Graphic: () => React.JSX.Element;
 };
 
 const SOLUTIONS: Solution[] = [
