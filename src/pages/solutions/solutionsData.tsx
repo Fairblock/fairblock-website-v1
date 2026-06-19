@@ -33,7 +33,7 @@ export const PaymentsGraphic = () => (
       ["0xE91B…4C","ENCRYPTED","NEOBANK","#8892A4","PENDING"],
       ["0xC72D…8F","ENCRYPTED","EXCHANGE","#8892A4","PENDING"],
       ["0xF80A…D3","ENCRYPTED","AI AGENTS","#8892A4","PENDING"],
-    ].map(([sender, amt, rcpt, sc, status], i) => {
+    ].map(([sender, amt, rcpt, _sc, status], i) => {
       const y = 100 + i * 44;
       const isEnc = amt === "ENCRYPTED";
       return (
@@ -177,7 +177,7 @@ export const LendingGraphic = () => (
     {[["Score",110],["History",138],["Risk tier",166]].map(([l, y]) => (
       <g key={l}>
         <text x="36" y={y} fontFamily="JetBrains Mono,monospace" fontSize="9" fill="#141210">{l}:</text>
-        <rect x="104" y={y - 13} width="132" height="17" fill="rgba(88,189,246,0.08)" stroke="#58BDF6" strokeWidth="0.6" />
+        <rect x="104" y={(y as number) - 13} width="132" height="17" fill="rgba(88,189,246,0.08)" stroke="#58BDF6" strokeWidth="0.6" />
         <text x="170" y={y} fontFamily="JetBrains Mono,monospace" fontSize="8" fill="#58BDF6" textAnchor="middle">ENCRYPTED</text>
       </g>
     ))}
@@ -188,7 +188,7 @@ export const LendingGraphic = () => (
     {[["Amount","$•••,•••",110],["Asset","ENCRYPTED",138],["LTV","••.•%",166]].map(([l, v, y]) => (
       <g key={l}>
         <text x="332" y={y} fontFamily="JetBrains Mono,monospace" fontSize="9" fill="#141210">{l}:</text>
-        <rect x="392" y={y - 13} width="132" height="17" fill="rgba(88,189,246,0.08)" stroke="#58BDF6" strokeWidth="0.6" />
+        <rect x="392" y={(y as number) - 13} width="132" height="17" fill="rgba(88,189,246,0.08)" stroke="#58BDF6" strokeWidth="0.6" />
         <text x="458" y={y} fontFamily="JetBrains Mono,monospace" fontSize="8" fill="#58BDF6" textAnchor="middle">{v}</text>
       </g>
     ))}
@@ -295,7 +295,7 @@ export const InferenceGraphic = () => (
 // ─── Solution definitions ─────────────────────────────────────────────────────
 
 export type Feature = {
-  Icon: React.ComponentType<{ size?: number; strokeWidth?: number }>;
+  Icon: React.ComponentType<{ size?: number; strokeWidth?: number; color?: string }>;
   title: string;
   body: string;
 };
@@ -307,7 +307,7 @@ export type Solution = {
   headline: string;
   description: string;
   features: Feature[];
-  Graphic: () => JSX.Element;
+  Graphic: () => React.JSX.Element;
 };
 
 export const SOLUTIONS: Solution[] = [

@@ -206,7 +206,7 @@ const cardData = [
 type CardProps = {
   content: string;
   title: string;
-  Graphic: () => JSX.Element;
+  Graphic: () => React.JSX.Element;
 };
 
 const Card = ({ title, Graphic, content }: CardProps) => (
