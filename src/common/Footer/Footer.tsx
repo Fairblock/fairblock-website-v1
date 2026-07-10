@@ -15,7 +15,7 @@ const NAV_COLS = [
   {
     label: "Developers",
     links: [
-      { text: "Documentation",   href: "https://docs.fairblock.network/docs/welcome/Vision" },
+      { text: "Documentation",   href: "https://docs.fairblock.network/" },
       { text: "Start building",  href: "https://docs.fairblock.network/ct/guides/build/building-with-sdk" },
       { text: "GitHub",          href: "https://github.com/Fairblock" },
       { text: "Brand kit",       href: "https://ballistic-sail-a4e.notion.site/Fairblock-Brand-Kit-4602243ba91c44b385dfdc9fccc426dc" },
