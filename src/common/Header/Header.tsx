@@ -173,7 +173,7 @@ const Header = () => {
                 {copied ? "✓ Copied" : "Contact us"}
               </button>
               <a
-                href="https://docs.fairblock.network/docs/welcome/Vision"
+                href="https://docs.fairblock.network/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline flex-1 justify-center"

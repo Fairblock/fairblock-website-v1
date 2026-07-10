@@ -25,22 +25,6 @@ export default function Section1() {
       >
         {/* ── Left: Text ── */}
         <div className="flex flex-col justify-center w-full lg:w-[42%] lg:pr-10">
-          {/* Eyebrow */}
-          <div style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: "10px",
-            letterSpacing: "0.16em",
-            textTransform: "uppercase",
-            color: "#8892A4",
-            display: "flex",
-            alignItems: "center",
-            gap: "8px",
-            marginBottom: "2.5rem",
-            ...fade(80),
-          }}>
-            <span className="hero-blink-dot" />
-            Fairblock Network
-          </div>
 
           {/* Heading */}
           <h1 className="font-heading font-normal" style={{ lineHeight: 1.05, letterSpacing: "-0.025em", fontSize: "clamp(3.2rem, 5.2vw, 6rem)" }}>
@@ -51,7 +35,7 @@ export default function Section1() {
 
           {/* CTAs */}
           <div className="flex gap-3 flex-wrap mt-10" style={fade(520)}>
-            <a href="https://docs.fairblock.network/docs/welcome/Vision"
+            <a href="https://docs.fairblock.network/"
               target="_blank" rel="noopener noreferrer"
               className="btn-ink">
               Read the docs

@@ -520,7 +520,7 @@ export default function SolutionsPage() {
               </p>
               <div className="flex gap-3 flex-wrap pt-2">
                 <a href="mailto:hello@fairblock.network" className="btn-ink">Contact us</a>
-                <a href="https://docs.fairblock.network/docs/welcome/Vision" target="_blank" rel="noopener noreferrer" className="btn-outline">Read the docs</a>
+                <a href="https://docs.fairblock.network/" target="_blank" rel="noopener noreferrer" className="btn-outline">Read the docs</a>
               </div>
             </div>
 
