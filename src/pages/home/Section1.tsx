@@ -40,7 +40,7 @@ export default function Section1() {
               className="btn-ink">
               Read the docs
             </a>
-            <a href="https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/"
+            <a href="https://docs.fairblock.network/ct/guides/build/building-with-sdk"
               target="_blank" rel="noopener noreferrer"
               className="btn-outline">
               Start building

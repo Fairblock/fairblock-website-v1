@@ -14,7 +14,7 @@ const Section1 = () => {
             across stablecoins, protected trading, and incorruptible AI.
           </h6>
           <a
-            href="https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/"
+            href="https://docs.fairblock.network/ct/guides/build/building-with-sdk"
             rel="noopener noreferrer"
             target="_blank"
           >

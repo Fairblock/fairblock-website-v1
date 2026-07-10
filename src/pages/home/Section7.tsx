@@ -46,7 +46,7 @@ const Section7 = () => {
         <StartBuildingCard
           content="Build your Confidential App in 5 minutes"
           imageUrl="/home/build-c-app.svg"
-          link="https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/"
+          link="https://docs.fairblock.network/ct/guides/build/building-with-sdk"
           title="Build cAPP"
         />
         <StartBuildingCard
