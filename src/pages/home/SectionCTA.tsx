@@ -4,18 +4,18 @@ import FadeIn from "../../common/FadeIn";
 const steps = [
   {
     number: "01",
-    title: "Install our SDK",
-    description: "Integrate Fairblock with any frontend, neobank, wallet, or agentic platform in minutes.",
+    title: "Use Fairblock Your Way",
+    description: "Use Fairblock through our apps, partner products, or an embedded integration built by your team or ours.",
   },
   {
     number: "02",
     title: "Go Private",
-    description: "Stablecoins, RWAs, and AI workloads are automatically routed through Fairblock's decentralized cryptographic network for confidential processing.",
+    description: "Stablecoins, Tokenized Assets, and AI workloads are protected automatically by Fairblock's decentralized cryptographic network.",
   },
   {
     number: "03",
     title: "Keep It Simple",
-    description: "Users interact as usual, with no new wallets, bridges, or extra steps. Privacy stays invisible and compliance is built in.",
+    description: "Users interact as usual, with no new wallets, bridges, or extra steps. Privacy and compliance work in the background.",
   },
 ];
 
