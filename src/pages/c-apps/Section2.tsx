@@ -48,35 +48,71 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: Card) => {
 const C_APPS_LIST = [
   {
     imageUrl: "/c-apps/demos/confidential-stablecoins.png",
-    title: "Stabletrust: Confidential Stablecoins",
+    title: "Stabletrust App: All stablecoins, All Chains, All Confidential in Our Universal Frontend",
     content:
       "Confidential stablecoins are the final catalyst for institutional adoption. Fairblock enables them: fast, compliant, and cross chain using a powerful cryptographic stack.",
     link: "https://stabletrust.io/",
   },
+   {
+    imageUrl: "/c-apps/demos/fairates.jpg",
+    title: "CUSD: Fairblock's Flagship Confidential and Compliant Stablecoin",
+    content:
+      "Powered by Fairblock x M0 x Predicate x MxON x Bridge",
+    link: "https://CUSD.fairblock.network/",
+  },
   {
     imageUrl: "/c-apps/demos/fairates.jpg",
-    title: "Fairrates: Protected Lending",
+    title: "YieldShield: Confidential Yield",
     content:
-      "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
-    link: "https://fairates.fairblock.network/",
+      "Confidential Stablecoin Yield. Morpho x Fairblock.",
+    link: "https://yieldshield.fairblock.network/",
+  },
+  {
+    imageUrl: "/c-apps/demos/fairates.jpg",
+    title: "Compliance Dashboard",
+    content:
+      "Granular selective disclosure dashboard for authorities, compliance officers, and security partners.",
+    link: "https://CUSD.fairblock.network/",
+  },
+  {
+    imageUrl: "/c-apps/demos/fairates.jpg",
+    title: "Compliance Dashboard",
+    content:
+      "Granular selective disclosure dashboard for authorities, compliance officers, and security partners.",
+    link: "https://CUSD.fairblock.network/",
   },
   {
     imageUrl: "/c-apps/demos/time-machine-img.png",
-    title: "Time Machine: Protected Predictions",
+    title: "Time Machine: Confidential Prediction Market",
     content:
       "Encrypt your prediction. Keep your alpha. Win more for being early and accurate. It’s like options or Polymarket. Just simpler, with asymmetric payoffs. No greeks. No frontrunning. No oracle manipulation.",
     link: "https://timemachine.fairblock.network/",
   },
   {
+    imageUrl: "/c-apps/demos/fairates.jpg",
+    title: "Limen: Private ChatGPT and Claude",
+    content:
+      "Limen finds sensitive information in AI prompts, applies your policy, and redacts what should not leave, right in the browser.
+",
+    link: "https://limen.fairblock.network/",
+  },
+  {
+    imageUrl: "/c-apps/demos/fairates.jpg",
+    title: "Fairrates: Confidential Auctions for Fixed-term Lending",
+    content:
+      "Fixed rate lending through leaderless sealed bid auctions. Live on Arbitrum One, coming soon to Hyperliquid. Tighter margins, no slippage, and reduced liquidation penalties.",
+    link: "https://fairates.fairblock.network/",
+  },
+  {
     imageUrl: "/c-apps/demos/unruggable-ai.jpg",
-    title: "Unruggable AI: Protected Agents",
+    title: "Unruggable AI: Protected AI Agents",
     content:
       "TEEs lose keys on failure or restart. Unruggable AI solves this with TEEs, Fairblock’s MPC, and private decryption to securely back up and recover keys without centralization.",
     link: "https://github.com/Fairblock/Unruggable-AI",
   },
   {
     videoUrl: "/c-apps/demos/fairy-cow-swap.mp4",
-    title: "FairyCoW: Protected Intents",
+    title: "FairyCoW: Protected Intents on CoWSwap",
     content:
       "Over 40% of US trades use dark pools to avoid market impact and frontrunning. FairyCoW brings that protection onchain, protecting sensitive order data before execution. Now live on Sepolia.",
     link: "https://swap.fairycow.fi/",
