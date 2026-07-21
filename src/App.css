@@ -179,6 +179,24 @@
   animation-delay: -2.2s;
 }
 
+@keyframes cusdHeartbeat {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 1px rgba(41, 189, 247, 0.12)); }
+  18% { transform: scale(1.08); filter: drop-shadow(0 0 5px rgba(41, 189, 247, 0.34)); }
+  36% { transform: scale(1.015); filter: drop-shadow(0 0 2px rgba(41, 189, 247, 0.18)); }
+  54% { transform: scale(1.055); filter: drop-shadow(0 0 4px rgba(41, 189, 247, 0.28)); }
+  74% { transform: scale(1); filter: drop-shadow(0 0 1px rgba(41, 189, 247, 0.12)); }
+}
+
+.cusd-heartbeat {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cusdHeartbeat 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cusd-heartbeat { animation: none; }
+}
+
 @keyframes skeleton-shimmer {
   0%   { background-position: -600px 0; }
   100% { background-position:  600px 0; }

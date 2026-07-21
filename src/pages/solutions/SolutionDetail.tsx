@@ -1,9 +1,17 @@
 import { useParams, Navigate } from "react-router-dom";
+import { useState } from "react";
 import { SOLUTIONS } from "./solutionsData";
 
 export default function SolutionDetail() {
   const { solutionId } = useParams<{ solutionId: string }>();
+  const [copied, setCopied] = useState(false);
   const solution = SOLUTIONS.find(s => s.id === solutionId);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("hello@fairblock.network");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   if (!solution) return <Navigate to={`/solutions/${SOLUTIONS[0].id}`} replace />;
 
@@ -66,9 +74,9 @@ export default function SolutionDetail() {
 
             {/* CTA */}
             <div className="flex gap-3 flex-wrap pt-2">
-              <a href="mailto:hello@fairblock.network" className="btn-ink">
-                Contact us
-              </a>
+              <button type="button" onClick={handleCopy} className="btn-ink" aria-live="polite">
+                {copied ? "✓ hello@fairblock.network copied" : "Contact us"}
+              </button>
             </div>
           </div>
 
@@ -153,9 +161,9 @@ export default function SolutionDetail() {
             Talk to our team about {solution.title.toLowerCase()}.
           </p>
         </div>
-        <a href="mailto:hello@fairblock.network" className="btn-ink" style={{ whiteSpace: "nowrap" }}>
-          Contact us →
-        </a>
+        <button type="button" onClick={handleCopy} className="btn-ink" style={{ whiteSpace: "nowrap" }} aria-live="polite">
+          {copied ? "✓ hello@fairblock.network copied" : "Contact us →"}
+        </button>
       </section>
     </div>
   );

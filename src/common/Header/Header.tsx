@@ -55,7 +55,7 @@ const Header = () => {
 
   const navItems = [
     { to: "/how-it-works", label: "How it works" },
-    { to: "/capps",        label: "Showcase" },
+    { to: "/capps",        label: "Application Showcase" },
     { to: "/articles",     label: "Articles" },
   ];
 
@@ -82,8 +82,10 @@ const Header = () => {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-2xl text-[#000D14]/70 hover:text-[#000D14] transition-colors"
+            className="md:hidden h-11 w-11 -mr-2 flex items-center justify-center text-2xl text-[#000D14]/70 hover:text-[#000D14] transition-colors"
             onClick={() => setMenuOpen(p => !p)}
+            aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={menuOpen}
           >
             {menuOpen ? <IoClose /> : <IoMenu />}
           </button>
@@ -109,7 +111,8 @@ const Header = () => {
             </Link>
             <button
               onClick={close}
-              className="text-[#141210] hover:opacity-60 transition-opacity"
+              className="h-11 w-11 -mr-2 flex items-center justify-center text-[#141210] hover:opacity-60 transition-opacity"
+              aria-label="Close navigation menu"
             >
               <IoClose size={24} />
             </button>
@@ -164,6 +167,16 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
+            <a
+              href="https://docs.fairblock.network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={close}
+              className="flex items-center justify-between py-5 border-b border-black/8"
+              style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "20px", color: "#141210", textDecoration: "none", fontWeight: 400 }}
+            >
+              Docs
+            </a>
           </div>
 
           {/* Bottom CTAs */}

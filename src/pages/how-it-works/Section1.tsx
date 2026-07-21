@@ -19,12 +19,15 @@ const Section1 = () => {
           <Title title="What's Fairblock?" />
         </div>
         <p className="mx-auto p-4 sm:px-8 text-justify lg:text-lg max-w-4xl leading-relaxed break-words">
-          Fairblock is a performant, compliant privacy infrastructure for enterprises.
-          We power confidential stablecoins and RWA for financial institutions
-          protecting payroll, treasury, revenue, and trading activity, and private AI
-          for enterprises that need persistent, accessible models without exposing
-          confidential data. Privacy is a compliance and profitability requirement
-          for enterprises. We're making it usable.
+          Fairblock is the turnkey confidentiality layer for digital assets and
+          intelligent applications. We enable confidential stablecoins and tokenized
+          assets for financial institutions protecting payroll, treasury balances,
+          revenue, payments, and trading activity, while supporting private AI and
+          agentic workflows that process sensitive enterprise data without exposing
+          confidential inputs or proprietary information. Fairblock combines strong
+          cryptography, configurable compliance controls, high performance, and
+          seamless integration with existing assets, applications, wallets, and
+          workflows.
         </p>
       </div>
     </div>

@@ -63,14 +63,6 @@ const ARTICLES: Article[] = [
     category: "Research",
   },
   {
-    imageUrl: "/articles/fairblock-x-altlayer.png",
-    title: "Encrypt Every Rollup",
-    body: "Bringing Dynamic Confidentiality to Rollup Developers with AltLayer.",
-    link: "https://medium.com/@0xfairblock/encrypting-every-rollup-ae95cfcad848",
-    site: "medium.com",
-    category: "Article",
-  },
-  {
     imageUrl: "/articles/announcing-fairy-cow.png",
     title: "Announcing FairyCoW: Encrypted Orders for CoW Swap",
     body: "FairyCoW improves onchain trading experiences by increasing capital efficiency and protecting against pre-execution order leakage without reliance on centralized parties.",
@@ -125,14 +117,6 @@ const ARTICLES: Article[] = [
     link: "https://medium.com/@0xfairblock/fairblock-public-testnet-is-now-live-a487f97ea3e0",
     site: "medium.com",
     category: "Article",
-  },
-  {
-    imageUrl: "/articles/accessible-encryption-for-ethereum-rollups-with-fairomon.png",
-    title: "Accessible Encryption for Ethereum Rollups with Fairomon",
-    body: "Fairomon enables builders to create Ethereum rollups with built-in encryption with minimal lift.",
-    link: "https://ethresear.ch/t/accessible-encryption-for-ethereum-rollups-with-fairomon/20349",
-    site: "ethresear.ch",
-    category: "Research",
   },
   {
     imageUrl: "/articles/no-more-plain-vanilla-defi.png",

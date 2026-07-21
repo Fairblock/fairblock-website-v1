@@ -461,7 +461,14 @@ const SOLUTIONS: Solution[] = [
 
 export default function SolutionsPage() {
   const [active, setActive] = useState<Solution>(SOLUTIONS[0]);
+  const [copied, setCopied] = useState(false);
   useEffect(() => { window.scrollTo({ top: 0, behavior: "smooth" }); }, []);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("hello@fairblock.network");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <div className="mx-auto max-w-[1920px]">
@@ -519,7 +526,9 @@ export default function SolutionsPage() {
                 {active.description}
               </p>
               <div className="flex gap-3 flex-wrap pt-2">
-                <a href="mailto:hello@fairblock.network" className="btn-ink">Contact us</a>
+                <button type="button" onClick={handleCopy} className="btn-ink" aria-live="polite">
+                  {copied ? "✓ hello@fairblock.network copied" : "Contact us"}
+                </button>
                 <a href="https://docs.fairblock.network/" target="_blank" rel="noopener noreferrer" className="btn-outline">Read the docs</a>
               </div>
             </div>

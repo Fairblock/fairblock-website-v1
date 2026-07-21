@@ -122,7 +122,7 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         onClick={isMobileNav ? () => setMenuOpen(false) : undefined}
         to="capps"
       >
-        Showcase
+        Application Showcase
       </Link>
       <Link
         className={linkClass("/articles")}
@@ -131,6 +131,14 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
       >
         Articles
       </Link>
+      <a
+        href="https://docs.fairblock.network/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={linkClass("")}
+      >
+        Docs
+      </a>
 
       {/* Divider + icons */}
       <div className={`flex items-center gap-3 ${isMobileNav ? "" : "pl-4 border-l border-black/10"}`}>

@@ -7,7 +7,7 @@ const NAV_COLS = [
     links: [
       { text: "Solutions",    href: "/solutions/stablecoin-payments" },
       { text: "How it works", href: "/how-it-works" },
-      { text: "Showcase",     href: "/showcase" },
+      { text: "Application Showcase", href: "/capps" },
       { text: "Ecosystem",    href: "/ecosystem" },
       { text: "Articles",     href: "/articles" },
     ],

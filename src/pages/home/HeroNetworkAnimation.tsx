@@ -44,8 +44,24 @@ const HeroNetworkAnimation = () => (
     <circle cx="830" cy="514" r="4.5" fill="#141210" />
     <circle cx="730" cy="630" r="4.5" fill="#141210" />
 
-    {/* Center node */}
-    <circle cx="450" cy="325" r="9" fill="#58BDF6" />
+    {/* Center node — CUSD star mark */}
+    <g transform="translate(450 325)">
+      <g className="cusd-heartbeat">
+        <circle r="22" fill="white" fillOpacity="0.88" />
+        <g stroke="#29BDF7" strokeWidth="4.5" strokeLinecap="round">
+          <path d="M0 -7 V-18" />
+          <path d="M0 7 V18" />
+          <path d="M7 0 H18" />
+          <path d="M-7 0 H-18" />
+          <path d="M5 -5 L13 -13" />
+          <path d="M-5 5 L-13 13" />
+          <path d="M5 5 L13 13" />
+          <path d="M-5 -5 L-13 -13" />
+        </g>
+        <circle r="5.5" fill="#BEEFFF" />
+        <circle r="2.5" fill="white" />
+      </g>
+    </g>
 
     {/* Node labels */}
     <g fontFamily="'JetBrains Mono', monospace" fontSize="10" fill="#8892A4" letterSpacing="1">
@@ -71,16 +87,16 @@ const HeroNetworkAnimation = () => (
       <text x="548" y="502">$•••,•••</text>
     </g>
 
-    {/* FAIRBLOCK label */}
+    {/* Fairblock label */}
     <text
-      x="450" y="350"
+      x="450" y="360"
       textAnchor="middle"
       fontFamily="'JetBrains Mono', monospace"
-      fontSize="11"
+      fontSize="12"
       fill="#141210"
-      letterSpacing="2"
+      letterSpacing="1.4"
     >
-      FAIRBLOCK
+      Fairblock
     </text>
   </svg>
 );

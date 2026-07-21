@@ -49,7 +49,7 @@ const Section2 = () => {
     <div className="flex flex-col gap-6 p-4 sm:px-8 mx-auto max-w-screen-xl w-full">
       <FadeIn className="flex flex-col gap-2">
         <div className="flex justify-center lg:justify-start">
-          <Title title="Enterprise Privacy Solutions" />
+          <Title title="Enterprise Confidentiality Solutions" />
         </div>
         <Typewriter />
       </FadeIn>
