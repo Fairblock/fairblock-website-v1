@@ -92,8 +92,7 @@ const C_APPS_LIST = [
     imageUrl: "/c-apps/demos/fairates.jpg",
     title: "Limen: Private ChatGPT and Claude",
     content:
-      "Limen finds sensitive information in AI prompts, applies your policy, and redacts what should not leave, right in the browser.
-",
+      "Limen finds sensitive information in AI prompts, applies your policy, and redacts what should not leave, right in the browser.",
     link: "https://limen.fairblock.network/",
   },
   {
