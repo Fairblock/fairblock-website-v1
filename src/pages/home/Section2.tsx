@@ -56,34 +56,28 @@ const Section2 = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         <FadeIn delay={150} className="flex h-full">
           <TiltCard className="w-full h-full">
-            <div className="border border-black/12 p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-black/[0.025] transition-colors duration-300">
-              <h3 className="font-heading font-normal text-[#141210] text-2xl">
+            <div className="border border-black/12 p-8 lg:p-12 flex flex-col gap-5 w-full h-full min-h-[16rem] lg:min-h-[20rem] justify-center hover:bg-black/[0.025] transition-colors duration-300">
+              <h3 className="font-heading font-normal text-[#141210] text-2xl lg:text-3xl">
                 Confidential Finance
               </h3>
-              <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
-                As institutional adoption of stablecoins accelerates, enterprises
-                and financial institutions demand privacy to protect their payroll,
-                treasury, revenue, and trading activity. Exposed onchain
-                transactions are a compliance and profitability liability. We are
-                building performant, compliant, cross-chain confidential stablecoins
-                and RWA that integrate in 30 minutes by developers, with no extra
-                clicks for end-users.
+              <p className="leading-relaxed lg:text-xl" style={{ textAlign: "justify" }}>
+                Protect sensitive balances, payment amounts, trades, treasury
+                activity, and tokenized asset flows while preserving compliance,
+                interoperability, and existing user experiences.
               </p>
             </div>
           </TiltCard>
         </FadeIn>
         <FadeIn delay={300} className="flex h-full">
           <TiltCard className="w-full h-full">
-            <div className="border border-black/12 p-6 lg:p-8 flex flex-col gap-4 w-full h-full hover:bg-black/[0.025] transition-colors duration-300">
-              <h3 className="font-heading font-normal text-[#141210] text-2xl">
-                Private AI
+            <div className="border border-black/12 p-8 lg:p-12 flex flex-col gap-5 w-full h-full min-h-[16rem] lg:min-h-[20rem] justify-center hover:bg-black/[0.025] transition-colors duration-300">
+              <h3 className="font-heading font-normal text-[#141210] text-2xl lg:text-3xl">
+                Confidential Intelligence
               </h3>
-              <p className="leading-relaxed lg:text-lg" style={{ textAlign: "justify" }}>
-                Enterprise AI adoption is surging, but businesses cannot share
-                confidential data with cloud models. They need AI that is persistent
-                and accessible without exposing sensitive information. For enterprises,
-                it is a compliance and profitability requirement. The only barriers
-                are performance and usability, and that is exactly what we are solving.
+              <p className="leading-relaxed lg:text-xl" style={{ textAlign: "justify" }}>
+                Enable AI agents and applications to process sensitive data, access
+                private services, and execute confidential workflows without
+                exposing proprietary or customer information.
               </p>
             </div>
           </TiltCard>
