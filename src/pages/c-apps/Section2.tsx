@@ -54,7 +54,7 @@ const Card = ({ imageUrl, videoUrl, title, content, link }: CardProps) => {
 const C_APPS_LIST = [
   {
     imageUrl: "/c-apps/demos/stabletrust.png",
-    title: "StableTrust: The Universal Confidential Stablecoin Application",
+    title: "Stabletrust Pay: The Universal Confidential Stablecoin Application",
     content:
       "A universal interface for confidential stablecoin transfers across any chain.",
     link: "https://stabletrust.io/",

@@ -8,6 +8,7 @@ import CApps from "./pages/c-apps/CApps";
 import Footer from "./common/Footer/Footer";
 import Articles from "./pages/articles/Articles";
 import SolutionDetail from "./pages/solutions/SolutionDetail";
+import ProductDetail from "./pages/products/ProductDetail";
 import CursorGlow from "./common/CursorGlow";
 import ScrollProgress from "./common/ScrollProgress";
 import PageTransition from "./common/PageTransition";
@@ -30,6 +31,8 @@ function App() {
             <Route path="articles" element={<Articles />} />
             <Route path="solutions" element={<Navigate to="/solutions/stablecoin-payments" replace />} />
             <Route path="solutions/:solutionId" element={<SolutionDetail />} />
+            <Route path="products" element={<Navigate to="/products/stabletrust-sdk" replace />} />
+            <Route path="products/:productId" element={<ProductDetail />} />
           </Routes>
         </PageTransition>
         <Footer />

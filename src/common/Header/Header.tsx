@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { FaXTwitter, FaDiscord } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
 import Navbar from "./Navbar";
 import { SOLUTIONS } from "../../pages/solutions/solutionsData";
+import { NAV_PRODUCTS } from "../../pages/products/productsData";
 
 const ChevronDown = ({ open }: { open: boolean }) => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -19,6 +18,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [productsOpen, setProductsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const location = useLocation();
 
@@ -37,6 +37,7 @@ const Header = () => {
   useEffect(() => {
     setMenuOpen(false);
     setSolutionsOpen(false);
+    setProductsOpen(false);
   }, [location.pathname]);
 
   // Prevent body scroll when menu is open
@@ -51,7 +52,7 @@ const Header = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const close = () => { setMenuOpen(false); setSolutionsOpen(false); };
+  const close = () => { setMenuOpen(false); setSolutionsOpen(false); setProductsOpen(false); };
 
   const navItems = [
     { to: "/how-it-works", label: "How it works" },
@@ -121,6 +122,51 @@ const Header = () => {
           {/* Nav items */}
           <div className="flex flex-col flex-1 px-6 pt-2 overflow-y-auto">
 
+            {/* Products — expandable */}
+            <div className="border-b border-black/8">
+              <button
+                className="flex items-center justify-between w-full py-5 text-left"
+                onClick={() => setProductsOpen(p => !p)}
+              >
+                <span style={{ fontSize: "20px", color: "#141210", fontFamily: "'Maison Neue', sans-serif", fontWeight: 400 }}>
+                  Products
+                </span>
+                <ChevronDown open={productsOpen} />
+              </button>
+
+              {/* Expanded product list */}
+              {productsOpen && (
+                <div className="flex flex-col pb-3">
+                  {NAV_PRODUCTS.map(p => p.internal ? (
+                    <Link
+                      key={p.id}
+                      to={p.to}
+                      onClick={close}
+                      className="flex items-start gap-3 py-3 border-t border-black/5"
+                    >
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "15px", color: "rgba(20,18,16,0.65)" }}>
+                        {p.title}
+                      </span>
+                    </Link>
+                  ) : (
+                    <a
+                      key={p.id}
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={close}
+                      className="flex items-center gap-2 py-3 border-t border-black/5"
+                    >
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "15px", color: "rgba(20,18,16,0.65)" }}>
+                        {p.title}
+                      </span>
+                      <span style={{ fontSize: "12px", color: "rgba(20,18,16,0.4)" }}>↗</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Solutions — expandable */}
             <div className="border-b border-black/8">
               <button
@@ -167,48 +213,13 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="https://docs.fairblock.network/"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={close}
-              className="flex items-center justify-between py-5 border-b border-black/8"
-              style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "20px", color: "#141210", textDecoration: "none", fontWeight: 400 }}
-            >
-              Docs
-            </a>
           </div>
 
           {/* Bottom CTAs */}
           <div className="px-6 pb-10 pt-6 flex flex-col gap-4 border-t border-black/8">
-            <div className="flex gap-3">
-              <button onClick={handleCopy} className="btn-ink flex-1 justify-center">
-                {copied ? "✓ Copied" : "Contact us"}
-              </button>
-              <a
-                href="https://docs.fairblock.network/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-outline flex-1 justify-center"
-              >
-                Read the docs
-              </a>
-            </div>
-
-            {/* Social icons */}
-            <div className="flex items-center gap-5 pt-1">
-              <a href="https://x.com/0xfairblock" target="_blank" rel="noopener noreferrer"
-                className="text-[#141210]/40 hover:text-[#141210] transition-colors">
-                <FaXTwitter size={18} />
-              </a>
-              <a href="https://discord.com/invite/fairblock" target="_blank" rel="noopener noreferrer"
-                className="text-[#141210]/40 hover:text-[#141210] transition-colors">
-                <FaDiscord size={18} />
-              </a>
-              <button onClick={handleCopy} className="text-[#141210]/40 hover:text-[#141210] transition-colors">
-                <MdEmail size={20} />
-              </button>
-            </div>
+            <button onClick={handleCopy} className="btn-ink justify-center">
+              {copied ? "✓ Copied" : "Contact us"}
+            </button>
           </div>
         </div>
       </div>

@@ -1,48 +1,6 @@
-import { useState, useEffect } from "react";
 import Title from "../../common/Title";
 import FadeIn from "../../common/FadeIn";
 import TiltCard from "../../common/TiltCard";
-
-const phrases = [
-  "protecting payroll",
-  "protecting treasury",
-  "protecting trading activity",
-  "protecting AI models",
-];
-
-const Typewriter = () => {
-  const [phraseIndex, setPhraseIndex] = useState(0);
-  const [displayed, setDisplayed] = useState("");
-  const [isDeleting, setIsDeleting] = useState(false);
-
-  useEffect(() => {
-    const current = phrases[phraseIndex];
-
-    if (!isDeleting && displayed.length < current.length) {
-      const t = setTimeout(() => setDisplayed(current.slice(0, displayed.length + 1)), 60);
-      return () => clearTimeout(t);
-    }
-    if (!isDeleting && displayed.length === current.length) {
-      const t = setTimeout(() => setIsDeleting(true), 1800);
-      return () => clearTimeout(t);
-    }
-    if (isDeleting && displayed.length > 0) {
-      const t = setTimeout(() => setDisplayed(displayed.slice(0, -1)), 30);
-      return () => clearTimeout(t);
-    }
-    if (isDeleting && displayed.length === 0) {
-      setIsDeleting(false);
-      setPhraseIndex((i) => (i + 1) % phrases.length);
-    }
-  }, [displayed, isDeleting, phraseIndex]);
-
-  return (
-    <p className="text-primary-blue text-lg sm:text-xl text-center lg:text-left min-h-7">
-      {displayed}
-      <span className="animate-pulse">|</span>
-    </p>
-  );
-};
 
 const Section2 = () => {
   return (
@@ -51,7 +9,9 @@ const Section2 = () => {
         <div className="flex justify-center lg:justify-start">
           <Title title="Enterprise Confidentiality Solutions" />
         </div>
-        <Typewriter />
+        <p className="text-primary-blue text-lg sm:text-xl text-center lg:text-left">
+          One Confidentiality Layer. Two Critical Markets.
+        </p>
       </FadeIn>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
         <FadeIn delay={150} className="flex h-full">
