@@ -63,7 +63,7 @@ const C_APPS_LIST = [
     imageUrl: "/c-apps/demos/cusd.png",
     title: "CUSD: Confidential, Compliant Digital Dollars",
     content:
-      "Fairblock’s flagship confidential stablecoin, built with M0, Predicate, MxON, and Bridge for private, compliant payments.",
+      "Fairblock’s flagship confidential stablecoin, built with M0, Predicate, and Bridge for private, compliant payments.",
     link: "https://CUSD.fairblock.network/",
   },
   {
