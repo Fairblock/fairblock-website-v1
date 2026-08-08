@@ -128,11 +128,13 @@ export const PRODUCTS: Product[] = [
 // the live app; only entries with `internal: true` have a dedicated page on this site.
 
 export type NavProduct =
-  | { id: string; title: string; internal: true; to: string }
-  | { id: string; title: string; internal: false; href: string };
+  | { id: string; title: string; internal: true; to: string; comingSoon?: false }
+  | { id: string; title: string; internal: false; href: string; comingSoon?: false }
+  | { id: string; title: string; internal: false; comingSoon: true };
 
 export const NAV_PRODUCTS: NavProduct[] = [
   { id: "stabletrust-pay", title: "Stabletrust Pay",             internal: false, href: "https://stabletrust.io/" },
+  { id: "stabletrust-pro", title: "Stabletrust Pro",             internal: false, comingSoon: true },
   { id: "stabletrust-sdk", title: "Stabletrust SDK",              internal: true,  to: "/products/stabletrust-sdk" },
-  { id: "cusd-app",        title: "Flagship confidential USD",    internal: false, href: "https://cusd.fairblock.network/" },
+  { id: "cusd-app",        title: "Flagship Confidential USD",    internal: false, href: "https://cusd.fairblock.network/" },
 ];

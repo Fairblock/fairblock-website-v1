@@ -29,7 +29,17 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
         <div className="flex flex-col gap-1">
           <span className="text-[#000D14]/55 text-sm tracking-wide font-maison-neue">Products</span>
           <div className="flex flex-col gap-1 pl-3 border-l border-black/10">
-            {NAV_PRODUCTS.map(p => p.internal ? (
+            {NAV_PRODUCTS.map(p => p.comingSoon ? (
+              <span
+                key={p.id}
+                aria-disabled="true"
+                className="flex items-center justify-between gap-3 text-[#000D14]/40 text-sm py-0.5"
+                style={{ fontFamily: "'Maison Neue', sans-serif" }}
+              >
+                <span>{p.title}</span>
+                <span className="text-[10px] uppercase tracking-wide">Coming soon</span>
+              </span>
+            ) : p.internal ? (
               <Link
                 key={p.id}
                 to={p.to}
@@ -88,7 +98,16 @@ const Navbar = ({ isMobileNav, setMenuOpen }: NavbarProps) => {
                 boxShadow: "0 8px 24px rgba(0,0,0,0.08)",
                 padding: "8px 0",
               }}>
-                {NAV_PRODUCTS.map(p => p.internal ? (
+                {NAV_PRODUCTS.map(p => p.comingSoon ? (
+                  <div
+                    key={p.id}
+                    aria-disabled="true"
+                    style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: "10px", padding: "10px 16px" }}
+                  >
+                    <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "13.5px", color: "rgba(20,18,16,0.5)" }}>{p.title}</span>
+                    <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "9px", color: "#8892A4", letterSpacing: "0.08em", textTransform: "uppercase" }}>Coming soon</span>
+                  </div>
+                ) : p.internal ? (
                   <Link
                     key={p.id}
                     to={p.to}

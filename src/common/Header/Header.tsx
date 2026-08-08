@@ -136,7 +136,20 @@ const Header = () => {
               {/* Expanded product list */}
               {productsOpen && (
                 <div className="flex flex-col pb-3">
-                  {NAV_PRODUCTS.map(p => p.internal ? (
+                  {NAV_PRODUCTS.map(p => p.comingSoon ? (
+                    <div
+                      key={p.id}
+                      aria-disabled="true"
+                      className="flex items-center justify-between gap-3 py-3 border-t border-black/5"
+                    >
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "15px", color: "rgba(20,18,16,0.45)" }}>
+                        {p.title}
+                      </span>
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "10px", color: "rgba(20,18,16,0.4)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+                        Coming soon
+                      </span>
+                    </div>
+                  ) : p.internal ? (
                     <Link
                       key={p.id}
                       to={p.to}
