@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
-import Navbar from "./Navbar";
+import Navbar, { RESOURCES } from "./Navbar";
 import { SOLUTIONS } from "../../pages/solutions/solutionsData";
 import { NAV_PRODUCTS } from "../../pages/products/productsData";
 
@@ -19,6 +19,7 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [solutionsOpen, setSolutionsOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const location = useLocation();
 
@@ -38,6 +39,7 @@ const Header = () => {
     setMenuOpen(false);
     setSolutionsOpen(false);
     setProductsOpen(false);
+    setResourcesOpen(false);
   }, [location.pathname]);
 
   // Prevent body scroll when menu is open
@@ -52,12 +54,10 @@ const Header = () => {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const close = () => { setMenuOpen(false); setSolutionsOpen(false); setProductsOpen(false); };
+  const close = () => { setMenuOpen(false); setSolutionsOpen(false); setProductsOpen(false); setResourcesOpen(false); };
 
   const navItems = [
     { to: "/how-it-works", label: "How it works" },
-    { to: "/capps",        label: "Application Showcase" },
-    { to: "/articles",     label: "Articles" },
   ];
 
   return (
@@ -213,6 +213,51 @@ const Header = () => {
                 {item.label}
               </Link>
             ))}
+
+            {/* Resources — expandable */}
+            <div className="border-b border-black/8">
+              <button
+                className="flex items-center justify-between w-full py-5 text-left"
+                onClick={() => setResourcesOpen(p => !p)}
+              >
+                <span style={{ fontSize: "20px", color: "#141210", fontFamily: "'Maison Neue', sans-serif", fontWeight: 400 }}>
+                  Resources
+                </span>
+                <ChevronDown open={resourcesOpen} />
+              </button>
+
+              {/* Expanded resource list */}
+              {resourcesOpen && (
+                <div className="flex flex-col pb-3">
+                  {RESOURCES.map(r => r.internal ? (
+                    <Link
+                      key={r.id}
+                      to={r.to}
+                      onClick={close}
+                      className="flex items-start gap-3 py-3 border-t border-black/5"
+                    >
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "15px", color: "rgba(20,18,16,0.65)" }}>
+                        {r.title}
+                      </span>
+                    </Link>
+                  ) : (
+                    <a
+                      key={r.id}
+                      href={r.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={close}
+                      className="flex items-center gap-2 py-3 border-t border-black/5"
+                    >
+                      <span style={{ fontFamily: "'Maison Neue', sans-serif", fontSize: "15px", color: "rgba(20,18,16,0.65)" }}>
+                        {r.title}
+                      </span>
+                      <span style={{ fontSize: "12px", color: "rgba(20,18,16,0.4)" }}>↗</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Bottom CTAs */}
