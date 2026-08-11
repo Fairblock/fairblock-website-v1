@@ -25,7 +25,7 @@ const NAV_COLS = [
     label: "Community",
     links: [
       { text: "X / Twitter", href: "https://x.com/0xfairblock" },
-      { text: "Discord",     href: "https://discord.com/invite/fairblock" },
+      { text: "Discord",     href: "https://discord.gg/QyZ6AH67Se" },
       { text: "Telegram",    href: "https://t.me/+HvfLo4NFTvw3NTU0" },
     ],
   },
@@ -33,7 +33,7 @@ const NAV_COLS = [
 
 const SOCIAL = [
   { icon: <FaXTwitter />,       href: "https://x.com/0xfairblock",                        label: "X" },
-  { icon: <FaDiscord />,        href: "https://discord.com/invite/fairblock",              label: "Discord" },
+  { icon: <FaDiscord />,        href: "https://discord.gg/QyZ6AH67Se",              label: "Discord" },
   { icon: <RiTelegram2Fill />,  href: "https://t.me/+HvfLo4NFTvw3NTU0",                   label: "Telegram" },
   { icon: <FaGithub />,         href: "https://github.com/Fairblock",                      label: "GitHub" },
 ];

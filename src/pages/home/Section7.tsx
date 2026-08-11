@@ -52,7 +52,7 @@ const Section7 = () => {
         <StartBuildingCard
           content="Become a mushroom in a fairy ring"
           imageUrl="/home/join-discord.svg"
-          link="https://discord.com/invite/fairblock"
+          link="https://discord.gg/QyZ6AH67Se"
           title="Join our Fairy Ring"
         />
       </div>
