@@ -60,6 +60,13 @@ const C_APPS_LIST = [
     link: "https://stabletrust.io/",
   },
   {
+    imageUrl: "/c-apps/demos/stabletrust-pro.png",
+    title: "Stabletrust Pro",
+    content:
+      "Confidential multi-approval payouts for Organisations and teams, powered by Fairblock and Turnkey",
+    link: "https://pro.stabletrust.io/",
+  },
+  {
     imageUrl: "/c-apps/demos/cusd.png",
     title: "CUSD: Confidential, Compliant Digital Dollars",
     content:
