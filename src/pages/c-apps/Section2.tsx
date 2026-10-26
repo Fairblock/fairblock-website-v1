@@ -7,27 +7,13 @@ type CardProps = {
   title: string;
   content: string;
   link: string;
-  comingSoon?: boolean;
 };
 
-const Card = ({ imageUrl, videoUrl, title, content, link, comingSoon }: CardProps) => {
+const Card = ({ imageUrl, videoUrl, title, content, link }: CardProps) => {
   return (
     <article className="relative border border-white/80 bg-white/65 backdrop-blur-xl rounded-2xl flex flex-col overflow-hidden shadow-[0_12px_40px_rgba(0,13,20,0.07)] transition-all duration-300 hover:-translate-y-1 hover:border-primary-blue/45 hover:bg-white/80 hover:shadow-[0_22px_55px_rgba(55,159,218,0.16)] group">
       <div className="aspect-[16/9] bg-white/50 overflow-hidden relative border-b border-white/80">
-        {comingSoon && (
-          <span className="absolute top-3 left-3 z-10 rounded-full border border-primary-blue/30 bg-white/90 px-3 py-1 text-xs font-medium uppercase tracking-[0.08em] text-primary-blue shadow-sm backdrop-blur">
-            Coming soon
-          </span>
-        )}
-        {imageUrl && comingSoon && (
-          <img
-            className="object-cover object-top h-full w-full"
-            src={imageUrl}
-            alt={`${title} landing page`}
-            loading="lazy"
-          />
-        )}
-        {imageUrl && !comingSoon && (
+        {imageUrl && (
           <a className="block h-full focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-primary-blue" href={link} target="_blank" rel="noopener noreferrer" aria-label={`Open ${title}`}>
             <img
               className="object-cover object-top h-full w-full transition-transform duration-500 group-hover:scale-[1.02]"
@@ -51,21 +37,15 @@ const Card = ({ imageUrl, videoUrl, title, content, link, comingSoon }: CardProp
       <div className="flex flex-col flex-1 p-5 sm:p-6">
         <h3 className="font-heading text-2xl sm:text-[1.65rem] leading-tight text-pretty mb-3">{title}</h3>
         <p className="text-neutral-600 leading-relaxed text-pretty mb-6">{content}</p>
-        {comingSoon ? (
-          <span className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-neutral-500 w-fit border-b border-neutral-300 pb-1 cursor-default">
-            Coming soon
-          </span>
-        ) : (
-          <a
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-[#000D14] w-fit border-b border-primary-blue/60 pb-1 transition-colors hover:text-primary-blue focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-blue"
-          >
-            Explore
-            <PiArrowUpRightBold className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </a>
-        )}
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-[#000D14] w-fit border-b border-primary-blue/60 pb-1 transition-colors hover:text-primary-blue focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary-blue"
+        >
+          Explore
+          <PiArrowUpRightBold className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+        </a>
       </div>
     </article>
   );
@@ -85,7 +65,6 @@ const C_APPS_LIST = [
     content:
       "Confidential multi-approval payouts for Organisations and teams, powered by Fairblock and Turnkey",
     link: "https://pro.stabletrust.io/",
-    comingSoon: true,
   },
   {
     imageUrl: "/c-apps/demos/cusd.png",
@@ -204,7 +183,6 @@ const Section2 = () => {
               title={cApp.title}
               content={cApp.content}
               link={cApp.link}
-              comingSoon={cApp.comingSoon}
             />
           );
         })}

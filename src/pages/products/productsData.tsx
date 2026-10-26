@@ -134,7 +134,7 @@ export type NavProduct =
 
 export const NAV_PRODUCTS: NavProduct[] = [
   { id: "stabletrust-pay", title: "Stabletrust Pay",             internal: false, href: "https://stabletrust.io/" },
-  { id: "stabletrust-pro", title: "Stabletrust Pro",             internal: false, comingSoon: true },
+  { id: "stabletrust-pro", title: "Stabletrust Pro",             internal: false, href: "https://pro.stabletrust.io/" },
   { id: "stabletrust-sdk", title: "Stabletrust SDK",              internal: true,  to: "/products/stabletrust-sdk" },
   { id: "cusd-app",        title: "Flagship Confidential USD",    internal: false, href: "https://cusd.fairblock.network/" },
 ];
